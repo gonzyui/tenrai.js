@@ -23,7 +23,11 @@
     "format": "biome format --write .",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "docs:generate": "typedoc",
+    "docs:dev": "pnpm run docs:generate && vitepress dev docs",
+    "docs:build": "pnpm run docs:generate && vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "keywords": [
     "myanimelist",
@@ -52,7 +56,13 @@
     "@biomejs/biome": "^2.5.2",
     "@types/node": "^26.1.0",
     "@vitest/coverage-v8": "^4.1.10",
+    "typedoc": "^0.28.20",
+    "typedoc-plugin-markdown": "^4.12.0",
     "typescript": "^6.0.3",
+    "vitepress": "^1.6.4",
     "vitest": "^4.1.10"
-  }
+  },
+  "onlyBuiltDependencies": [
+    "esbuild"
+  ]
 }
