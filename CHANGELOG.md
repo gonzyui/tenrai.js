@@ -17,9 +17,11 @@ This project adheres to Semantic Versioning.
   - `vitest` 0.34.6 → 4.1.10
   - `@vitest/coverage-v8` 0.34.6 → 4.1.10
 - Fixed `tsconfig.json` to explicitly set `rootDir` required by TypeScript 6.
+- Added GitHub Actions workflow to automatically publish `tenrai.js` to npm upon release creation.
+- Added GitHub Actions workflow for CI (lint, test, build) on push and pull requests to `main`.
 
 ### Removed
 - Removed `users`, and `clubs` endpoint.
 - Removed `userMangaUpdate` and `userAnimeUpdate`.
 - Temporarily removed Husky and pre-commit hooks until the project is ready for release.
-- Removed GitHub Actions workflows.
+- Removed old GitHub Actions CI/CD workflows.
