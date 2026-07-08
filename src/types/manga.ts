@@ -187,13 +187,13 @@ export interface MangaQueryParams {
   limit?: number;
   q?: string;
   type?:
-  | 'manga'
-  | 'novel'
-  | 'lightnovel'
-  | 'oneshot'
-  | 'doujin'
-  | 'manhwa'
-  | 'manhua';
+    | 'manga'
+    | 'novel'
+    | 'lightnovel'
+    | 'oneshot'
+    | 'doujin'
+    | 'manhwa'
+    | 'manhua';
   score?: number;
   min_score?: number;
   max_score?: number;
@@ -202,18 +202,18 @@ export interface MangaQueryParams {
   genres?: string;
   genres_exclude?: string;
   order_by?:
-  | 'mal_id'
-  | 'title'
-  | 'start_date'
-  | 'end_date'
-  | 'chapters'
-  | 'volumes'
-  | 'score'
-  | 'scored_by'
-  | 'rank'
-  | 'popularity'
-  | 'members'
-  | 'favorites';
+    | 'mal_id'
+    | 'title'
+    | 'start_date'
+    | 'end_date'
+    | 'chapters'
+    | 'volumes'
+    | 'score'
+    | 'scored_by'
+    | 'rank'
+    | 'popularity'
+    | 'members'
+    | 'favorites';
   sort?: 'desc' | 'asc';
   letter?: string;
   magazines?: string;
