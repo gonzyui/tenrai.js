@@ -292,19 +292,19 @@ export interface AnimeQueryParams {
   genres?: string;
   genres_exclude?: string;
   order_by?:
-  | 'mal_id'
-  | 'title'
-  | 'type'
-  | 'rating'
-  | 'start_date'
-  | 'end_date'
-  | 'episodes'
-  | 'score'
-  | 'scored_by'
-  | 'rank'
-  | 'popularity'
-  | 'members'
-  | 'favorites';
+    | 'mal_id'
+    | 'title'
+    | 'type'
+    | 'rating'
+    | 'start_date'
+    | 'end_date'
+    | 'episodes'
+    | 'score'
+    | 'scored_by'
+    | 'rank'
+    | 'popularity'
+    | 'members'
+    | 'favorites';
   sort?: 'desc' | 'asc';
   letter?: string;
   producers?: string;
