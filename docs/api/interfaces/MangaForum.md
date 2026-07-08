@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/manga.ts:88](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L88)
+Defined in: [types/manga.ts:88](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L88)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/manga.ts:88](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **author\_url**: `string`
 
-Defined in: [types/manga.ts:94](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L94)
+Defined in: [types/manga.ts:94](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L94)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [types/manga.ts:94](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **author\_username**: `string`
 
-Defined in: [types/manga.ts:93](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L93)
+Defined in: [types/manga.ts:93](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L93)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [types/manga.ts:93](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **comments**: `number`
 
-Defined in: [types/manga.ts:95](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L95)
+Defined in: [types/manga.ts:95](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L95)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [types/manga.ts:95](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **date**: `string`
 
-Defined in: [types/manga.ts:92](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L92)
+Defined in: [types/manga.ts:92](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L92)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [types/manga.ts:92](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **last\_comment**: `object`
 
-Defined in: [types/manga.ts:96](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L96)
+Defined in: [types/manga.ts:96](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L96)
 
 #### author\_url
 
@@ -66,7 +66,7 @@ Defined in: [types/manga.ts:96](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **mal\_id**: `number`
 
-Defined in: [types/manga.ts:89](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L89)
+Defined in: [types/manga.ts:89](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L89)
 
 ***
 
@@ -74,7 +74,7 @@ Defined in: [types/manga.ts:89](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **title**: `string`
 
-Defined in: [types/manga.ts:91](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L91)
+Defined in: [types/manga.ts:91](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L91)
 
 ***
 
@@ -82,4 +82,4 @@ Defined in: [types/manga.ts:91](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **url**: `string`
 
-Defined in: [types/manga.ts:90](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L90)
+Defined in: [types/manga.ts:90](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L90)

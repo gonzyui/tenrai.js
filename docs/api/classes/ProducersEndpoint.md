@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [endpoints/producers.ts:8](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/producers.ts#L8)
+Defined in: [endpoints/producers.ts:8](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/producers.ts#L8)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [endpoints/producers.ts:8](https://github.com/gonzyui/tenrai.js/blob
 
 > **new ProducersEndpoint**(`client`): `ProducersEndpoint`
 
-Defined in: [endpoints/producers.ts:11](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/producers.ts#L11)
+Defined in: [endpoints/producers.ts:11](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/producers.ts#L11)
 
 #### Parameters
 
@@ -28,7 +28,7 @@ Defined in: [endpoints/producers.ts:11](https://github.com/gonzyui/tenrai.js/blo
 
 > **getAll**(`params?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`Producer`](../interfaces/Producer.md)\>\>
 
-Defined in: [endpoints/producers.ts:38](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/producers.ts#L38)
+Defined in: [endpoints/producers.ts:38](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/producers.ts#L38)
 
 Get all producers
 
@@ -52,7 +52,7 @@ Promise with producers data
 
 > **getById**(`id`, `page?`, `limit?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`Producer`](../interfaces/Producer.md)\>\>
 
-Defined in: [endpoints/producers.ts:22](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/producers.ts#L22)
+Defined in: [endpoints/producers.ts:22](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/producers.ts#L22)
 
 Get producer by ID
 

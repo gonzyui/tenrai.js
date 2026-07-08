@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/anime.ts:190](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/anime.ts#L190)
+Defined in: [types/anime.ts:190](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L190)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/anime.ts:190](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **jpg**: `object`
 
-Defined in: [types/anime.ts:191](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/anime.ts#L191)
+Defined in: [types/anime.ts:191](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L191)
 
 #### image\_url
 
@@ -30,7 +30,7 @@ Defined in: [types/anime.ts:191](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > `optional` **webp?**: `object`
 
-Defined in: [types/anime.ts:196](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/anime.ts#L196)
+Defined in: [types/anime.ts:196](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L196)
 
 #### image\_url
 

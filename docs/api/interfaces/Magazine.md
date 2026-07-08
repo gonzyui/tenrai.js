@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/magazines.ts:1](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/magazines.ts#L1)
+Defined in: [types/magazines.ts:1](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/magazines.ts#L1)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/magazines.ts:1](https://github.com/gonzyui/tenrai.js/blob/d18
 
 > **count**: `number`
 
-Defined in: [types/magazines.ts:5](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/magazines.ts#L5)
+Defined in: [types/magazines.ts:5](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/magazines.ts#L5)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [types/magazines.ts:5](https://github.com/gonzyui/tenrai.js/blob/d18
 
 > **mal\_id**: `number`
 
-Defined in: [types/magazines.ts:2](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/magazines.ts#L2)
+Defined in: [types/magazines.ts:2](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/magazines.ts#L2)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [types/magazines.ts:2](https://github.com/gonzyui/tenrai.js/blob/d18
 
 > **name**: `string`
 
-Defined in: [types/magazines.ts:3](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/magazines.ts#L3)
+Defined in: [types/magazines.ts:3](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/magazines.ts#L3)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [types/magazines.ts:3](https://github.com/gonzyui/tenrai.js/blob/d18
 
 > **url**: `string`
 
-Defined in: [types/magazines.ts:4](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/magazines.ts#L4)
+Defined in: [types/magazines.ts:4](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/magazines.ts#L4)

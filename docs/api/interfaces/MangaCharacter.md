@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/manga.ts:65](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L65)
+Defined in: [types/manga.ts:65](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L65)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/manga.ts:65](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **character**: `object`
 
-Defined in: [types/manga.ts:66](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L66)
+Defined in: [types/manga.ts:66](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L66)
 
 #### images
 
@@ -34,4 +34,4 @@ Defined in: [types/manga.ts:66](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **role**: `string`
 
-Defined in: [types/manga.ts:72](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L72)
+Defined in: [types/manga.ts:72](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L72)

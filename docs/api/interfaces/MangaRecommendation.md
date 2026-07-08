@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/manga.ts:131](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L131)
+Defined in: [types/manga.ts:131](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L131)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/manga.ts:131](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **entry**: `object`
 
-Defined in: [types/manga.ts:132](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L132)
+Defined in: [types/manga.ts:132](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L132)
 
 #### images
 
@@ -34,7 +34,7 @@ Defined in: [types/manga.ts:132](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **url**: `string`
 
-Defined in: [types/manga.ts:138](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L138)
+Defined in: [types/manga.ts:138](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L138)
 
 ***
 
@@ -42,4 +42,4 @@ Defined in: [types/manga.ts:138](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **votes**: `number`
 
-Defined in: [types/manga.ts:139](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L139)
+Defined in: [types/manga.ts:139](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L139)

@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [endpoints/recommendations.ts:8](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/recommendations.ts#L8)
+Defined in: [endpoints/recommendations.ts:8](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/recommendations.ts#L8)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [endpoints/recommendations.ts:8](https://github.com/gonzyui/tenrai.j
 
 > **new RecommendationsEndpoint**(`client`): `RecommendationsEndpoint`
 
-Defined in: [endpoints/recommendations.ts:11](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/recommendations.ts#L11)
+Defined in: [endpoints/recommendations.ts:11](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/recommendations.ts#L11)
 
 #### Parameters
 
@@ -28,7 +28,7 @@ Defined in: [endpoints/recommendations.ts:11](https://github.com/gonzyui/tenrai.
 
 > **getAnimeRecommendations**(`params?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`Recommendation`](../interfaces/Recommendation.md)\>\>
 
-Defined in: [endpoints/recommendations.ts:20](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/recommendations.ts#L20)
+Defined in: [endpoints/recommendations.ts:20](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/recommendations.ts#L20)
 
 Get recent anime recommendations
 
@@ -52,7 +52,7 @@ Promise with anime recommendations data
 
 > **getMangaRecommendations**(`params?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`Recommendation`](../interfaces/Recommendation.md)\>\>
 
-Defined in: [endpoints/recommendations.ts:34](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/recommendations.ts#L34)
+Defined in: [endpoints/recommendations.ts:34](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/recommendations.ts#L34)
 
 Get recent manga recommendations
 

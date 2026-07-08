@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [endpoints/seasons.ts:10](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/seasons.ts#L10)
+Defined in: [endpoints/seasons.ts:10](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/seasons.ts#L10)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [endpoints/seasons.ts:10](https://github.com/gonzyui/tenrai.js/blob/
 
 > **new SeasonsEndpoint**(`client`): `SeasonsEndpoint`
 
-Defined in: [endpoints/seasons.ts:13](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/seasons.ts#L13)
+Defined in: [endpoints/seasons.ts:13](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/seasons.ts#L13)
 
 #### Parameters
 
@@ -28,7 +28,7 @@ Defined in: [endpoints/seasons.ts:13](https://github.com/gonzyui/tenrai.js/blob/
 
 > **getCurrent**(`params?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`SeasonalAnime`](../interfaces/SeasonalAnime.md)\>\>
 
-Defined in: [endpoints/seasons.ts:48](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/seasons.ts#L48)
+Defined in: [endpoints/seasons.ts:48](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/seasons.ts#L48)
 
 Get current season anime
 
@@ -52,7 +52,7 @@ Promise with current season anime data
 
 > **getList**(): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`Season`](../interfaces/Season.md)[]\>\>
 
-Defined in: [endpoints/seasons.ts:21](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/seasons.ts#L21)
+Defined in: [endpoints/seasons.ts:21](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/seasons.ts#L21)
 
 Get available seasons
 
@@ -68,7 +68,7 @@ Promise with available seasons data
 
 > **getSeason**(`year`, `season`, `params?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`SeasonalAnime`](../interfaces/SeasonalAnime.md)\>\>
 
-Defined in: [endpoints/seasons.ts:32](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/seasons.ts#L32)
+Defined in: [endpoints/seasons.ts:32](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/seasons.ts#L32)
 
 Get seasonal anime
 
@@ -104,7 +104,7 @@ Promise with seasonal anime data
 
 > **getUpcoming**(`params?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`SeasonalAnime`](../interfaces/SeasonalAnime.md)\>\>
 
-Defined in: [endpoints/seasons.ts:62](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/seasons.ts#L62)
+Defined in: [endpoints/seasons.ts:62](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/seasons.ts#L62)
 
 Get upcoming season anime
 

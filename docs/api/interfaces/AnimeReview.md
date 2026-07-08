@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/anime.ts:228](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/anime.ts#L228)
+Defined in: [types/anime.ts:228](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L228)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/anime.ts:228](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **date**: `string`
 
-Defined in: [types/anime.ts:242](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/anime.ts#L242)
+Defined in: [types/anime.ts:242](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L242)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [types/anime.ts:242](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **episodes\_watched**: `number` \| `null`
 
-Defined in: [types/anime.ts:248](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/anime.ts#L248)
+Defined in: [types/anime.ts:248](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L248)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [types/anime.ts:248](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **is\_preliminary**: `boolean`
 
-Defined in: [types/anime.ts:247](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/anime.ts#L247)
+Defined in: [types/anime.ts:247](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L247)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [types/anime.ts:247](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **is\_spoiler**: `boolean`
 
-Defined in: [types/anime.ts:246](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/anime.ts#L246)
+Defined in: [types/anime.ts:246](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L246)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [types/anime.ts:246](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **mal\_id**: `number`
 
-Defined in: [types/anime.ts:229](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/anime.ts#L229)
+Defined in: [types/anime.ts:229](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L229)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [types/anime.ts:229](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **reactions**: `object`
 
-Defined in: [types/anime.ts:232](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/anime.ts#L232)
+Defined in: [types/anime.ts:232](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L232)
 
 #### confusing
 
@@ -90,7 +90,7 @@ Defined in: [types/anime.ts:232](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **review**: `string`
 
-Defined in: [types/anime.ts:243](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/anime.ts#L243)
+Defined in: [types/anime.ts:243](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L243)
 
 ***
 
@@ -98,7 +98,7 @@ Defined in: [types/anime.ts:243](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **score**: `number`
 
-Defined in: [types/anime.ts:244](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/anime.ts#L244)
+Defined in: [types/anime.ts:244](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L244)
 
 ***
 
@@ -106,7 +106,7 @@ Defined in: [types/anime.ts:244](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **tags**: `string`[]
 
-Defined in: [types/anime.ts:245](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/anime.ts#L245)
+Defined in: [types/anime.ts:245](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L245)
 
 ***
 
@@ -114,7 +114,7 @@ Defined in: [types/anime.ts:245](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **type**: `string`
 
-Defined in: [types/anime.ts:231](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/anime.ts#L231)
+Defined in: [types/anime.ts:231](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L231)
 
 ***
 
@@ -122,7 +122,7 @@ Defined in: [types/anime.ts:231](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **url**: `string`
 
-Defined in: [types/anime.ts:230](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/anime.ts#L230)
+Defined in: [types/anime.ts:230](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L230)
 
 ***
 
@@ -130,7 +130,7 @@ Defined in: [types/anime.ts:230](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **user**: `object`
 
-Defined in: [types/anime.ts:249](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/anime.ts#L249)
+Defined in: [types/anime.ts:249](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L249)
 
 #### images
 

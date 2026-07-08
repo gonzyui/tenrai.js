@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/people.ts:3](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/people.ts#L3)
+Defined in: [types/people.ts:3](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L3)
 
 ## Extended by
 
@@ -14,7 +14,7 @@ Defined in: [types/people.ts:3](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **about**: `string` \| `null`
 
-Defined in: [types/people.ts:13](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/people.ts#L13)
+Defined in: [types/people.ts:13](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L13)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [types/people.ts:13](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **alternate\_names**: `string`[]
 
-Defined in: [types/people.ts:10](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/people.ts#L10)
+Defined in: [types/people.ts:10](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L10)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [types/people.ts:10](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **anime**: `object`[]
 
-Defined in: [types/people.ts:14](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/people.ts#L14)
+Defined in: [types/people.ts:14](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L14)
 
 #### anime
 
@@ -62,7 +62,7 @@ Defined in: [types/people.ts:14](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **birthday**: `string` \| `null`
 
-Defined in: [types/people.ts:11](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/people.ts#L11)
+Defined in: [types/people.ts:11](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L11)
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: [types/people.ts:11](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **family\_name**: `string` \| `null`
 
-Defined in: [types/people.ts:9](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/people.ts#L9)
+Defined in: [types/people.ts:9](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L9)
 
 ***
 
@@ -78,7 +78,7 @@ Defined in: [types/people.ts:9](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **favorites**: `number`
 
-Defined in: [types/people.ts:12](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/people.ts#L12)
+Defined in: [types/people.ts:12](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L12)
 
 ***
 
@@ -86,7 +86,7 @@ Defined in: [types/people.ts:12](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **given\_name**: `string` \| `null`
 
-Defined in: [types/people.ts:8](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/people.ts#L8)
+Defined in: [types/people.ts:8](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L8)
 
 ***
 
@@ -94,7 +94,7 @@ Defined in: [types/people.ts:8](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **images**: [`Image`](Image.md)
 
-Defined in: [types/people.ts:6](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/people.ts#L6)
+Defined in: [types/people.ts:6](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L6)
 
 ***
 
@@ -102,7 +102,7 @@ Defined in: [types/people.ts:6](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **mal\_id**: `number`
 
-Defined in: [types/people.ts:4](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/people.ts#L4)
+Defined in: [types/people.ts:4](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L4)
 
 ***
 
@@ -110,7 +110,7 @@ Defined in: [types/people.ts:4](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **manga**: `object`[]
 
-Defined in: [types/people.ts:23](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/people.ts#L23)
+Defined in: [types/people.ts:23](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L23)
 
 #### manga
 
@@ -142,7 +142,7 @@ Defined in: [types/people.ts:23](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **name**: `string`
 
-Defined in: [types/people.ts:7](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/people.ts#L7)
+Defined in: [types/people.ts:7](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L7)
 
 ***
 
@@ -150,7 +150,7 @@ Defined in: [types/people.ts:7](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **url**: `string`
 
-Defined in: [types/people.ts:5](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/people.ts#L5)
+Defined in: [types/people.ts:5](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L5)
 
 ***
 
@@ -158,7 +158,7 @@ Defined in: [types/people.ts:5](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **voices**: `object`[]
 
-Defined in: [types/people.ts:32](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/people.ts#L32)
+Defined in: [types/people.ts:32](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L32)
 
 #### anime
 

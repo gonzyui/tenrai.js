@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/common.ts:10](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/common.ts#L10)
+Defined in: [types/common.ts:10](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/common.ts#L10)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/common.ts:10](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **current\_page**: `number`
 
-Defined in: [types/common.ts:13](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/common.ts#L13)
+Defined in: [types/common.ts:13](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/common.ts#L13)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [types/common.ts:13](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **has\_next\_page**: `boolean`
 
-Defined in: [types/common.ts:12](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/common.ts#L12)
+Defined in: [types/common.ts:12](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/common.ts#L12)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [types/common.ts:12](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **items**: `object`
 
-Defined in: [types/common.ts:14](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/common.ts#L14)
+Defined in: [types/common.ts:14](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/common.ts#L14)
 
 #### count
 
@@ -46,4 +46,4 @@ Defined in: [types/common.ts:14](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > **last\_visible\_page**: `number`
 
-Defined in: [types/common.ts:11](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/common.ts#L11)
+Defined in: [types/common.ts:11](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/common.ts#L11)

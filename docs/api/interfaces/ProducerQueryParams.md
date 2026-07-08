@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/producers.ts:8](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/producers.ts#L8)
+Defined in: [types/producers.ts:8](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/producers.ts#L8)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/producers.ts:8](https://github.com/gonzyui/tenrai.js/blob/d18
 
 > `optional` **letter?**: `string`
 
-Defined in: [types/producers.ts:14](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/producers.ts#L14)
+Defined in: [types/producers.ts:14](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/producers.ts#L14)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [types/producers.ts:14](https://github.com/gonzyui/tenrai.js/blob/d1
 
 > `optional` **limit?**: `number`
 
-Defined in: [types/producers.ts:10](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/producers.ts#L10)
+Defined in: [types/producers.ts:10](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/producers.ts#L10)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [types/producers.ts:10](https://github.com/gonzyui/tenrai.js/blob/d1
 
 > `optional` **order\_by?**: `"mal_id"` \| `"name"` \| `"count"`
 
-Defined in: [types/producers.ts:12](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/producers.ts#L12)
+Defined in: [types/producers.ts:12](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/producers.ts#L12)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [types/producers.ts:12](https://github.com/gonzyui/tenrai.js/blob/d1
 
 > `optional` **page?**: `number`
 
-Defined in: [types/producers.ts:9](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/producers.ts#L9)
+Defined in: [types/producers.ts:9](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/producers.ts#L9)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [types/producers.ts:9](https://github.com/gonzyui/tenrai.js/blob/d18
 
 > `optional` **q?**: `string`
 
-Defined in: [types/producers.ts:11](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/producers.ts#L11)
+Defined in: [types/producers.ts:11](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/producers.ts#L11)
 
 ***
 
@@ -50,4 +50,4 @@ Defined in: [types/producers.ts:11](https://github.com/gonzyui/tenrai.js/blob/d1
 
 > `optional` **sort?**: `"desc"` \| `"asc"`
 
-Defined in: [types/producers.ts:13](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/producers.ts#L13)
+Defined in: [types/producers.ts:13](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/producers.ts#L13)

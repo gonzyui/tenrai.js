@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/recommendations.ts:19](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/recommendations.ts#L19)
+Defined in: [types/recommendations.ts:19](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/recommendations.ts#L19)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/recommendations.ts:19](https://github.com/gonzyui/tenrai.js/b
 
 > `optional` **limit?**: `number`
 
-Defined in: [types/recommendations.ts:21](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/recommendations.ts#L21)
+Defined in: [types/recommendations.ts:21](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/recommendations.ts#L21)
 
 ***
 
@@ -18,4 +18,4 @@ Defined in: [types/recommendations.ts:21](https://github.com/gonzyui/tenrai.js/b
 
 > `optional` **page?**: `number`
 
-Defined in: [types/recommendations.ts:20](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/recommendations.ts#L20)
+Defined in: [types/recommendations.ts:20](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/recommendations.ts#L20)

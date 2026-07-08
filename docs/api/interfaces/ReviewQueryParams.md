@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/reviews.ts:38](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/reviews.ts#L38)
+Defined in: [types/reviews.ts:38](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/reviews.ts#L38)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/reviews.ts:38](https://github.com/gonzyui/tenrai.js/blob/d185
 
 > `optional` **limit?**: `number`
 
-Defined in: [types/reviews.ts:40](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/reviews.ts#L40)
+Defined in: [types/reviews.ts:40](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/reviews.ts#L40)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [types/reviews.ts:40](https://github.com/gonzyui/tenrai.js/blob/d185
 
 > `optional` **page?**: `number`
 
-Defined in: [types/reviews.ts:39](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/reviews.ts#L39)
+Defined in: [types/reviews.ts:39](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/reviews.ts#L39)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [types/reviews.ts:39](https://github.com/gonzyui/tenrai.js/blob/d185
 
 > `optional` **preliminary?**: `boolean`
 
-Defined in: [types/reviews.ts:41](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/reviews.ts#L41)
+Defined in: [types/reviews.ts:41](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/reviews.ts#L41)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [types/reviews.ts:41](https://github.com/gonzyui/tenrai.js/blob/d185
 
 > `optional` **spoiler?**: `boolean`
 
-Defined in: [types/reviews.ts:42](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/reviews.ts#L42)
+Defined in: [types/reviews.ts:42](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/reviews.ts#L42)
