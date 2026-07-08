@@ -1,0 +1,13 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": ["src/index.ts"],
+  "out": "docs/api",
+  "plugin": ["typedoc-plugin-markdown"],
+  "entryFileName": "index.md",
+  "readme": "none",
+  "cleanOutputDir": true,
+  "exclude": ["**/*.spec.ts", "**/tests/**", "**/node_modules/**"],
+  "hidePageTitle": true,
+  "hideBreadcrumbs": true,
+  "membersWithOwnFile": ["Class", "Interface", "Enum"]
+}
