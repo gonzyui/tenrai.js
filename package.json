@@ -11,13 +11,6 @@
     "README.md"
   ],
   "packageManager": "pnpm@11.10.0",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "11.10.0",
-      "onFail": "download"
-    }
-  },
   "scripts": {
     "build": "tsc",
     "lint": "biome lint .",
