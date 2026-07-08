@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/reviews.ts:3](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/reviews.ts#L3)
+Defined in: [types/reviews.ts:3](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/reviews.ts#L3)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/reviews.ts:3](https://github.com/gonzyui/tenrai.js/blob/7cd0c
 
 > `optional` **chapters\_read?**: `number`
 
-Defined in: [types/reviews.ts:24](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/reviews.ts#L24)
+Defined in: [types/reviews.ts:24](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/reviews.ts#L24)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [types/reviews.ts:24](https://github.com/gonzyui/tenrai.js/blob/7cd0
 
 > **date**: `string`
 
-Defined in: [types/reviews.ts:17](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/reviews.ts#L17)
+Defined in: [types/reviews.ts:17](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/reviews.ts#L17)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [types/reviews.ts:17](https://github.com/gonzyui/tenrai.js/blob/7cd0
 
 > **entry**: `object`
 
-Defined in: [types/reviews.ts:25](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/reviews.ts#L25)
+Defined in: [types/reviews.ts:25](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/reviews.ts#L25)
 
 #### images
 
@@ -50,7 +50,7 @@ Defined in: [types/reviews.ts:25](https://github.com/gonzyui/tenrai.js/blob/7cd0
 
 > `optional` **episodes\_watched?**: `number`
 
-Defined in: [types/reviews.ts:23](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/reviews.ts#L23)
+Defined in: [types/reviews.ts:23](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/reviews.ts#L23)
 
 ***
 
@@ -58,7 +58,7 @@ Defined in: [types/reviews.ts:23](https://github.com/gonzyui/tenrai.js/blob/7cd0
 
 > **is\_preliminary**: `boolean`
 
-Defined in: [types/reviews.ts:22](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/reviews.ts#L22)
+Defined in: [types/reviews.ts:22](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/reviews.ts#L22)
 
 ***
 
@@ -66,7 +66,7 @@ Defined in: [types/reviews.ts:22](https://github.com/gonzyui/tenrai.js/blob/7cd0
 
 > **is\_spoiler**: `boolean`
 
-Defined in: [types/reviews.ts:21](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/reviews.ts#L21)
+Defined in: [types/reviews.ts:21](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/reviews.ts#L21)
 
 ***
 
@@ -74,7 +74,7 @@ Defined in: [types/reviews.ts:21](https://github.com/gonzyui/tenrai.js/blob/7cd0
 
 > **mal\_id**: `number`
 
-Defined in: [types/reviews.ts:4](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/reviews.ts#L4)
+Defined in: [types/reviews.ts:4](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/reviews.ts#L4)
 
 ***
 
@@ -82,7 +82,7 @@ Defined in: [types/reviews.ts:4](https://github.com/gonzyui/tenrai.js/blob/7cd0c
 
 > **reactions**: `object`
 
-Defined in: [types/reviews.ts:7](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/reviews.ts#L7)
+Defined in: [types/reviews.ts:7](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/reviews.ts#L7)
 
 #### confusing
 
@@ -122,7 +122,7 @@ Defined in: [types/reviews.ts:7](https://github.com/gonzyui/tenrai.js/blob/7cd0c
 
 > **review**: `string`
 
-Defined in: [types/reviews.ts:18](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/reviews.ts#L18)
+Defined in: [types/reviews.ts:18](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/reviews.ts#L18)
 
 ***
 
@@ -130,7 +130,7 @@ Defined in: [types/reviews.ts:18](https://github.com/gonzyui/tenrai.js/blob/7cd0
 
 > **score**: `number`
 
-Defined in: [types/reviews.ts:19](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/reviews.ts#L19)
+Defined in: [types/reviews.ts:19](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/reviews.ts#L19)
 
 ***
 
@@ -138,7 +138,7 @@ Defined in: [types/reviews.ts:19](https://github.com/gonzyui/tenrai.js/blob/7cd0
 
 > **tags**: `string`[]
 
-Defined in: [types/reviews.ts:20](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/reviews.ts#L20)
+Defined in: [types/reviews.ts:20](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/reviews.ts#L20)
 
 ***
 
@@ -146,7 +146,7 @@ Defined in: [types/reviews.ts:20](https://github.com/gonzyui/tenrai.js/blob/7cd0
 
 > **type**: `string`
 
-Defined in: [types/reviews.ts:6](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/reviews.ts#L6)
+Defined in: [types/reviews.ts:6](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/reviews.ts#L6)
 
 ***
 
@@ -154,7 +154,7 @@ Defined in: [types/reviews.ts:6](https://github.com/gonzyui/tenrai.js/blob/7cd0c
 
 > **url**: `string`
 
-Defined in: [types/reviews.ts:5](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/reviews.ts#L5)
+Defined in: [types/reviews.ts:5](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/reviews.ts#L5)
 
 ***
 
@@ -162,7 +162,7 @@ Defined in: [types/reviews.ts:5](https://github.com/gonzyui/tenrai.js/blob/7cd0c
 
 > **user**: `object`
 
-Defined in: [types/reviews.ts:31](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/reviews.ts#L31)
+Defined in: [types/reviews.ts:31](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/reviews.ts#L31)
 
 #### images
 

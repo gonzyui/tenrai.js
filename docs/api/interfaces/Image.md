@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/common.ts:21](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/common.ts#L21)
+Defined in: [types/common.ts:21](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/common.ts#L21)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/common.ts:21](https://github.com/gonzyui/tenrai.js/blob/7cd0c
 
 > **jpg**: `object`
 
-Defined in: [types/common.ts:22](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/common.ts#L22)
+Defined in: [types/common.ts:22](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/common.ts#L22)
 
 #### image\_url
 
@@ -30,7 +30,7 @@ Defined in: [types/common.ts:22](https://github.com/gonzyui/tenrai.js/blob/7cd0c
 
 > `optional` **webp?**: `object`
 
-Defined in: [types/common.ts:27](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/common.ts#L27)
+Defined in: [types/common.ts:27](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/common.ts#L27)
 
 #### image\_url
 

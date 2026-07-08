@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/genres.ts:8](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/genres.ts#L8)
+Defined in: [types/genres.ts:8](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/genres.ts#L8)
 
 ## Properties
 
@@ -10,4 +10,4 @@ Defined in: [types/genres.ts:8](https://github.com/gonzyui/tenrai.js/blob/7cd0cd
 
 > `optional` **filter?**: `"genres"` \| `"explicit_genres"` \| `"themes"` \| `"demographics"`
 
-Defined in: [types/genres.ts:9](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/genres.ts#L9)
+Defined in: [types/genres.ts:9](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/genres.ts#L9)

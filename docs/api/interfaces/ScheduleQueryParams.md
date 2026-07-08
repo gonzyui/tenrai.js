@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/schedules.ts:1](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/schedules.ts#L1)
+Defined in: [types/schedules.ts:1](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/schedules.ts#L1)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/schedules.ts:1](https://github.com/gonzyui/tenrai.js/blob/7cd
 
 > `optional` **filter?**: `"unknown"` \| `"monday"` \| `"tuesday"` \| `"wednesday"` \| `"thursday"` \| `"friday"` \| `"saturday"` \| `"sunday"` \| `"other"`
 
-Defined in: [types/schedules.ts:2](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/schedules.ts#L2)
+Defined in: [types/schedules.ts:2](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/schedules.ts#L2)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [types/schedules.ts:2](https://github.com/gonzyui/tenrai.js/blob/7cd
 
 > `optional` **limit?**: `number`
 
-Defined in: [types/schedules.ts:14](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/schedules.ts#L14)
+Defined in: [types/schedules.ts:14](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/schedules.ts#L14)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [types/schedules.ts:14](https://github.com/gonzyui/tenrai.js/blob/7c
 
 > `optional` **page?**: `number`
 
-Defined in: [types/schedules.ts:13](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/schedules.ts#L13)
+Defined in: [types/schedules.ts:13](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/schedules.ts#L13)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [types/schedules.ts:13](https://github.com/gonzyui/tenrai.js/blob/7c
 
 > `optional` **sfw?**: `boolean`
 
-Defined in: [types/schedules.ts:12](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/schedules.ts#L12)
+Defined in: [types/schedules.ts:12](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/schedules.ts#L12)

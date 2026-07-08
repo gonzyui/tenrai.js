@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [endpoints/top.ts:12](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/endpoints/top.ts#L12)
+Defined in: [endpoints/top.ts:12](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/top.ts#L12)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [endpoints/top.ts:12](https://github.com/gonzyui/tenrai.js/blob/7cd0
 
 > **new TopEndpoint**(`client`): `TopEndpoint`
 
-Defined in: [endpoints/top.ts:15](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/endpoints/top.ts#L15)
+Defined in: [endpoints/top.ts:15](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/top.ts#L15)
 
 #### Parameters
 
@@ -28,7 +28,7 @@ Defined in: [endpoints/top.ts:15](https://github.com/gonzyui/tenrai.js/blob/7cd0
 
 > **getAnime**(`params?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`TopAnime`](../interfaces/TopAnime.md)\>\>
 
-Defined in: [endpoints/top.ts:24](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/endpoints/top.ts#L24)
+Defined in: [endpoints/top.ts:24](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/top.ts#L24)
 
 Get top anime
 
@@ -52,7 +52,7 @@ Promise with top anime data
 
 > **getCharacters**(`params?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`TopCharacter`](../interfaces/TopCharacter.md)\>\>
 
-Defined in: [endpoints/top.ts:52](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/endpoints/top.ts#L52)
+Defined in: [endpoints/top.ts:52](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/top.ts#L52)
 
 Get top characters
 
@@ -76,7 +76,7 @@ Promise with top characters data
 
 > **getManga**(`params?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`TopManga`](../interfaces/TopManga.md)\>\>
 
-Defined in: [endpoints/top.ts:38](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/endpoints/top.ts#L38)
+Defined in: [endpoints/top.ts:38](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/top.ts#L38)
 
 Get top manga
 
@@ -100,7 +100,7 @@ Promise with top manga data
 
 > **getPeople**(`params?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`TopPerson`](../interfaces/TopPerson.md)\>\>
 
-Defined in: [endpoints/top.ts:66](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/endpoints/top.ts#L66)
+Defined in: [endpoints/top.ts:66](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/top.ts#L66)
 
 Get top people
 
@@ -124,7 +124,7 @@ Promise with top people data
 
 > **getReviews**(`params?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`TopReview`](../interfaces/TopReview.md)\>\>
 
-Defined in: [endpoints/top.ts:80](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/endpoints/top.ts#L80)
+Defined in: [endpoints/top.ts:80](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/top.ts#L80)
 
 Get top reviews
 
