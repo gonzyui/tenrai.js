@@ -10,13 +10,7 @@
     "LICENSE",
     "README.md"
   ],
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "^11.8.0",
-      "onFail": "download"
-    }
-  },
+  "packageManager": "pnpm@11.10.0",
   "scripts": {
     "build": "tsc",
     "lint": "biome lint .",
