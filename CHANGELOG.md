@@ -2,31 +2,24 @@
 
 This project adheres to Semantic Versioning.
 
-## - 2026-02-04
-
-### Updated
-- Completed unit test coverage for core features.
-- Added expanded JSDoc blocks across endpoint unit tests for clearer intent.
-
-## - 2026-01-24
-
-### Updated
-- Updated documentation in `README.md` for better clarity on setup and usage.
-- Improved JSDoc comments across the codebase for better developer experience.
-- Updated `CONTRIBUTING.md` with clearer guidelines.
-- Fixed several typos in the documentation and examples.
-
-## - 2025-05-22
+## 1.0.0 - 2026-07-08
 
 ### Added
-- Initial stable release of `myanimelist-wrapper`
-- Core client class `JikanClient` for accessing MyAnimeList API
-- Support for main API endpoints:
-  - AnimeEndpoint
-  - MangaEndpoint
-  - CharacterEndpoint
-- Basic error handling and validation
-- TypeScript type definitions and interfaces for better development experience
-- Auto-generated API documentation using TypeDoc
-- Unit tests covering core features to ensure reliability
-- CI workflow setup for linting, testing, and building the project
+- Fork of the original "MyAnimeList-Wrapper" (https://github.com/firrthecreator/myanimelist-wrapper).
+- Complete migration of the wrapper to support the **Tenrai API** due to the announced Jikan shutdown.
+- Renamed the project package to `tenrai.js`.
+- Migrated the package manager from `npm` to `pnpm`.
+- Switched linting and formatting tools from ESLint and Prettier to **Biome**.
+- Upgraded all dev dependencies to their latest major versions:
+  - `@biomejs/biome` 1.9.4 → 2.5.2
+  - `@types/node` 20.x → 26.1.0
+  - `typescript` 5.9.3 → 6.0.3
+  - `vitest` 0.34.6 → 4.1.10
+  - `@vitest/coverage-v8` 0.34.6 → 4.1.10
+- Fixed `tsconfig.json` to explicitly set `rootDir` required by TypeScript 6.
+
+### Removed
+- Removed `users`, and `clubs` endpoint.
+- Removed `userMangaUpdate` and `userAnimeUpdate`.
+- Temporarily removed Husky and pre-commit hooks until the project is ready for release.
+- Removed GitHub Actions workflows.

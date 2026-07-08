@@ -1,59 +1,53 @@
-# MyAnimeList Wrapper
+# Tenrai.js
 
-<div align="center">
-
-[![npm version](https://img.shields.io/npm/v/myanimelist-wrapper.svg?style=flat-square)](https://www.npmjs.com/package/myanimelist-wrapper)
-[![npm downloads](https://img.shields.io/npm/dm/myanimelist-wrapper.svg?style=flat-square)](https://www.npmjs.com/package/myanimelist-wrapper)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![CI](https://img.shields.io/github/actions/workflow/status/firrthecreator/myanimelist-wrapper/ci.yml?style=flat-square)](https://github.com/firrthecreator/myanimelist-wrapper/actions/workflows/ci.yml)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178c6?style=flat-square)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-16+-339933?style=flat-square)](https://nodejs.org/)
 
-**A type-safe, feature-complete TypeScript wrapper for the Jikan API v4**
-
-[Documentation](#documentation) • [Examples](#examples) • [API Reference](#api-reference) • [Contributing](CONTRIBUTING.md)
-
-</div>
+**A type-safe, feature-complete TypeScript wrapper for the Tenrai API v1**
 
 ---
 
+> **This project is currently undergoing a major rewrite** to transition from the Jikan API to the new Tenrai API. Some features might be unstable or incomplete.
+> Contributions, feedback, and bug reports are highly welcome! Check out [CONTRIBUTING.md](CONTRIBUTING.md) to see how you can help.
+
 ## Overview
 
-A comprehensive, production-ready TypeScript wrapper for the **Jikan API v4** (unofficial MyAnimeList API). Built with type safety, performance, and developer experience in mind.
+A comprehensive, production-ready TypeScript wrapper for the **Tenrai API v1** (unofficial MyAnimeList API). Built with type safety, performance, and developer experience in mind.
 
 Provides seamless access to MyAnimeList data including anime, manga, characters, people, and more with full TypeScript support and robust error handling.
 
-## ✨ Features
+## Features
 
-- **🎯 Type-Safe**: Full TypeScript support with comprehensive type definitions for all API responses
-- **📦 Complete Coverage**: All Jikan API v4 endpoints implemented and tested
-- **⚡ Performance Optimized**: Built-in caching, request batching, and connection pooling support
-- **🛡️ Robust Error Handling**: Custom error classes with detailed error information and recovery suggestions
-- **📚 Comprehensive Documentation**: Extensive JSDoc comments, examples, and API guides
-- **🧪 Well Tested**: Full unit test coverage with vitest
-- **🔧 Zero Dependencies**: Minimal footprint using native Node.js APIs
-- **🎨 Clean API**: Intuitive, fluent API design for common use cases
-- **♻️ Tree-Shakeable**: Modular architecture enables optimal bundle sizes
-- **📊 Rate Limit Aware**: Built-in rate limit handling and request throttling
+- **Type-Safe**: Full TypeScript support with comprehensive type definitions for all API responses
+- **Complete Coverage**: All Tenrai API v1 endpoints implemented and tested
+- **Performance Optimized**: Built-in caching, request batching, and connection pooling support
+- **Robust Error Handling**: Custom error classes with detailed error information and recovery suggestions
+- **Comprehensive Type Safety**: Extensive JSDoc comments and full TypeScript types
+- **Well Tested**: Full unit test coverage with vitest
+- **Zero Dependencies**: Minimal footprint using native Node.js APIs
+- **Clean API**: Intuitive, fluent API design for common use cases
+- **Tree-Shakeable**: Modular architecture enables optimal bundle sizes
+- **Rate Limit Aware**: Built-in rate limit handling and request throttling
 
-## 📦 Installation
+## Installation
 
 ### Using npm
 
 ```bash
-npm install myanimelist-wrapper
+npm install tenrai.js
 ```
 
 ### Using yarn
 
 ```bash
-yarn add myanimelist-wrapper
+yarn add tenrai.js
 ```
 
 ### Using pnpm
 
 ```bash
-pnpm add myanimelist-wrapper
+pnpm add tenrai.js
 ```
 
 ### Requirements
@@ -61,20 +55,20 @@ pnpm add myanimelist-wrapper
 - Node.js 16 or higher
 - TypeScript 4.7 or higher (for TypeScript projects)
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Basic Usage
 
 ```typescript
-import { JikanClient } from 'myanimelist-wrapper';
+import { TenraiClient } from 'tenrai.js';
 
 // Initialize the client
-const jikan = new JikanClient();
+const Tenrai = new TenraiClient();
 
 // Fetch anime information
 const getAnime = async () => {
   try {
-    const response = await jikan.anime.getById(5114); // Fullmetal Alchemist: Brotherhood
+    const response = await Tenrai.anime.getById(5114); // Fullmetal Alchemist: Brotherhood
     console.log(response.data.title);
     console.log(response.data.score);
   } catch (error) {
@@ -85,7 +79,7 @@ const getAnime = async () => {
 // Search for anime
 const searchAnime = async () => {
   try {
-    const results = await jikan.anime.search({
+    const results = await Tenrai.anime.search({
       q: 'attack on titan',
       limit: 5,
       type: 'tv'
@@ -102,11 +96,11 @@ getAnime();
 searchAnime();
 ```
 
-## 📖 Documentation
+## Documentation
 
 ### Table of Contents
 
-1. **[Client Configuration](#client-configuration)** - Configure the JikanClient
+1. **[Client Configuration](#client-configuration)** - Configure the TenraiClient
 2. **[API Endpoints](#-available-endpoints)** - All available endpoints
 3. **[Examples](#-examples)** - Real-world usage examples
 4. **[Error Handling](#-error-handling)** - Handle errors gracefully
@@ -114,21 +108,18 @@ searchAnime();
 6. **[Pagination](#-pagination)** - Navigate through results
 7. **[Advanced Usage](#-advanced-usage)** - Advanced patterns and techniques
 8. **[TypeScript Types](#-typescript-types)** - Type definitions
-
-For complete API reference, see [API Documentation](docs/API.md).
-
 ### Client Configuration
 
 ```typescript
-import { JikanClient } from 'myanimelist-wrapper';
+import { TenraiClient } from 'tenrai.js';
 
 // Default configuration
-const jikan = new JikanClient();
+const Tenrai = new TenraiClient();
 
 // Custom configuration
-const jikanCustom = new JikanClient({
-  // Base URL of the Jikan API
-  baseUrl: 'https://api.jikan.moe/v4',
+const TenraiCustom = new TenraiClient({
+  // Base URL of the Tenrai API
+  baseUrl: 'https://api.tenrai.moe/v1',
   
   // Request timeout in milliseconds
   timeout: 30000,
@@ -136,7 +127,7 @@ const jikanCustom = new JikanClient({
   // Custom headers
   headers: {
     'Accept': 'application/json',
-    'User-Agent': 'MyAnimeList-Wrapper/1.0'
+    'User-Agent': 'tenrai.js/1.0'
   },
   
   // Enable/disable automatic retries
@@ -153,7 +144,7 @@ const jikanCustom = new JikanClient({
 
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
-| `baseUrl` | string | `https://api.jikan.moe/v4` | The base URL for the Jikan API |
+| `baseUrl` | string | `https://api.tenrai.moe/v1` | The base URL for the Tenrai API |
 | `timeout` | number | `30000` | Request timeout in milliseconds |
 | `headers` | object | `{}` | Custom HTTP headers |
 | `retryAttempts` | number | `3` | Number of retry attempts on failure |
@@ -161,37 +152,28 @@ const jikanCustom = new JikanClient({
 | `cacheEnabled` | boolean | `true` | Enable response caching |
 | `cacheTTL` | number | `3600000` | Cache time-to-live in milliseconds |
 
-### 🔌 Available Endpoints
+### Available Endpoints
 
-The client provides access to all Jikan API v4 endpoints through these properties:
+The client provides access to all Tenrai API v1 endpoints through these properties:
 
 | Endpoint | Module | Methods |
 |----------|--------|---------|
-| **Anime** | `jikan.anime` | `getById()`, `search()`, `getCharacters()`, `getEpisodes()`, `getStatistics()`, `getForums()`, `getNews()`, `getRecommendations()`, `getRelations()` |
-| **Manga** | `jikan.manga` | `getById()`, `search()`, `getCharacters()`, `getForums()`, `getNews()`, `getRelations()` |
-| **Characters** | `jikan.characters` | `getById()`, `search()`, `getPictures()` |
-| **People** | `jikan.people` | `getById()`, `search()`, `getPictures()` |
-| **Clubs** | `jikan.clubs` | `getById()`, `search()`, `getRelations()`, `getMembers()` |
-| **Seasons** | `jikan.seasons` | `getCurrent()`, `getSeason()`, `getUpcoming()` |
-| **Schedules** | `jikan.schedules` | `getSchedule()` |
-| **Top** | `jikan.top` | `getAnime()`, `getManga()`, `getCharacters()`, `getPeople()` |
-| **Genres** | `jikan.genres` | `getAnimeGenres()`, `getMangaGenres()`, `getAnimeExplicitGenres()`, `getMangaExplicitGenres()` |
-| **Producers** | `jikan.producers` | `getById()`, `search()` |
-| **Magazines** | `jikan.magazines` | `getById()`, `search()` |
-| **Users** | `jikan.users` | `getById()`, `search()`, `getFullProfile()`, `getHistory()` |
-| **Reviews** | `jikan.reviews` | `getAnimeReviews()`, `getMangaReviews()` |
-| **Recommendations** | `jikan.recommendations` | `getRecommendations()` |
-| **Random** | `jikan.random` | `getAnime()`, `getManga()`, `getCharacter()`, `getPerson()`, `getUser()` |
+| **Anime** | `Tenrai.anime` | `getById()`, `search()`, `getCharacters()`, `getEpisodes()`, `getStatistics()`, `getForums()`, `getNews()`, `getRecommendations()`, `getRelations()` |
+| **Manga** | `Tenrai.manga` | `getById()`, `search()`, `getCharacters()`, `getForums()`, `getNews()`, `getRelations()` |
+| **Characters** | `Tenrai.characters` | `getById()`, `search()`, `getPictures()` |
+| **People** | `Tenrai.people` | `getById()`, `search()`, `getPictures()` |
+| **Clubs** | `Tenrai.clubs` | `getById()`, `search()`, `getRelations()`, `getMembers()` |
+| **Seasons** | `Tenrai.seasons` | `getCurrent()`, `getSeason()`, `getUpcoming()` |
+| **Schedules** | `Tenrai.schedules` | `getSchedule()` |
+| **Top** | `Tenrai.top` | `getAnime()`, `getManga()`, `getCharacters()`, `getPeople()` |
+| **Genres** | `Tenrai.genres` | `getAnimeGenres()`, `getMangaGenres()`, `getAnimeExplicitGenres()`, `getMangaExplicitGenres()` |
+| **Producers** | `Tenrai.producers` | `getById()`, `search()` |
+| **Magazines** | `Tenrai.magazines` | `getById()`, `search()` |
+| **Reviews** | `Tenrai.reviews` | `getAnimeReviews()`, `getMangaReviews()` |
+| **Recommendations** | `Tenrai.recommendations` | `getRecommendations()` |
+| **Random** | `Tenrai.random` | `getAnime()`, `getManga()`, `getCharacter()`, `getPerson()`, `getUser()` |
 
-### 📚 Examples
-
-Complete examples are available in the [examples/](examples/) directory:
-
-- [Basic Usage](examples/basic-usage.ts) - Simple API calls
-- [Advanced Usage](examples/advanced-usage.ts) - Complex scenarios
-- [Error Handling](examples/error-handling.ts) - Proper error management
-- [Pagination](examples/pagination.ts) - Navigating through paginated results
-- [Rate Limiting](examples/rate-limiting.ts) - Respecting API limits
+### Examples
 
 #### Anime
 
@@ -199,7 +181,7 @@ Complete examples are available in the [examples/](examples/) directory:
 
 ```typescript
 // Get anime by ID with full details
-const anime = await jikan.anime.getById(5114);
+const anime = await Tenrai.anime.getById(5114);
 console.log(anime.data.title); // "Fullmetal Alchemist: Brotherhood"
 console.log(anime.data.score); // 9.1
 console.log(anime.data.episodes); // 64
@@ -209,7 +191,7 @@ console.log(anime.data.aired.from); // "2009-04-05"
 **Search anime:**
 
 ```typescript
-const results = await jikan.anime.search({
+const results = await Tenrai.anime.search({
   q: 'one piece',
   type: 'tv',
   status: 'airing',
@@ -225,7 +207,7 @@ results.data.forEach(anime => {
 
 // Check pagination
 if (results.pagination.has_next_page) {
-  const nextPage = await jikan.anime.search({
+  const nextPage = await Tenrai.anime.search({
     q: 'one piece',
     page: 2
   });
@@ -235,7 +217,7 @@ if (results.pagination.has_next_page) {
 **Get anime characters and voice actors:**
 
 ```typescript
-const characters = await jikan.anime.getCharacters(5114);
+const characters = await Tenrai.anime.getCharacters(5114);
 characters.data.forEach(char => {
   console.log(`${char.character.name} (${char.role})`);
   if (char.voice_actors.length > 0) {
@@ -247,7 +229,7 @@ characters.data.forEach(char => {
 **Get anime episodes:**
 
 ```typescript
-const episodes = await jikan.anime.getEpisodes(5114, 1); // Page 1
+const episodes = await Tenrai.anime.getEpisodes(5114, 1); // Page 1
 episodes.data.forEach(ep => {
   console.log(`Episode ${ep.mal_id}: ${ep.title}`);
   console.log(`  Air date: ${ep.aired}`);
@@ -257,7 +239,7 @@ episodes.data.forEach(ep => {
 **Get anime statistics:**
 
 ```typescript
-const stats = await jikan.anime.getStatistics(5114);
+const stats = await Tenrai.anime.getStatistics(5114);
 stats.data.forEach(stat => {
   console.log(`${stat.title}: ${stat.count} users`);
 });
@@ -268,7 +250,7 @@ stats.data.forEach(stat => {
 **Get manga information:**
 
 ```typescript
-const manga = await jikan.manga.getById(1);
+const manga = await Tenrai.manga.getById(1);
 console.log(manga.data.title); // "Berserk"
 console.log(manga.data.type); // "Manga"
 console.log(manga.data.chapters); // 364 (or null if ongoing)
@@ -277,7 +259,7 @@ console.log(manga.data.chapters); // 364 (or null if ongoing)
 **Search manga:**
 
 ```typescript
-const results = await jikan.manga.search({
+const results = await Tenrai.manga.search({
   q: 'berserk',
   type: 'manga',
   status: 'publishing',
@@ -293,7 +275,7 @@ results.data.forEach(manga => {
 **Get manga characters:**
 
 ```typescript
-const characters = await jikan.manga.getCharacters(1);
+const characters = await Tenrai.manga.getCharacters(1);
 characters.data.forEach(char => {
   console.log(`${char.character.name} (${char.role})`);
 });
@@ -304,7 +286,7 @@ characters.data.forEach(char => {
 **Get character information:**
 
 ```typescript
-const character = await jikan.characters.getById(1);
+const character = await Tenrai.characters.getById(1);
 console.log(character.data.name); // "Monkey D. Luffy"
 console.log(character.data.about); // Character biography
 console.log(character.data.mal_id); // MyAnimeList ID
@@ -313,7 +295,7 @@ console.log(character.data.mal_id); // MyAnimeList ID
 **Search characters:**
 
 ```typescript
-const results = await jikan.characters.search({
+const results = await Tenrai.characters.search({
   q: 'luffy',
   limit: 10,
   page: 1
@@ -327,7 +309,7 @@ results.data.forEach(char => {
 **Get character pictures:**
 
 ```typescript
-const pictures = await jikan.characters.getPictures(1);
+const pictures = await Tenrai.characters.getPictures(1);
 pictures.data.forEach(pic => {
   console.log(pic.jpg.image_url);
 });
@@ -338,7 +320,7 @@ pictures.data.forEach(pic => {
 **Get current season:**
 
 ```typescript
-const currentSeason = await jikan.seasons.getCurrent();
+const currentSeason = await Tenrai.seasons.getCurrent();
 currentSeason.data.forEach(anime => {
   console.log(`${anime.title} (${anime.season})`);
 });
@@ -347,7 +329,7 @@ currentSeason.data.forEach(anime => {
 **Get specific season:**
 
 ```typescript
-const winter2024 = await jikan.seasons.getSeason(2024, 'winter');
+const winter2024 = await Tenrai.seasons.getSeason(2024, 'winter');
 winter2024.data.forEach(anime => {
   console.log(`${anime.title} - Episodes: ${anime.episodes}`);
 });
@@ -356,7 +338,7 @@ winter2024.data.forEach(anime => {
 **Get upcoming season:**
 
 ```typescript
-const upcoming = await jikan.seasons.getUpcoming();
+const upcoming = await Tenrai.seasons.getUpcoming();
 upcoming.data.slice(0, 5).forEach(anime => {
   console.log(`${anime.title} (${anime.aired.from})`);
 });
@@ -367,7 +349,7 @@ upcoming.data.slice(0, 5).forEach(anime => {
 **Get top anime:**
 
 ```typescript
-const topAnime = await jikan.top.getAnime({
+const topAnime = await Tenrai.top.getAnime({
   filter: 'airing',
   limit: 25,
   page: 1
@@ -381,7 +363,7 @@ topAnime.data.forEach((anime, index) => {
 **Get top manga:**
 
 ```typescript
-const topManga = await jikan.top.getManga({
+const topManga = await Tenrai.top.getManga({
   filter: 'publishing',
   limit: 10
 });
@@ -394,8 +376,8 @@ topManga.data.forEach((manga, index) => {
 **Get top characters and people:**
 
 ```typescript
-const topCharacters = await jikan.top.getCharacters({ limit: 10 });
-const topPeople = await jikan.top.getPeople({ limit: 10 });
+const topCharacters = await Tenrai.top.getCharacters({ limit: 10 });
+const topPeople = await Tenrai.top.getPeople({ limit: 10 });
 ```
 
 #### Random
@@ -403,42 +385,14 @@ const topPeople = await jikan.top.getPeople({ limit: 10 });
 **Get random content:**
 
 ```typescript
-const randomAnime = await jikan.random.getAnime();
+const randomAnime = await Tenrai.random.getAnime();
 console.log(`Random anime: ${randomAnime.data.title}`);
 
-const randomManga = await jikan.random.getManga();
+const randomManga = await Tenrai.random.getManga();
 console.log(`Random manga: ${randomManga.data.title}`);
 
-const randomChar = await jikan.random.getCharacter();
+const randomChar = await Tenrai.random.getCharacter();
 console.log(`Random character: ${randomChar.data.name}`);
-```
-
-#### Users
-
-**Get user profile:**
-
-```typescript
-const user = await jikan.users.getById('firrthecreator');
-console.log(user.data.username);
-console.log(user.data.gender);
-console.log(user.data.joined_date);
-```
-
-**Get user full profile:**
-
-```typescript
-const fullProfile = await jikan.users.getFullProfile('firrthecreator');
-console.log(fullProfile.data.statistics);
-console.log(fullProfile.data.favorites);
-```
-
-**Get user history:**
-
-```typescript
-const history = await jikan.users.getHistory('firrthecreator', 'anime');
-history.data.forEach(entry => {
-  console.log(`${entry.entry.title} - ${entry.increment} episodes`);
-});
 ```
 
 #### Other Endpoints
@@ -446,7 +400,7 @@ history.data.forEach(entry => {
 **Genres:**
 
 ```typescript
-const animeGenres = await jikan.genres.getAnimeGenres();
+const animeGenres = await Tenrai.genres.getAnimeGenres();
 animeGenres.data.forEach(genre => {
   console.log(`${genre.name} - ${genre.count} anime`);
 });
@@ -455,22 +409,22 @@ animeGenres.data.forEach(genre => {
 **Producers:**
 
 ```typescript
-const producer = await jikan.producers.getById(1);
+const producer = await Tenrai.producers.getById(1);
 console.log(producer.data.titles[0].title);
 
-const producerSearch = await jikan.producers.search({ query: 'sunrise' });
+const producerSearch = await Tenrai.producers.search({ query: 'sunrise' });
 ```
 
 **Magazines:**
 
 ```typescript
-const magazines = await jikan.magazines.search({ query: 'jump' });
+const magazines = await Tenrai.magazines.search({ query: 'jump' });
 ```
 
 **Reviews:**
 
 ```typescript
-const animeReviews = await jikan.reviews.getAnimeReviews();
+const animeReviews = await Tenrai.reviews.getAnimeReviews();
 animeReviews.data.forEach(review => {
   console.log(`${review.anime.title} - ${review.score}/10`);
   console.log(review.review.substring(0, 100) + '...');
@@ -480,7 +434,7 @@ animeReviews.data.forEach(review => {
 **Recommendations:**
 
 ```typescript
-const recommendations = await jikan.recommendations.getRecommendations();
+const recommendations = await Tenrai.recommendations.getRecommendations();
 recommendations.data.forEach(rec => {
   console.log(
     `If you like ${rec.entry_1.title}, try ${rec.entry_2.title}`
@@ -488,17 +442,17 @@ recommendations.data.forEach(rec => {
 });
 ```
 
-### 🛡️ Error Handling
+### Error Handling
 
-The client provides a custom `JikanError` class for comprehensive error handling:
+The client provides a custom `TenraiError` class for comprehensive error handling:
 
 ```typescript
-import { JikanError } from 'myanimelist-wrapper';
+import { TenraiError } from 'tenrai.js';
 
 try {
-  const anime = await jikan.anime.getById(999999999);
+  const anime = await Tenrai.anime.getById(999999999);
 } catch (error) {
-  if (error instanceof JikanError) {
+  if (error instanceof TenraiError) {
     // API-level error
     console.error(`API Error [${error.status}]: ${error.message}`);
     
@@ -533,9 +487,9 @@ try {
 | `429` | Too Many Requests | Implement rate limiting (see below) |
 | `500` | Server Error | Wait and retry |
 
-### ⏱️ Rate Limiting
+###  Rate Limiting
 
-The Jikan API enforces rate limits. Respect them using these strategies:
+The Tenrai API enforces rate limits. Respect them using these strategies:
 
 **Simple Delay Between Requests:**
 
@@ -547,7 +501,7 @@ const wait = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 async function fetchAnimeList(ids: number[]) {
   for (const id of ids) {
     try {
-      const anime = await jikan.anime.getById(id);
+      const anime = await Tenrai.anime.getById(id);
       console.log(anime.data.title);
       
       // Wait 400ms between requests to avoid rate limiting
@@ -602,11 +556,11 @@ class RequestQueue {
 const queue = new RequestQueue();
 const animes = [1, 5, 10, 15, 20];
 const results = await Promise.all(
-  animes.map(id => queue.add(() => jikan.anime.getById(id)))
+  animes.map(id => queue.add(() => Tenrai.anime.getById(id)))
 );
 ```
 
-### 📄 Pagination
+### Pagination
 
 Navigate through paginated results:
 
@@ -617,7 +571,7 @@ interface PaginationOptions {
 }
 
 // Get first page
-const firstPage = await jikan.anime.search({
+const firstPage = await Tenrai.anime.search({
   q: 'naruto',
   limit: 10,
   page: 1
@@ -652,7 +606,7 @@ async function fetchAllPages<T>(
 
 // Usage
 const allAnimes = await fetchAllPages(
-  page => jikan.anime.search({ q: 'dragon', page })
+  page => Tenrai.anime.search({ q: 'dragon', page })
 );
 ```
 
@@ -669,7 +623,7 @@ async function batchFetch(ids: number[], batchSize = 5) {
     
     // Fetch batch in parallel
     const batchResults = await Promise.all(
-      batch.map(id => jikan.anime.getById(id))
+      batch.map(id => Tenrai.anime.getById(id))
     );
     
     results.push(...batchResults);
@@ -713,11 +667,11 @@ class CachedClient {
 // Usage
 const client = new CachedClient();
 const anime = await client.get('anime:5114', () =>
-  jikan.anime.getById(5114)
+  Tenrai.anime.getById(5114)
 );
 ```
 
-### 📝 TypeScript Types
+### TypeScript Types
 
 Full type definitions are available for all responses:
 
@@ -730,12 +684,12 @@ import type {
   AnimeSearchQuery,
   MangaSearchQuery,
   ApiResponse,
-  JikanError
-} from 'myanimelist-wrapper';
+  TenraiError
+} from 'tenrai.js';
 
 // Type-safe API calls
 async function exampleUsage() {
-  const response: ApiResponse<Anime> = await jikan.anime.getById(5114);
+  const response: ApiResponse<Anime> = await Tenrai.anime.getById(5114);
   const anime: Anime = response.data;
   
   // TypeScript knows about all properties
@@ -753,79 +707,19 @@ async function exampleUsage() {
   };
   
   const searchResults: ApiResponse<Anime[]> = 
-    await jikan.anime.search(query);
+    await Tenrai.anime.search(query);
 }
 ```
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
-### Development Setup
+## License
 
-```bash
-# Clone the repository
-git clone https://github.com/firrthecreator/myanimelist-wrapper.git
-cd myanimelist-wrapper
+[MIT](LICENSE) © 2026 [gonzyui](https://github.com/gonzyui)
 
-# Install dependencies
-npm install
+## Acknowledgments
 
-# Build the project
-npm run build
-
-# Run tests
-npm test
-
-# Run tests in watch mode
-npm run test:watch
-
-# Generate coverage report
-npm run test:coverage
-
-# Format code
-npm run format
-
-# Lint code
-npm run lint
-```
-
-### Project Structure
-
-```
-├── src/
-│   ├── client.ts           # Main client class
-│   ├── index.ts            # Package exports
-│   ├── endpoints/          # API endpoint implementations
-│   └── types/              # TypeScript type definitions
-├── tests/                  # Test files
-├── docs/                   # Documentation
-├── examples/               # Usage examples
-└── package.json            # Dependencies and scripts
-```
-
-## 📄 License
-
-MIT © 2026 [Firr, The Creator](https://github.com/firrthecreator)
-
-## 🙏 Acknowledgments
-
-- [Jikan API](https://jikan.moe/) - The wonderful unofficial MyAnimeList API
+- [Tenrai API](https://tenrai.org/) - The unofficial MyAnimeList API
 - [MyAnimeList](https://myanimelist.net/) - The source of all anime/manga data
-- Contributors and maintainers of this project
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/firrthecreator/myanimelist-wrapper/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/firrthecreator/myanimelist-wrapper/discussions)
-- **Documentation**: [Complete API Documentation](docs/API.md)
-
----
-
-<div align="center">
-
-**Made with ❤️ by [Firr, The Creator](https://github.com/firrthecreator)**
-
-[⬆ back to top](#myanimelist-wrapper)
-
-</div>

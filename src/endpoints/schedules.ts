@@ -1,28 +1,28 @@
-import type { JikanClient } from "../client";
+import type { TenraiClient } from '../client';
 import type {
-    Anime,
-    JikanPaginatedResponse,
-    ScheduleQueryParams
-} from "../types";
+  Anime,
+  TenraiPaginatedResponse,
+  ScheduleQueryParams,
+} from '../types';
 
 export class SchedulesEndpoint {
-    private client: JikanClient;
+  private client: TenraiClient;
 
-    constructor(client: JikanClient) {
-        this.client = client;
-    }
+  constructor(client: TenraiClient) {
+    this.client = client;
+  }
 
-    /**
-     * Get anime schedules
-     * @param params Query parameters
-     * @returns Promise with anime schedules data
-     */
-    async getSchedules(
-        params?: ScheduleQueryParams
-    ): Promise<JikanPaginatedResponse<Anime>> {
-        return this.client.request<JikanPaginatedResponse<Anime>>(
-            "/schedules",
-            params
-        );
-    }
+  /**
+   * Get anime schedules
+   * @param params Query parameters
+   * @returns Promise with anime schedules data
+   */
+  async getSchedules(
+    params?: ScheduleQueryParams,
+  ): Promise<TenraiPaginatedResponse<Anime>> {
+    return this.client.request<TenraiPaginatedResponse<Anime>>(
+      '/schedules',
+      params,
+    );
+  }
 }

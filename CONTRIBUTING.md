@@ -1,4 +1,4 @@
-# Contributing to `myanimelist-wrapper`
+# Contributing to `tenrai.js`
 
 Thank you for your interest in contributing to this project. This guide outlines the recommended workflow and best practices for contributing effectively.
 
@@ -10,12 +10,12 @@ Thank you for your interest in contributing to this project. This guide outlines
 2. Clone your fork:
 
    ```bash
-   git clone https://github.com/firrthecreator/myanimelist-wrapper.git
+   git clone https://github.com/gonzyui/tenrai.js.git
    ```
 3. Install dependencies:
 
    ```bash
-   npm install
+   pnpm install
    ```
 4. Create a new branch for your work:
 
@@ -31,22 +31,22 @@ Thank you for your interest in contributing to this project. This guide outlines
 2. Run tests to verify your changes:
 
    ```bash
-   npm test
+   pnpm test
    ```
 3. Check for linting issues:
 
    ```bash
-   npm run lint
+   pnpm run lint
    ```
 4. Automatically fix formatting (if needed):
 
    ```bash
-   npm run format
+   pnpm run format
    ```
 5. Build the project:
 
    ```bash
-   npm run build
+   pnpm run build
    ```
 6. Commit your changes with a meaningful message.
 7. Push your branch to your fork:
@@ -86,24 +86,18 @@ examples/         - Example usage scripts
 
 ```bash
 # Run all tests
-npm test
+pnpm test
 
 # Run tests in watch mode
-npm run test:watch
+pnpm run test:watch
 
 # Generate a test coverage report
-npm run test:coverage
+pnpm run test:coverage
 ```
 
 ---
 
-## Building Documentation
 
-```bash
-npm run docs
-```
-
----
 
 ## License
 
