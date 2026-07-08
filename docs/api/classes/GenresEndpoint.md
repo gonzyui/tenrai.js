@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [endpoints/genres.ts:4](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/endpoints/genres.ts#L4)
+Defined in: [endpoints/genres.ts:4](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/genres.ts#L4)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [endpoints/genres.ts:4](https://github.com/gonzyui/tenrai.js/blob/7c
 
 > **new GenresEndpoint**(`client`): `GenresEndpoint`
 
-Defined in: [endpoints/genres.ts:7](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/endpoints/genres.ts#L7)
+Defined in: [endpoints/genres.ts:7](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/genres.ts#L7)
 
 #### Parameters
 
@@ -28,7 +28,7 @@ Defined in: [endpoints/genres.ts:7](https://github.com/gonzyui/tenrai.js/blob/7c
 
 > **getAnimeGenres**(`params?`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`Genre`](../interfaces/Genre.md)[]\>\>
 
-Defined in: [endpoints/genres.ts:16](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/endpoints/genres.ts#L16)
+Defined in: [endpoints/genres.ts:16](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/genres.ts#L16)
 
 Get anime genres
 
@@ -52,7 +52,7 @@ Promise with anime genres data
 
 > **getMangaGenres**(`params?`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`Genre`](../interfaces/Genre.md)[]\>\>
 
-Defined in: [endpoints/genres.ts:30](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/endpoints/genres.ts#L30)
+Defined in: [endpoints/genres.ts:30](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/genres.ts#L30)
 
 Get manga genres
 

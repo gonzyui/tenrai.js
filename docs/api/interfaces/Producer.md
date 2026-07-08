@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/producers.ts:1](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/producers.ts#L1)
+Defined in: [types/producers.ts:1](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/producers.ts#L1)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/producers.ts:1](https://github.com/gonzyui/tenrai.js/blob/7cd
 
 > **count**: `number`
 
-Defined in: [types/producers.ts:5](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/producers.ts#L5)
+Defined in: [types/producers.ts:5](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/producers.ts#L5)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [types/producers.ts:5](https://github.com/gonzyui/tenrai.js/blob/7cd
 
 > **mal\_id**: `number`
 
-Defined in: [types/producers.ts:2](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/producers.ts#L2)
+Defined in: [types/producers.ts:2](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/producers.ts#L2)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [types/producers.ts:2](https://github.com/gonzyui/tenrai.js/blob/7cd
 
 > **name**: `string`
 
-Defined in: [types/producers.ts:3](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/producers.ts#L3)
+Defined in: [types/producers.ts:3](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/producers.ts#L3)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [types/producers.ts:3](https://github.com/gonzyui/tenrai.js/blob/7cd
 
 > **url**: `string`
 
-Defined in: [types/producers.ts:4](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/producers.ts#L4)
+Defined in: [types/producers.ts:4](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/producers.ts#L4)

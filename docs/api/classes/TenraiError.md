@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/error.ts:1](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/error.ts#L1)
+Defined in: [types/error.ts:1](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/error.ts#L1)
 
 ## Extends
 
@@ -14,7 +14,7 @@ Defined in: [types/error.ts:1](https://github.com/gonzyui/tenrai.js/blob/7cd0cde
 
 > **new TenraiError**(`message`, `status`, `data?`): `TenraiError`
 
-Defined in: [types/error.ts:5](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/error.ts#L5)
+Defined in: [types/error.ts:5](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/error.ts#L5)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [types/error.ts:5](https://github.com/gonzyui/tenrai.js/blob/7cd0cde
 
 > `optional` **data?**: `any`
 
-Defined in: [types/error.ts:3](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/error.ts#L3)
+Defined in: [types/error.ts:3](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/error.ts#L3)
 
 ***
 
@@ -52,4 +52,4 @@ Defined in: [types/error.ts:3](https://github.com/gonzyui/tenrai.js/blob/7cd0cde
 
 > **status**: `number`
 
-Defined in: [types/error.ts:2](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/error.ts#L2)
+Defined in: [types/error.ts:2](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/error.ts#L2)

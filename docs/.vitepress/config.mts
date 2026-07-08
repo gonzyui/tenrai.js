@@ -3,7 +3,6 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Tenrai.js",
   description: "A type-safe, feature-complete TypeScript wrapper for the Tenrai API v1",
-  base: '/tenrai.js/',
   cleanUrls: true,
   appearance: 'dark',
 

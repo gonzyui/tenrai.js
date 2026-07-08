@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/anime.ts:113](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/anime.ts#L113)
+Defined in: [types/anime.ts:113](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/anime.ts#L113)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/anime.ts:113](https://github.com/gonzyui/tenrai.js/blob/7cd0c
 
 > **person**: `object`
 
-Defined in: [types/anime.ts:114](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/anime.ts#L114)
+Defined in: [types/anime.ts:114](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/anime.ts#L114)
 
 #### images
 
@@ -34,4 +34,4 @@ Defined in: [types/anime.ts:114](https://github.com/gonzyui/tenrai.js/blob/7cd0c
 
 > **positions**: `string`[]
 
-Defined in: [types/anime.ts:120](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/anime.ts#L120)
+Defined in: [types/anime.ts:120](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/anime.ts#L120)

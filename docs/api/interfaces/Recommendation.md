@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/recommendations.ts:3](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/recommendations.ts#L3)
+Defined in: [types/recommendations.ts:3](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/recommendations.ts#L3)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/recommendations.ts:3](https://github.com/gonzyui/tenrai.js/bl
 
 > **content**: `string`
 
-Defined in: [types/recommendations.ts:11](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/recommendations.ts#L11)
+Defined in: [types/recommendations.ts:11](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/recommendations.ts#L11)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [types/recommendations.ts:11](https://github.com/gonzyui/tenrai.js/b
 
 > **date**: `string`
 
-Defined in: [types/recommendations.ts:12](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/recommendations.ts#L12)
+Defined in: [types/recommendations.ts:12](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/recommendations.ts#L12)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [types/recommendations.ts:12](https://github.com/gonzyui/tenrai.js/b
 
 > **entry**: `object`[]
 
-Defined in: [types/recommendations.ts:5](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/recommendations.ts#L5)
+Defined in: [types/recommendations.ts:5](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/recommendations.ts#L5)
 
 #### images
 
@@ -50,7 +50,7 @@ Defined in: [types/recommendations.ts:5](https://github.com/gonzyui/tenrai.js/bl
 
 > **mal\_id**: `string`
 
-Defined in: [types/recommendations.ts:4](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/recommendations.ts#L4)
+Defined in: [types/recommendations.ts:4](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/recommendations.ts#L4)
 
 ***
 
@@ -58,7 +58,7 @@ Defined in: [types/recommendations.ts:4](https://github.com/gonzyui/tenrai.js/bl
 
 > **user**: `object`
 
-Defined in: [types/recommendations.ts:13](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/recommendations.ts#L13)
+Defined in: [types/recommendations.ts:13](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/recommendations.ts#L13)
 
 #### url
 

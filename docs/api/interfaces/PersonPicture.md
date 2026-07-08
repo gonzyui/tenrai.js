@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/people.ts:49](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/people.ts#L49)
+Defined in: [types/people.ts:49](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/people.ts#L49)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/people.ts:49](https://github.com/gonzyui/tenrai.js/blob/7cd0c
 
 > **jpg**: `object`
 
-Defined in: [types/people.ts:50](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/people.ts#L50)
+Defined in: [types/people.ts:50](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/people.ts#L50)
 
 #### image\_url
 
@@ -30,7 +30,7 @@ Defined in: [types/people.ts:50](https://github.com/gonzyui/tenrai.js/blob/7cd0c
 
 > `optional` **webp?**: `object`
 
-Defined in: [types/people.ts:55](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/people.ts#L55)
+Defined in: [types/people.ts:55](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/people.ts#L55)
 
 #### image\_url
 

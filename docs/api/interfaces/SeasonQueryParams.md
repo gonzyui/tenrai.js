@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/seasons.ts:12](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/seasons.ts#L12)
+Defined in: [types/seasons.ts:12](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/seasons.ts#L12)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/seasons.ts:12](https://github.com/gonzyui/tenrai.js/blob/7cd0
 
 > `optional` **filter?**: `"tv"` \| `"movie"` \| `"ova"` \| `"special"` \| `"ona"` \| `"unknown"`
 
-Defined in: [types/seasons.ts:13](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/seasons.ts#L13)
+Defined in: [types/seasons.ts:13](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/seasons.ts#L13)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [types/seasons.ts:13](https://github.com/gonzyui/tenrai.js/blob/7cd0
 
 > `optional` **limit?**: `number`
 
-Defined in: [types/seasons.ts:17](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/seasons.ts#L17)
+Defined in: [types/seasons.ts:17](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/seasons.ts#L17)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [types/seasons.ts:17](https://github.com/gonzyui/tenrai.js/blob/7cd0
 
 > `optional` **page?**: `number`
 
-Defined in: [types/seasons.ts:16](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/seasons.ts#L16)
+Defined in: [types/seasons.ts:16](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/seasons.ts#L16)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [types/seasons.ts:16](https://github.com/gonzyui/tenrai.js/blob/7cd0
 
 > `optional` **sfw?**: `boolean`
 
-Defined in: [types/seasons.ts:14](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/seasons.ts#L14)
+Defined in: [types/seasons.ts:14](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/seasons.ts#L14)
 
 ***
 
@@ -42,4 +42,4 @@ Defined in: [types/seasons.ts:14](https://github.com/gonzyui/tenrai.js/blob/7cd0
 
 > `optional` **unapproved?**: `boolean`
 
-Defined in: [types/seasons.ts:15](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/seasons.ts#L15)
+Defined in: [types/seasons.ts:15](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/seasons.ts#L15)

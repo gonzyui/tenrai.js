@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/top.ts:22](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/top.ts#L22)
+Defined in: [types/top.ts:22](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/top.ts#L22)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/top.ts:22](https://github.com/gonzyui/tenrai.js/blob/7cd0cdef
 
 > `optional` **chapters\_read?**: `number`
 
-Defined in: [types/top.ts:43](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/top.ts#L43)
+Defined in: [types/top.ts:43](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/top.ts#L43)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [types/top.ts:43](https://github.com/gonzyui/tenrai.js/blob/7cd0cdef
 
 > **date**: `string`
 
-Defined in: [types/top.ts:36](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/top.ts#L36)
+Defined in: [types/top.ts:36](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/top.ts#L36)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [types/top.ts:36](https://github.com/gonzyui/tenrai.js/blob/7cd0cdef
 
 > **entry**: `object`
 
-Defined in: [types/top.ts:44](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/top.ts#L44)
+Defined in: [types/top.ts:44](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/top.ts#L44)
 
 #### images
 
@@ -82,7 +82,7 @@ Defined in: [types/top.ts:44](https://github.com/gonzyui/tenrai.js/blob/7cd0cdef
 
 > `optional` **episodes\_watched?**: `number`
 
-Defined in: [types/top.ts:42](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/top.ts#L42)
+Defined in: [types/top.ts:42](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/top.ts#L42)
 
 ***
 
@@ -90,7 +90,7 @@ Defined in: [types/top.ts:42](https://github.com/gonzyui/tenrai.js/blob/7cd0cdef
 
 > **is\_preliminary**: `boolean`
 
-Defined in: [types/top.ts:41](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/top.ts#L41)
+Defined in: [types/top.ts:41](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/top.ts#L41)
 
 ***
 
@@ -98,7 +98,7 @@ Defined in: [types/top.ts:41](https://github.com/gonzyui/tenrai.js/blob/7cd0cdef
 
 > **is\_spoiler**: `boolean`
 
-Defined in: [types/top.ts:40](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/top.ts#L40)
+Defined in: [types/top.ts:40](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/top.ts#L40)
 
 ***
 
@@ -106,7 +106,7 @@ Defined in: [types/top.ts:40](https://github.com/gonzyui/tenrai.js/blob/7cd0cdef
 
 > **mal\_id**: `number`
 
-Defined in: [types/top.ts:23](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/top.ts#L23)
+Defined in: [types/top.ts:23](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/top.ts#L23)
 
 ***
 
@@ -114,7 +114,7 @@ Defined in: [types/top.ts:23](https://github.com/gonzyui/tenrai.js/blob/7cd0cdef
 
 > **reactions**: `object`
 
-Defined in: [types/top.ts:26](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/top.ts#L26)
+Defined in: [types/top.ts:26](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/top.ts#L26)
 
 #### confusing
 
@@ -154,7 +154,7 @@ Defined in: [types/top.ts:26](https://github.com/gonzyui/tenrai.js/blob/7cd0cdef
 
 > **review**: `string`
 
-Defined in: [types/top.ts:37](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/top.ts#L37)
+Defined in: [types/top.ts:37](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/top.ts#L37)
 
 ***
 
@@ -162,7 +162,7 @@ Defined in: [types/top.ts:37](https://github.com/gonzyui/tenrai.js/blob/7cd0cdef
 
 > **score**: `number`
 
-Defined in: [types/top.ts:38](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/top.ts#L38)
+Defined in: [types/top.ts:38](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/top.ts#L38)
 
 ***
 
@@ -170,7 +170,7 @@ Defined in: [types/top.ts:38](https://github.com/gonzyui/tenrai.js/blob/7cd0cdef
 
 > **tags**: `string`[]
 
-Defined in: [types/top.ts:39](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/top.ts#L39)
+Defined in: [types/top.ts:39](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/top.ts#L39)
 
 ***
 
@@ -178,7 +178,7 @@ Defined in: [types/top.ts:39](https://github.com/gonzyui/tenrai.js/blob/7cd0cdef
 
 > **type**: `string`
 
-Defined in: [types/top.ts:25](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/top.ts#L25)
+Defined in: [types/top.ts:25](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/top.ts#L25)
 
 ***
 
@@ -186,7 +186,7 @@ Defined in: [types/top.ts:25](https://github.com/gonzyui/tenrai.js/blob/7cd0cdef
 
 > **url**: `string`
 
-Defined in: [types/top.ts:24](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/top.ts#L24)
+Defined in: [types/top.ts:24](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/top.ts#L24)
 
 ***
 
@@ -194,7 +194,7 @@ Defined in: [types/top.ts:24](https://github.com/gonzyui/tenrai.js/blob/7cd0cdef
 
 > **user**: `object`
 
-Defined in: [types/top.ts:61](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/top.ts#L61)
+Defined in: [types/top.ts:61](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/top.ts#L61)
 
 #### images
 

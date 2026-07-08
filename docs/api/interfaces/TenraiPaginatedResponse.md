@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/common.ts:5](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/common.ts#L5)
+Defined in: [types/common.ts:5](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/common.ts#L5)
 
 ## Type Parameters
 
@@ -16,7 +16,7 @@ Defined in: [types/common.ts:5](https://github.com/gonzyui/tenrai.js/blob/7cd0cd
 
 > **data**: `T`[]
 
-Defined in: [types/common.ts:6](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/common.ts#L6)
+Defined in: [types/common.ts:6](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/common.ts#L6)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [types/common.ts:6](https://github.com/gonzyui/tenrai.js/blob/7cd0cd
 
 > **pagination**: [`PaginationInfo`](PaginationInfo.md)
 
-Defined in: [types/common.ts:7](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/common.ts#L7)
+Defined in: [types/common.ts:7](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/common.ts#L7)

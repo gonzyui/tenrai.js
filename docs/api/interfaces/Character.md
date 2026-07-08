@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/characters.ts:3](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/characters.ts#L3)
+Defined in: [types/characters.ts:3](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/characters.ts#L3)
 
 ## Extended by
 
@@ -14,7 +14,7 @@ Defined in: [types/characters.ts:3](https://github.com/gonzyui/tenrai.js/blob/7c
 
 > **about**: `string` \| `null`
 
-Defined in: [types/characters.ts:11](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/characters.ts#L11)
+Defined in: [types/characters.ts:11](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/characters.ts#L11)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [types/characters.ts:11](https://github.com/gonzyui/tenrai.js/blob/7
 
 > **animeography**: `object`[]
 
-Defined in: [types/characters.ts:12](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/characters.ts#L12)
+Defined in: [types/characters.ts:12](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/characters.ts#L12)
 
 #### anime
 
@@ -54,7 +54,7 @@ Defined in: [types/characters.ts:12](https://github.com/gonzyui/tenrai.js/blob/7
 
 > **favorites**: `number`
 
-Defined in: [types/characters.ts:10](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/characters.ts#L10)
+Defined in: [types/characters.ts:10](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/characters.ts#L10)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [types/characters.ts:10](https://github.com/gonzyui/tenrai.js/blob/7
 
 > **images**: [`Image`](Image.md)
 
-Defined in: [types/characters.ts:6](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/characters.ts#L6)
+Defined in: [types/characters.ts:6](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/characters.ts#L6)
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: [types/characters.ts:6](https://github.com/gonzyui/tenrai.js/blob/7c
 
 > **mal\_id**: `number`
 
-Defined in: [types/characters.ts:4](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/characters.ts#L4)
+Defined in: [types/characters.ts:4](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/characters.ts#L4)
 
 ***
 
@@ -78,7 +78,7 @@ Defined in: [types/characters.ts:4](https://github.com/gonzyui/tenrai.js/blob/7c
 
 > **mangaography**: `object`[]
 
-Defined in: [types/characters.ts:21](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/characters.ts#L21)
+Defined in: [types/characters.ts:21](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/characters.ts#L21)
 
 #### manga
 
@@ -110,7 +110,7 @@ Defined in: [types/characters.ts:21](https://github.com/gonzyui/tenrai.js/blob/7
 
 > **name**: `string`
 
-Defined in: [types/characters.ts:7](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/characters.ts#L7)
+Defined in: [types/characters.ts:7](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/characters.ts#L7)
 
 ***
 
@@ -118,7 +118,7 @@ Defined in: [types/characters.ts:7](https://github.com/gonzyui/tenrai.js/blob/7c
 
 > **name\_kanji**: `string` \| `null`
 
-Defined in: [types/characters.ts:8](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/characters.ts#L8)
+Defined in: [types/characters.ts:8](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/characters.ts#L8)
 
 ***
 
@@ -126,7 +126,7 @@ Defined in: [types/characters.ts:8](https://github.com/gonzyui/tenrai.js/blob/7c
 
 > **nicknames**: `string`[]
 
-Defined in: [types/characters.ts:9](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/characters.ts#L9)
+Defined in: [types/characters.ts:9](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/characters.ts#L9)
 
 ***
 
@@ -134,7 +134,7 @@ Defined in: [types/characters.ts:9](https://github.com/gonzyui/tenrai.js/blob/7c
 
 > **url**: `string`
 
-Defined in: [types/characters.ts:5](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/characters.ts#L5)
+Defined in: [types/characters.ts:5](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/characters.ts#L5)
 
 ***
 
@@ -142,7 +142,7 @@ Defined in: [types/characters.ts:5](https://github.com/gonzyui/tenrai.js/blob/7c
 
 > **voices**: `object`[]
 
-Defined in: [types/characters.ts:30](https://github.com/gonzyui/tenrai.js/blob/7cd0cdeffc6a1b40f20a8ca1b79e42b6c58295fd/src/types/characters.ts#L30)
+Defined in: [types/characters.ts:30](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/characters.ts#L30)
 
 #### language
 
