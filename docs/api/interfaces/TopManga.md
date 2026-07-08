@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/top.ts:10](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/top.ts#L10)
+Defined in: [types/top.ts:10](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/top.ts#L10)
 
 ## Extends
 
@@ -14,7 +14,7 @@ Defined in: [types/top.ts:10](https://github.com/gonzyui/tenrai.js/blob/d185aa3a
 
 > **approved**: `boolean`
 
-Defined in: [types/manga.ts:7](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L7)
+Defined in: [types/manga.ts:7](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L7)
 
 #### Inherited from
 
@@ -26,7 +26,7 @@ Defined in: [types/manga.ts:7](https://github.com/gonzyui/tenrai.js/blob/d185aa3
 
 > **authors**: `object`[]
 
-Defined in: [types/manga.ts:27](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L27)
+Defined in: [types/manga.ts:27](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L27)
 
 #### mal\_id
 
@@ -54,7 +54,7 @@ Defined in: [types/manga.ts:27](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **background**: `string` \| `null`
 
-Defined in: [types/manga.ts:26](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L26)
+Defined in: [types/manga.ts:26](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L26)
 
 #### Inherited from
 
@@ -66,7 +66,7 @@ Defined in: [types/manga.ts:26](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **chapters**: `number` \| `null`
 
-Defined in: [types/manga.ts:14](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L14)
+Defined in: [types/manga.ts:14](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L14)
 
 #### Inherited from
 
@@ -78,7 +78,7 @@ Defined in: [types/manga.ts:14](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **demographics**: `object`[]
 
-Defined in: [types/manga.ts:57](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L57)
+Defined in: [types/manga.ts:57](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L57)
 
 #### mal\_id
 
@@ -106,7 +106,7 @@ Defined in: [types/manga.ts:57](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **explicit\_genres**: `object`[]
 
-Defined in: [types/manga.ts:45](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L45)
+Defined in: [types/manga.ts:45](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L45)
 
 #### mal\_id
 
@@ -134,7 +134,7 @@ Defined in: [types/manga.ts:45](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **favorites**: `number` \| `null`
 
-Defined in: [types/manga.ts:24](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L24)
+Defined in: [types/manga.ts:24](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L24)
 
 #### Inherited from
 
@@ -146,7 +146,7 @@ Defined in: [types/manga.ts:24](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **genres**: `object`[]
 
-Defined in: [types/manga.ts:39](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L39)
+Defined in: [types/manga.ts:39](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L39)
 
 #### mal\_id
 
@@ -174,7 +174,7 @@ Defined in: [types/manga.ts:39](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **images**: [`Image`](Image.md)
 
-Defined in: [types/manga.ts:6](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L6)
+Defined in: [types/manga.ts:6](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L6)
 
 #### Inherited from
 
@@ -186,7 +186,7 @@ Defined in: [types/manga.ts:6](https://github.com/gonzyui/tenrai.js/blob/d185aa3
 
 > **mal\_id**: `number`
 
-Defined in: [types/manga.ts:4](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L4)
+Defined in: [types/manga.ts:4](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L4)
 
 #### Inherited from
 
@@ -198,7 +198,7 @@ Defined in: [types/manga.ts:4](https://github.com/gonzyui/tenrai.js/blob/d185aa3
 
 > **members**: `number` \| `null`
 
-Defined in: [types/manga.ts:23](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L23)
+Defined in: [types/manga.ts:23](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L23)
 
 #### Inherited from
 
@@ -210,7 +210,7 @@ Defined in: [types/manga.ts:23](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **popularity**: `number` \| `null`
 
-Defined in: [types/manga.ts:22](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L22)
+Defined in: [types/manga.ts:22](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L22)
 
 #### Inherited from
 
@@ -222,7 +222,7 @@ Defined in: [types/manga.ts:22](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **published**: [`DateRange`](DateRange.md)
 
-Defined in: [types/manga.ts:18](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L18)
+Defined in: [types/manga.ts:18](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L18)
 
 #### Inherited from
 
@@ -234,7 +234,7 @@ Defined in: [types/manga.ts:18](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **publishing**: `boolean`
 
-Defined in: [types/manga.ts:17](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L17)
+Defined in: [types/manga.ts:17](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L17)
 
 #### Inherited from
 
@@ -246,7 +246,7 @@ Defined in: [types/manga.ts:17](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **rank**: `number` \| `null`
 
-Defined in: [types/manga.ts:21](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L21)
+Defined in: [types/manga.ts:21](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L21)
 
 #### Inherited from
 
@@ -258,7 +258,7 @@ Defined in: [types/manga.ts:21](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **score**: `number` \| `null`
 
-Defined in: [types/manga.ts:19](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L19)
+Defined in: [types/manga.ts:19](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L19)
 
 #### Inherited from
 
@@ -270,7 +270,7 @@ Defined in: [types/manga.ts:19](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **scored\_by**: `number` \| `null`
 
-Defined in: [types/manga.ts:20](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L20)
+Defined in: [types/manga.ts:20](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L20)
 
 #### Inherited from
 
@@ -282,7 +282,7 @@ Defined in: [types/manga.ts:20](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **serializations**: `object`[]
 
-Defined in: [types/manga.ts:33](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L33)
+Defined in: [types/manga.ts:33](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L33)
 
 #### mal\_id
 
@@ -310,7 +310,7 @@ Defined in: [types/manga.ts:33](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **status**: `string` \| `null`
 
-Defined in: [types/manga.ts:16](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L16)
+Defined in: [types/manga.ts:16](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L16)
 
 #### Inherited from
 
@@ -322,7 +322,7 @@ Defined in: [types/manga.ts:16](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **synopsis**: `string` \| `null`
 
-Defined in: [types/manga.ts:25](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L25)
+Defined in: [types/manga.ts:25](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L25)
 
 #### Inherited from
 
@@ -334,7 +334,7 @@ Defined in: [types/manga.ts:25](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **themes**: `object`[]
 
-Defined in: [types/manga.ts:51](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L51)
+Defined in: [types/manga.ts:51](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L51)
 
 #### mal\_id
 
@@ -362,7 +362,7 @@ Defined in: [types/manga.ts:51](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **title**: `string`
 
-Defined in: [types/manga.ts:9](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L9)
+Defined in: [types/manga.ts:9](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L9)
 
 #### Inherited from
 
@@ -374,7 +374,7 @@ Defined in: [types/manga.ts:9](https://github.com/gonzyui/tenrai.js/blob/d185aa3
 
 > **title\_english**: `string` \| `null`
 
-Defined in: [types/manga.ts:10](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L10)
+Defined in: [types/manga.ts:10](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L10)
 
 #### Inherited from
 
@@ -386,7 +386,7 @@ Defined in: [types/manga.ts:10](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **title\_japanese**: `string` \| `null`
 
-Defined in: [types/manga.ts:11](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L11)
+Defined in: [types/manga.ts:11](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L11)
 
 #### Inherited from
 
@@ -398,7 +398,7 @@ Defined in: [types/manga.ts:11](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **title\_synonyms**: `string`[]
 
-Defined in: [types/manga.ts:12](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L12)
+Defined in: [types/manga.ts:12](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L12)
 
 #### Inherited from
 
@@ -410,7 +410,7 @@ Defined in: [types/manga.ts:12](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **titles**: [`Title`](Title.md)[]
 
-Defined in: [types/manga.ts:8](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L8)
+Defined in: [types/manga.ts:8](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L8)
 
 #### Inherited from
 
@@ -422,7 +422,7 @@ Defined in: [types/manga.ts:8](https://github.com/gonzyui/tenrai.js/blob/d185aa3
 
 > **type**: `string` \| `null`
 
-Defined in: [types/manga.ts:13](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L13)
+Defined in: [types/manga.ts:13](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L13)
 
 #### Inherited from
 
@@ -434,7 +434,7 @@ Defined in: [types/manga.ts:13](https://github.com/gonzyui/tenrai.js/blob/d185aa
 
 > **url**: `string`
 
-Defined in: [types/manga.ts:5](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L5)
+Defined in: [types/manga.ts:5](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L5)
 
 #### Inherited from
 
@@ -446,7 +446,7 @@ Defined in: [types/manga.ts:5](https://github.com/gonzyui/tenrai.js/blob/d185aa3
 
 > **volumes**: `number` \| `null`
 
-Defined in: [types/manga.ts:15](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/manga.ts#L15)
+Defined in: [types/manga.ts:15](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L15)
 
 #### Inherited from
 

@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [endpoints/magazines.ts:8](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/magazines.ts#L8)
+Defined in: [endpoints/magazines.ts:8](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/magazines.ts#L8)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [endpoints/magazines.ts:8](https://github.com/gonzyui/tenrai.js/blob
 
 > **new MagazinesEndpoint**(`client`): `MagazinesEndpoint`
 
-Defined in: [endpoints/magazines.ts:11](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/magazines.ts#L11)
+Defined in: [endpoints/magazines.ts:11](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/magazines.ts#L11)
 
 #### Parameters
 
@@ -28,7 +28,7 @@ Defined in: [endpoints/magazines.ts:11](https://github.com/gonzyui/tenrai.js/blo
 
 > **getAll**(`params?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`Magazine`](../interfaces/Magazine.md)\>\>
 
-Defined in: [endpoints/magazines.ts:38](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/magazines.ts#L38)
+Defined in: [endpoints/magazines.ts:38](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/magazines.ts#L38)
 
 Get all magazines
 
@@ -52,7 +52,7 @@ Promise with magazines data
 
 > **getById**(`id`, `page?`, `limit?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`Magazine`](../interfaces/Magazine.md)\>\>
 
-Defined in: [endpoints/magazines.ts:22](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/magazines.ts#L22)
+Defined in: [endpoints/magazines.ts:22](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/magazines.ts#L22)
 
 Get magazine by ID
 

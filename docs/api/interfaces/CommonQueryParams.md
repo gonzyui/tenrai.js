@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/common.ts:44](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/common.ts#L44)
+Defined in: [types/common.ts:44](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/common.ts#L44)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/common.ts:44](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > `optional` **letter?**: `string`
 
-Defined in: [types/common.ts:50](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/common.ts#L50)
+Defined in: [types/common.ts:50](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/common.ts#L50)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [types/common.ts:50](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > `optional` **limit?**: `number`
 
-Defined in: [types/common.ts:46](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/common.ts#L46)
+Defined in: [types/common.ts:46](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/common.ts#L46)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [types/common.ts:46](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > `optional` **order\_by?**: `string`
 
-Defined in: [types/common.ts:48](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/common.ts#L48)
+Defined in: [types/common.ts:48](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/common.ts#L48)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [types/common.ts:48](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > `optional` **page?**: `number`
 
-Defined in: [types/common.ts:45](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/common.ts#L45)
+Defined in: [types/common.ts:45](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/common.ts#L45)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [types/common.ts:45](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > `optional` **q?**: `string`
 
-Defined in: [types/common.ts:47](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/common.ts#L47)
+Defined in: [types/common.ts:47](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/common.ts#L47)
 
 ***
 
@@ -50,4 +50,4 @@ Defined in: [types/common.ts:47](https://github.com/gonzyui/tenrai.js/blob/d185a
 
 > `optional` **sort?**: `"desc"` \| `"asc"`
 
-Defined in: [types/common.ts:49](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/types/common.ts#L49)
+Defined in: [types/common.ts:49](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/common.ts#L49)

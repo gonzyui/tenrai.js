@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [endpoints/characters.ts:10](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/characters.ts#L10)
+Defined in: [endpoints/characters.ts:10](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/characters.ts#L10)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [endpoints/characters.ts:10](https://github.com/gonzyui/tenrai.js/bl
 
 > **new CharactersEndpoint**(`client`): `CharactersEndpoint`
 
-Defined in: [endpoints/characters.ts:13](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/characters.ts#L13)
+Defined in: [endpoints/characters.ts:13](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/characters.ts#L13)
 
 #### Parameters
 
@@ -28,7 +28,7 @@ Defined in: [endpoints/characters.ts:13](https://github.com/gonzyui/tenrai.js/bl
 
 > **getById**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`Character`](../interfaces/Character.md)\>\>
 
-Defined in: [endpoints/characters.ts:22](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/characters.ts#L22)
+Defined in: [endpoints/characters.ts:22](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/characters.ts#L22)
 
 Get character by ID
 
@@ -52,7 +52,7 @@ Promise with character data
 
 > **getPictures**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`CharacterPicture`](../interfaces/CharacterPicture.md)[]\>\>
 
-Defined in: [endpoints/characters.ts:31](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/characters.ts#L31)
+Defined in: [endpoints/characters.ts:31](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/characters.ts#L31)
 
 Get character pictures
 
@@ -76,7 +76,7 @@ Promise with character pictures data
 
 > **search**(`params?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`Character`](../interfaces/Character.md)\>\>
 
-Defined in: [endpoints/characters.ts:42](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/characters.ts#L42)
+Defined in: [endpoints/characters.ts:42](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/characters.ts#L42)
 
 Search for characters
 

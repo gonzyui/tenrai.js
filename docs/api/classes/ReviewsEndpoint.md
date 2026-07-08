@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [endpoints/reviews.ts:8](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/reviews.ts#L8)
+Defined in: [endpoints/reviews.ts:8](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/reviews.ts#L8)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [endpoints/reviews.ts:8](https://github.com/gonzyui/tenrai.js/blob/d
 
 > **new ReviewsEndpoint**(`client`): `ReviewsEndpoint`
 
-Defined in: [endpoints/reviews.ts:11](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/reviews.ts#L11)
+Defined in: [endpoints/reviews.ts:11](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/reviews.ts#L11)
 
 #### Parameters
 
@@ -28,7 +28,7 @@ Defined in: [endpoints/reviews.ts:11](https://github.com/gonzyui/tenrai.js/blob/
 
 > **getAnimeReviews**(`params?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`Review`](../interfaces/Review.md)\>\>
 
-Defined in: [endpoints/reviews.ts:20](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/reviews.ts#L20)
+Defined in: [endpoints/reviews.ts:20](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/reviews.ts#L20)
 
 Get recent anime reviews
 
@@ -52,7 +52,7 @@ Promise with anime reviews data
 
 > **getMangaReviews**(`params?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`Review`](../interfaces/Review.md)\>\>
 
-Defined in: [endpoints/reviews.ts:34](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/endpoints/reviews.ts#L34)
+Defined in: [endpoints/reviews.ts:34](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/reviews.ts#L34)
 
 Get recent manga reviews
 

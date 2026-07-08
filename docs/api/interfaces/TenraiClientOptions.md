@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [client.ts:16](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/client.ts#L16)
+Defined in: [client.ts:16](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L16)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [client.ts:16](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1
 
 > `optional` **baseUrl?**: `string`
 
-Defined in: [client.ts:17](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/client.ts#L17)
+Defined in: [client.ts:17](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L17)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [client.ts:17](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1
 
 > `optional` **headers?**: `Record`\<`string`, `string`\>
 
-Defined in: [client.ts:19](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/client.ts#L19)
+Defined in: [client.ts:19](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L19)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [client.ts:19](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1
 
 > `optional` **timeout?**: `number`
 
-Defined in: [client.ts:18](https://github.com/gonzyui/tenrai.js/blob/d185aa3abe1df5bdf8440b4c377466ac0f5a698f/src/client.ts#L18)
+Defined in: [client.ts:18](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L18)
