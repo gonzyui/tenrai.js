@@ -16,6 +16,24 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Added `manga.getFullById()` endpoint — fetches full manga details including relations and external links (`GET /v1/manga/{id}/full`).
 - Added `manga.getAllIds()` endpoint — retrieves all active MAL manga IDs, requires Server Key (`GET /v1/manga/ids`).
 - Added `MangaFullDetails` and `MangaIdsResponse` type interfaces.
+- Added `characters.getFullById()` endpoint — fetches full character details including anime/manga appearances and voice actors (`GET /v1/characters/{id}/full`).
+- Added `characters.getAnime()` endpoint — fetches character anime appearances (`GET /v1/characters/{id}/anime`).
+- Added `characters.getManga()` endpoint — fetches character manga appearances (`GET /v1/characters/{id}/manga`).
+- Added `characters.getVoices()` endpoint — fetches character voice actors (`GET /v1/characters/{id}/voices`).
+- Added `characters.getAllIds()` endpoint — retrieves all active MAL character IDs, requires Server Key (`GET /v1/characters/ids`).
+- Added `CharacterFull`, `CharacterAnimeAppearance`, `CharacterMangaAppearance`, `CharacterVoiceActor`, and `CharacterIdsResponse` type interfaces.
+- Added `people.getFullById()` endpoint — fetches full person details including anime, manga, and voice acting roles (`GET /v1/people/{id}/full`).
+- Added `people.getAnime()` endpoint — fetches person anime roles (`GET /v1/people/{id}/anime`).
+- Added `people.getManga()` endpoint — fetches person manga roles (`GET /v1/people/{id}/manga`).
+- Added `people.getVoices()` endpoint — fetches person voice acting roles (`GET /v1/people/{id}/voices`).
+- Added `people.getAllIds()` endpoint — retrieves all active MAL person IDs, requires Server Key (`GET /v1/people/ids`).
+- Added `PersonFull`, `PersonAnimeRole`, `PersonMangaRole`, `PersonVoiceRole`, and `PersonIdsResponse` type interfaces.
+- Added `producers.getFullById()` endpoint — fetches full producer details (`GET /v1/producers/{id}/full`).
+- Added `producers.getExternal()` endpoint — fetches producer external links (`GET /v1/producers/{id}/external`).
+- Added `producers.getAllIds()` endpoint — retrieves all active MAL producer IDs, requires Server Key (`GET /v1/producers/ids`).
+- Added `ProducerFull`, `ProducerExternal`, and `ProducerIdsResponse` type interfaces.
+
+
 
 ### Removed
 - Removed `anime.getForum()` endpoint — `/anime/{id}/forum` does not exist in the Tenrai API (Jikan-only endpoint).

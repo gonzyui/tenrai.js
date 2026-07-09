@@ -39,4 +39,30 @@ describe('PeopleEndpoint', () => {
       limit: 10,
     });
   });
+
+  it('should get full person details by ID', async () => {
+    await peopleEndpoint.getFullById(1);
+    expect(client.request).toHaveBeenCalledWith('/people/1/full');
+  });
+
+  it('should get person anime roles', async () => {
+    await peopleEndpoint.getAnime(1);
+    expect(client.request).toHaveBeenCalledWith('/people/1/anime');
+  });
+
+  it('should get person manga roles', async () => {
+    await peopleEndpoint.getManga(1);
+    expect(client.request).toHaveBeenCalledWith('/people/1/manga');
+  });
+
+  it('should get person voice acting roles', async () => {
+    await peopleEndpoint.getVoices(1);
+    expect(client.request).toHaveBeenCalledWith('/people/1/voices');
+  });
+
+  it('should get all person IDs', async () => {
+    await peopleEndpoint.getAllIds();
+    expect(client.request).toHaveBeenCalledWith('/people/ids');
+  });
 });
+

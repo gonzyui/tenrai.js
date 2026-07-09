@@ -37,4 +37,20 @@ describe('ProducersEndpoint', () => {
       page: 1,
     });
   });
+
+  it('should get full producer details by ID', async () => {
+    await producersEndpoint.getFullById(1);
+    expect(client.request).toHaveBeenCalledWith('/producers/1/full');
+  });
+
+  it('should get producer external links', async () => {
+    await producersEndpoint.getExternal(1);
+    expect(client.request).toHaveBeenCalledWith('/producers/1/external');
+  });
+
+  it('should get all producer IDs', async () => {
+    await producersEndpoint.getAllIds();
+    expect(client.request).toHaveBeenCalledWith('/producers/ids');
+  });
 });
+
