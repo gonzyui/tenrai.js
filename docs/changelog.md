@@ -71,14 +71,16 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Implemented integration tests in `tests/integration.test.ts` to validate real network requests, data formats, and type consistency (skipped by default unless `INTEGRATION=true` environment variable is set).
 - Corrected incorrect feature claims in `README.md` (removed non-existent batching and connection pooling, updated badges to Node.js 18+).
 - Corrected project structure layout in `CONTRIBUTING.md` (removed reference to non-existent `examples/` directory) and added links to the official documentation website (`https://tenrai.js.org/`).
-
-
-
+- Added modern Node.js `"exports"` property mapping to `package.json` for better module resolution in ESM/CommonJS projects.
+- Added `"sideEffects": false` flag to `package.json` to enable bundler tree-shaking optimizations.
+- Configured Biome linter rule `noExplicitAny` as `"warn"` in `biome.json` to enforce strict type checking, and replaced explicit `any` usages with `unknown` inside `client.ts`.
+- Documented `GenresEndpoint`, `MagazinesEndpoint`, and `RandomEndpoint` methods with detailed English JSDocs and examples.
 
 ### Removed
 - Removed `anime.getForum()` endpoint — `/anime/{id}/forum` does not exist in the Tenrai API (Jikan-only endpoint).
 - Removed `manga.getForum()` endpoint — `/manga/{id}/forum` does not exist in the Tenrai API (Jikan-only endpoint).
 - Removed `random.getUser()` endpoint — `/random/users` does not exist in the Tenrai API (no user data endpoints).
+- Removed `magazines.getById()` endpoint — `/magazines/{id}` does not exist in the Tenrai API.
 - Removed `AnimeForum` and `MangaForum` type interfaces (unused after endpoint removal).
 - Removed associated unit tests for the above ghost endpoints.
 ---

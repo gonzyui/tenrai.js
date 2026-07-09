@@ -60,7 +60,7 @@ export class TenraiClient {
   private cacheTtl: number;
   private maxRetries: number;
   private retryDelay: number;
-  private cacheStore = new Map<string, { data: any; expires: number }>();
+  private cacheStore = new Map<string, { data: unknown; expires: number }>();
 
   // Endpoints
   public anime: AnimeEndpoint;
@@ -134,6 +134,7 @@ export class TenraiClient {
    * @param params - Query parameters
    * @returns Promise with the API response
    */
+  // biome-ignore lint/suspicious/noExplicitAny: Record<string, any> is required to allow arbitrary QueryParams objects without index signature issues
   async request<T>(endpoint: string, params?: Record<string, any>): Promise<T> {
     const url = new URL(`${this.baseUrl}${endpoint}`);
 

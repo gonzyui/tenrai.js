@@ -22,14 +22,6 @@ describe('MagazinesEndpoint', () => {
     }));
   });
 
-  it('should get magazine by ID with pagination', async () => {
-    await magazinesEndpoint.getById(1, 2, 10);
-    expect(client.request).toHaveBeenCalledWith('/magazines/1', {
-      page: 2,
-      limit: 10,
-    });
-  });
-
   it('should get all magazines with parameters', async () => {
     await magazinesEndpoint.getAll({ q: 'jump', page: 1 });
     expect(client.request).toHaveBeenCalledWith('/magazines', {
@@ -38,3 +30,4 @@ describe('MagazinesEndpoint', () => {
     });
   });
 });
+
