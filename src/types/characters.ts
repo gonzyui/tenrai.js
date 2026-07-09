@@ -38,6 +38,64 @@ export interface Character {
   }[];
 }
 
+/**
+ * Full character details including anime/manga appearances and voice actors.
+ * Returned by the `/characters/{id}/full` endpoint.
+ */
+export interface CharacterFull extends Character {
+  animeography: CharacterAnimeAppearance[];
+  mangaography: CharacterMangaAppearance[];
+  voices: CharacterVoiceActor[];
+}
+
+/**
+ * A character's appearance in an anime.
+ */
+export interface CharacterAnimeAppearance {
+  role: string;
+  anime: {
+    mal_id: number;
+    url: string;
+    images: Image;
+    title: string;
+  };
+}
+
+/**
+ * A character's appearance in a manga.
+ */
+export interface CharacterMangaAppearance {
+  role: string;
+  manga: {
+    mal_id: number;
+    url: string;
+    images: Image;
+    title: string;
+  };
+}
+
+/**
+ * A voice actor for a character.
+ */
+export interface CharacterVoiceActor {
+  language: string;
+  person: {
+    mal_id: number;
+    url: string;
+    images: Image;
+    name: string;
+  };
+}
+
+/**
+ * Response returned by the `/characters/ids` endpoint.
+ * Contains all unique MAL character IDs that currently exist and are active.
+ * Requires a Server Key (`X-Server-Key` header) for authentication.
+ */
+export interface CharacterIdsResponse {
+  data: number[];
+}
+
 export interface CharacterPicture {
   jpg: {
     image_url: string;

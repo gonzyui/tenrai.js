@@ -39,4 +39,30 @@ describe('CharactersEndpoint', () => {
       limit: 5,
     });
   });
+
+  it('should get full character details by ID', async () => {
+    await charactersEndpoint.getFullById(1);
+    expect(client.request).toHaveBeenCalledWith('/characters/1/full');
+  });
+
+  it('should get character anime appearances', async () => {
+    await charactersEndpoint.getAnime(1);
+    expect(client.request).toHaveBeenCalledWith('/characters/1/anime');
+  });
+
+  it('should get character manga appearances', async () => {
+    await charactersEndpoint.getManga(1);
+    expect(client.request).toHaveBeenCalledWith('/characters/1/manga');
+  });
+
+  it('should get character voice actors', async () => {
+    await charactersEndpoint.getVoices(1);
+    expect(client.request).toHaveBeenCalledWith('/characters/1/voices');
+  });
+
+  it('should get all character IDs', async () => {
+    await charactersEndpoint.getAllIds();
+    expect(client.request).toHaveBeenCalledWith('/characters/ids');
+  });
 });
+
