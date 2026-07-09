@@ -58,4 +58,14 @@ describe('MangaEndpoint', () => {
     await mangaEndpoint.getRecommendations(1);
     expect(client.request).toHaveBeenCalledWith('/manga/1/recommendations');
   });
+
+  it('should get full manga details by ID', async () => {
+    await mangaEndpoint.getFullById(1);
+    expect(client.request).toHaveBeenCalledWith('/manga/1/full');
+  });
+
+  it('should get all manga IDs', async () => {
+    await mangaEndpoint.getAllIds();
+    expect(client.request).toHaveBeenCalledWith('/manga/ids');
+  });
 });

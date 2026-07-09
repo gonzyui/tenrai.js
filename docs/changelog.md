@@ -13,6 +13,9 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Added `anime.getVideoEpisodes()` endpoint — fetches paginated episode videos (`GET /v1/anime/{id}/videos/episodes`).
 - Added `anime.getAllIds()` endpoint — retrieves all active MAL anime IDs, requires Server Key (`GET /v1/anime/ids`).
 - Added `AnimeFullDetails`, `AnimeVideoEpisode`, and `AnimeIdsResponse` type interfaces.
+- Added `manga.getFullById()` endpoint — fetches full manga details including relations and external links (`GET /v1/manga/{id}/full`).
+- Added `manga.getAllIds()` endpoint — retrieves all active MAL manga IDs, requires Server Key (`GET /v1/manga/ids`).
+- Added `MangaFullDetails` and `MangaIdsResponse` type interfaces.
 
 ### Removed
 - Removed `anime.getForum()` endpoint — `/anime/{id}/forum` does not exist in the Tenrai API (Jikan-only endpoint).

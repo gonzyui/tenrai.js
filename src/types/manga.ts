@@ -62,6 +62,15 @@ export interface Manga {
   }[];
 }
 
+/**
+ * Full manga details including relations and external links.
+ * Returned by the `/manga/{id}/full` endpoint.
+ */
+export interface MangaFullDetails extends Manga {
+  relations: MangaRelation[];
+  external: MangaExternal[];
+}
+
 export interface MangaCharacter {
   character: {
     mal_id: number;
@@ -164,6 +173,15 @@ export interface MangaRelation {
 export interface MangaExternal {
   name: string;
   url: string;
+}
+
+/**
+ * Response returned by the `/manga/ids` endpoint.
+ * Contains all unique MAL manga IDs that currently exist and are active.
+ * Requires a Server Key (`X-Server-Key` header) for authentication.
+ */
+export interface MangaIdsResponse {
+  data: number[];
 }
 
 export interface MangaQueryParams {
