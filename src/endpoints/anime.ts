@@ -4,6 +4,8 @@ import type {
   AnimeCharacter,
   AnimeEpisode,
   AnimeExternal,
+  AnimeFullDetails,
+  AnimeIdsResponse,
   AnimeNews,
   AnimePicture,
   AnimeQueryParams,
@@ -15,6 +17,7 @@ import type {
   AnimeStreaming,
   AnimeTheme,
   AnimeVideo,
+  AnimeVideoEpisode,
   TenraiPaginatedResponse,
   TenraiResponse,
 } from '../types';
@@ -33,6 +36,25 @@ export class AnimeEndpoint {
    */
   async getById(id: number): Promise<TenraiResponse<Anime>> {
     return this.client.request<TenraiResponse<Anime>>(`/anime/${id}`);
+  }
+
+  /**
+   * Get full anime details by ID, including relations, themes, external links, and streaming data.
+   * @param id - The MAL anime ID
+   * @returns Promise with full anime data
+   * @see {@link https://api.tenrai.org | Tenrai API} — `GET /v1/anime/{id}/full`
+   *
+   * @example
+   * ```ts
+   * const anime = await client.anime.getFullById(5114);
+   * console.log(anime.data.relations); // Related anime/manga
+   * console.log(anime.data.streaming); // Streaming links
+   * ```
+   */
+  async getFullById(id: number): Promise<TenraiResponse<AnimeFullDetails>> {
+    return this.client.request<TenraiResponse<AnimeFullDetails>>(
+      `/anime/${id}/full`,
+    );
   }
 
   /**
@@ -114,6 +136,29 @@ export class AnimeEndpoint {
   async getVideos(id: number): Promise<TenraiResponse<AnimeVideo>> {
     return this.client.request<TenraiResponse<AnimeVideo>>(
       `/anime/${id}/videos`,
+    );
+  }
+
+  /**
+   * Get paginated episode videos for an anime.
+   * @param id - The MAL anime ID
+   * @param page - Page number (default: 1)
+   * @returns Promise with paginated episode video data
+   * @see {@link https://api.tenrai.org | Tenrai API} — `GET /v1/anime/{id}/videos/episodes`
+   *
+   * @example
+   * ```ts
+   * const videos = await client.anime.getVideoEpisodes(5114, 2);
+   * videos.data.forEach(ep => console.log(ep.title));
+   * ```
+   */
+  async getVideoEpisodes(
+    id: number,
+    page?: number,
+  ): Promise<TenraiPaginatedResponse<AnimeVideoEpisode>> {
+    return this.client.request<TenraiPaginatedResponse<AnimeVideoEpisode>>(
+      `/anime/${id}/videos/episodes`,
+      { page },
     );
   }
 
@@ -233,5 +278,27 @@ export class AnimeEndpoint {
       '/anime',
       params,
     );
+  }
+
+  /**
+   * Retrieve all unique MAL anime IDs that currently exist and are active.
+   *
+   * **Requires a Server Key** — pass it via the `X-Server-Key` header
+   * when constructing the client, or use the `serverKey` option.
+   *
+   * @returns Promise with an array of all anime IDs
+   * @see {@link https://api.tenrai.org | Tenrai API} — `GET /v1/anime/ids`
+   *
+   * @example
+   * ```ts
+   * const client = new TenraiClient({
+   *   headers: { 'X-Server-Key': 'your-server-key' },
+   * });
+   * const ids = await client.anime.getAllIds();
+   * console.log(ids.data); // [1, 5, 6, 20, ...]
+   * ```
+   */
+  async getAllIds(): Promise<AnimeIdsResponse> {
+    return this.client.request<AnimeIdsResponse>('/anime/ids');
   }
 }

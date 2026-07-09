@@ -8,6 +8,12 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ## 1.0.1 - 2026-07-09
 
+### Added
+- Added `anime.getFullById()` endpoint — fetches full anime details including relations, themes, external links, and streaming data (`GET /v1/anime/{id}/full`).
+- Added `anime.getVideoEpisodes()` endpoint — fetches paginated episode videos (`GET /v1/anime/{id}/videos/episodes`).
+- Added `anime.getAllIds()` endpoint — retrieves all active MAL anime IDs, requires Server Key (`GET /v1/anime/ids`).
+- Added `AnimeFullDetails`, `AnimeVideoEpisode`, and `AnimeIdsResponse` type interfaces.
+
 ### Removed
 - Removed `anime.getForum()` endpoint — `/anime/{id}/forum` does not exist in the Tenrai API (Jikan-only endpoint).
 - Removed `manga.getForum()` endpoint — `/manga/{id}/forum` does not exist in the Tenrai API (Jikan-only endpoint).

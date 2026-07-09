@@ -90,6 +90,17 @@ export interface Anime {
   }[];
 }
 
+/**
+ * Full anime details including relations, themes, external links, and streaming data.
+ * Returned by the `/anime/{id}/full` endpoint.
+ */
+export interface AnimeFullDetails extends Anime {
+  relations: AnimeRelation[];
+  theme: AnimeTheme;
+  external: AnimeExternal[];
+  streaming: AnimeStreaming[];
+}
+
 export interface AnimeCharacter {
   character: {
     mal_id: number;
@@ -169,6 +180,17 @@ export interface AnimeVideo {
     episode: string | null;
     images: Image;
   }[];
+}
+
+/**
+ * A single episode video entry returned by the `/anime/{id}/videos/episodes` paginated endpoint.
+ */
+export interface AnimeVideoEpisode {
+  mal_id: number;
+  url: string | null;
+  title: string | null;
+  episode: string | null;
+  images: Image;
 }
 
 export interface AnimePicture {
@@ -260,6 +282,15 @@ export interface AnimeExternal {
 export interface AnimeStreaming {
   name: string;
   url: string;
+}
+
+/**
+ * Response returned by the `/anime/ids` endpoint.
+ * Contains all unique MAL anime IDs that currently exist and are active.
+ * Requires a Server Key (`X-Server-Key` header) for authentication.
+ */
+export interface AnimeIdsResponse {
+  data: number[];
 }
 
 export interface AnimeQueryParams {

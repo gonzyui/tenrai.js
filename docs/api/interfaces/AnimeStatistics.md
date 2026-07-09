@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/anime.ts:187](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L187)
+Defined in: [types/anime.ts:209](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L209)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/anime.ts:187](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > **completed**: `number`
 
-Defined in: [types/anime.ts:189](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L189)
+Defined in: [types/anime.ts:211](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L211)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [types/anime.ts:189](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > **dropped**: `number`
 
-Defined in: [types/anime.ts:191](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L191)
+Defined in: [types/anime.ts:213](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L213)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [types/anime.ts:191](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > **on\_hold**: `number`
 
-Defined in: [types/anime.ts:190](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L190)
+Defined in: [types/anime.ts:212](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L212)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [types/anime.ts:190](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > **plan\_to\_watch**: `number`
 
-Defined in: [types/anime.ts:192](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L192)
+Defined in: [types/anime.ts:214](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L214)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [types/anime.ts:192](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > **scores**: `object`[]
 
-Defined in: [types/anime.ts:194](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L194)
+Defined in: [types/anime.ts:216](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L216)
 
 #### percentage
 
@@ -62,7 +62,7 @@ Defined in: [types/anime.ts:194](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > **total**: `number`
 
-Defined in: [types/anime.ts:193](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L193)
+Defined in: [types/anime.ts:215](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L215)
 
 ***
 
@@ -70,4 +70,4 @@ Defined in: [types/anime.ts:193](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > **watching**: `number`
 
-Defined in: [types/anime.ts:188](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L188)
+Defined in: [types/anime.ts:210](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L210)
