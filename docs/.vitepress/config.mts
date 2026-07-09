@@ -6,8 +6,25 @@ export default defineConfig({
     'A type-safe, feature-complete TypeScript wrapper for the Tenrai API v1',
   cleanUrls: true,
   appearance: 'dark',
+  sitemap: {
+    hostname: 'https://tenrai.js.org'
+  },
+  head: [
+    ['link', { rel: 'icon', href: '/logo.png' }],
+    ['meta', { name: 'keywords', content: 'tenrai, tenrai.js, myanimelist, mal, api, wrapper, typescript, nodejs, anime, manga' }],
+    ['meta', { name: 'author', content: 'gonzyui' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: 'Tenrai.js' }],
+    ['meta', { property: 'og:description', content: 'A type-safe, feature-complete TypeScript wrapper for the Tenrai API v1' }],
+    ['meta', { property: 'og:image', content: 'https://tenrai.js.org/logo.png' }],
+    ['meta', { name: 'twitter:card', content: 'summary' }],
+    ['meta', { name: 'twitter:title', content: 'Tenrai.js' }],
+    ['meta', { name: 'twitter:description', content: 'A type-safe, feature-complete TypeScript wrapper for the Tenrai API v1' }],
+    ['meta', { name: 'twitter:image', content: 'https://tenrai.js.org/logo.png' }]
+  ],
 
   themeConfig: {
+    logo: '/logo.png',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/getting-started' },

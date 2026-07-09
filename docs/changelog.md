@@ -75,6 +75,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Added `"sideEffects": false` flag to `package.json` to enable bundler tree-shaking optimizations.
 - Configured Biome linter rule `noExplicitAny` as `"warn"` in `biome.json` to enforce strict type checking, and replaced explicit `any` usages with `unknown` inside `client.ts`.
 - Documented `GenresEndpoint`, `MagazinesEndpoint`, and `RandomEndpoint` methods with detailed English JSDocs and examples.
+- Configured SEO metadata keywords/description tags, Open Graph options, and automatic XML sitemap generation for the VitePress documentation.
+- Generated a futuristic logo icon "T" and registered it as the documentation logo and favicon.
 
 ### Removed
 - Removed `anime.getForum()` endpoint — `/anime/{id}/forum` does not exist in the Tenrai API (Jikan-only endpoint).
