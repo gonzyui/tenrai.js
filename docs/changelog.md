@@ -67,6 +67,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Implemented a lightweight in-memory cache system for successful GET requests with configurable TTL and `clearCache()` support.
 - Implemented automatic rate limit handling for HTTP `429` status responses with custom Retry-After header parsing and exponential backoff retries.
 - Updated `README.md` to accurately describe implemented features (caching, server key, automatic 429 retries) and linked to the documentation website (`https://tenrai.js.org/`).
+- Added `test:integration` script to `package.json` to run tests against the live Tenrai API.
+- Implemented integration tests in `tests/integration.test.ts` to validate real network requests, data formats, and type consistency (skipped by default unless `INTEGRATION=true` environment variable is set).
 
 
 
