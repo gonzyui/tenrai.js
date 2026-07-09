@@ -6,7 +6,7 @@ outline: deep
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
-## 1.0.1 - 2026-07-09
+## 1.1.0 - 2026-07-09
 
 ### Added
 - Added `anime.getFullById()` endpoint — fetches full anime details including relations, themes, external links, and streaming data (`GET /v1/anime/{id}/full`).

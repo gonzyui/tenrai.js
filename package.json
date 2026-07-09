@@ -1,6 +1,6 @@
 {
   "name": "tenrai.js",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple and typed client to fetch anime, manga, characters and user data from tenrai.org",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -51,7 +51,7 @@
   "bugs": {
     "url": "https://github.com/gonzyui/tenrai.js/issues"
   },
-  "homepage": "https://github.com/gonzyui/tenrai.js#readme",
+  "homepage": "https://tenrai.js.org/",
   "engines": {
     "node": ">=18.0.0"
   },
