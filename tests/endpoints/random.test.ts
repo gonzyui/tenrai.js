@@ -41,9 +41,4 @@ describe('RandomEndpoint', () => {
     await randomEndpoint.getPerson();
     expect(client.request).toHaveBeenCalledWith('/random/people');
   });
-
-  it('should get random user', async () => {
-    await randomEndpoint.getUser();
-    expect(client.request).toHaveBeenCalledWith('/random/users');
-  });
 });

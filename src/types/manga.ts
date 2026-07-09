@@ -85,22 +85,6 @@ export interface MangaNews {
   excerpt: string;
 }
 
-export interface MangaForum {
-  mal_id: number;
-  url: string;
-  title: string;
-  date: string;
-  author_username: string;
-  author_url: string;
-  comments: number;
-  last_comment: {
-    url: string;
-    author_username: string;
-    author_url: string;
-    date: string;
-  };
-}
-
 export interface MangaPicture {
   jpg: {
     image_url: string;

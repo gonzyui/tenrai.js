@@ -4,7 +4,6 @@ import type {
   AnimeCharacter,
   AnimeEpisode,
   AnimeExternal,
-  AnimeForum,
   AnimeNews,
   AnimePicture,
   AnimeQueryParams,
@@ -105,21 +104,7 @@ export class AnimeEndpoint {
     );
   }
 
-  /**
-   * Get anime forum topics
-   * @param id Anime ID
-   * @param filter Filter topics (all, episode, other)
-   * @returns Promise with anime forum data
-   */
-  async getForum(
-    id: number,
-    filter?: 'all' | 'episode' | 'other',
-  ): Promise<TenraiResponse<AnimeForum[]>> {
-    return this.client.request<TenraiResponse<AnimeForum[]>>(
-      `/anime/${id}/forum`,
-      { filter },
-    );
-  }
+
 
   /**
    * Get anime videos

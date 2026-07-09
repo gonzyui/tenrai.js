@@ -40,11 +40,4 @@ export class RandomEndpoint {
     return this.client.request<TenraiResponse<Person>>('/random/people');
   }
 
-  /**
-   * Get random user
-   * @returns Promise with random user data
-   */
-  async getUser(): Promise<TenraiResponse<any>> {
-    return this.client.request<TenraiResponse<any>>('/random/users');
-  }
 }

@@ -85,19 +85,3 @@ Get random person
 `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`Person`](../interfaces/Person.md)\>\>
 
 Promise with random person data
-
-***
-
-### getUser()
-
-> **getUser**(): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<`any`\>\>
-
-Defined in: [endpoints/random.ts:47](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/random.ts#L47)
-
-Get random user
-
-#### Returns
-
-`Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<`any`\>\>
-
-Promise with random user data

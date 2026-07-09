@@ -5,7 +5,6 @@ import type {
   Manga,
   MangaCharacter,
   MangaExternal,
-  MangaForum,
   MangaNews,
   MangaPicture,
   MangaQueryParams,
@@ -58,16 +57,7 @@ export class MangaEndpoint {
     );
   }
 
-  /**
-   * Get manga forum topics
-   * @param id Manga ID
-   * @returns Promise with manga forum data
-   */
-  async getForum(id: number): Promise<TenraiResponse<MangaForum[]>> {
-    return this.client.request<TenraiResponse<MangaForum[]>>(
-      `/manga/${id}/forum`,
-    );
-  }
+
 
   /**
    * Get manga pictures

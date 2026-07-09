@@ -40,10 +40,6 @@ describe('MangaEndpoint', () => {
     });
   });
 
-  it('should get manga forum topics', async () => {
-    await mangaEndpoint.getForum(1);
-    expect(client.request).toHaveBeenCalledWith('/manga/1/forum');
-  });
 
   it('should search for manga with parameters', async () => {
     await mangaEndpoint.search({ q: 'berserk', limit: 10 });
