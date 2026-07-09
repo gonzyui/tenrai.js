@@ -69,6 +69,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Updated `README.md` to accurately describe implemented features (caching, server key, automatic 429 retries) and linked to the documentation website (`https://tenrai.js.org/`).
 - Added `test:integration` script to `package.json` to run tests against the live Tenrai API.
 - Implemented integration tests in `tests/integration.test.ts` to validate real network requests, data formats, and type consistency (skipped by default unless `INTEGRATION=true` environment variable is set).
+- Corrected incorrect feature claims in `README.md` (removed non-existent batching and connection pooling, updated badges to Node.js 18+).
+- Corrected project structure layout in `CONTRIBUTING.md` (removed reference to non-existent `examples/` directory) and added links to the official documentation website (`https://tenrai.js.org/`).
 
 
 

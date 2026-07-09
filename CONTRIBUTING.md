@@ -68,6 +68,10 @@ Thank you for your interest in contributing to this project. This guide outlines
 
 ---
 
+## Documentation
+
+Documentation guides and live examples are available at [tenrai.js.org](https://tenrai.js.org/).
+
 ## Project Structure
 
 ```
@@ -77,7 +81,6 @@ src/               - Main source code
   └── types/        - TypeScript types and interfaces
 
 tests/            - Test files
-examples/         - Example usage scripts
 ```
 
 ---
