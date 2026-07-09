@@ -2,7 +2,10 @@
 
 ***
 
-Defined in: [endpoints/genres.ts:4](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/genres.ts#L4)
+Defined in: [endpoints/genres.ts:8](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/genres.ts#L8)
+
+Endpoint wrapper for anime and manga genres.
+Provides access to the `/genres/anime` and `/genres/manga` resources.
 
 ## Constructors
 
@@ -10,7 +13,7 @@ Defined in: [endpoints/genres.ts:4](https://github.com/gonzyui/tenrai.js/blob/de
 
 > **new GenresEndpoint**(`client`): `GenresEndpoint`
 
-Defined in: [endpoints/genres.ts:7](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/genres.ts#L7)
+Defined in: [endpoints/genres.ts:11](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/genres.ts#L11)
 
 #### Parameters
 
@@ -28,9 +31,9 @@ Defined in: [endpoints/genres.ts:7](https://github.com/gonzyui/tenrai.js/blob/de
 
 > **getAnimeGenres**(`params?`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`Genre`](../interfaces/Genre.md)[]\>\>
 
-Defined in: [endpoints/genres.ts:16](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/genres.ts#L16)
+Defined in: [endpoints/genres.ts:27](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/genres.ts#L27)
 
-Get anime genres
+Retrieve a list of all anime genres (including explicit genres, themes, and demographics).
 
 #### Parameters
 
@@ -38,13 +41,24 @@ Get anime genres
 
 [`GenreQueryParams`](../interfaces/GenreQueryParams.md)
 
-Query parameters
+Optional query parameters to filter the list of genres
 
 #### Returns
 
 `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`Genre`](../interfaces/Genre.md)[]\>\>
 
-Promise with anime genres data
+Promise with the list of anime genres
+
+#### See
+
+[Tenrai API](https://api.tenrai.org) — `GET /v1/genres/anime`
+
+#### Example
+
+```ts
+const genres = await client.genres.getAnimeGenres({ filter: 'themes' });
+genres.data.forEach(g => console.log(`${g.name} (MAL ID: ${g.mal_id})`));
+```
 
 ***
 
@@ -52,9 +66,9 @@ Promise with anime genres data
 
 > **getMangaGenres**(`params?`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`Genre`](../interfaces/Genre.md)[]\>\>
 
-Defined in: [endpoints/genres.ts:30](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/genres.ts#L30)
+Defined in: [endpoints/genres.ts:48](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/genres.ts#L48)
 
-Get manga genres
+Retrieve a list of all manga genres (including explicit genres, themes, and demographics).
 
 #### Parameters
 
@@ -62,10 +76,21 @@ Get manga genres
 
 [`GenreQueryParams`](../interfaces/GenreQueryParams.md)
 
-Query parameters
+Optional query parameters to filter the list of genres
 
 #### Returns
 
 `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`Genre`](../interfaces/Genre.md)[]\>\>
 
-Promise with manga genres data
+Promise with the list of manga genres
+
+#### See
+
+[Tenrai API](https://api.tenrai.org) — `GET /v1/genres/manga`
+
+#### Example
+
+```ts
+const genres = await client.genres.getMangaGenres({ filter: 'demographics' });
+genres.data.forEach(g => console.log(`${g.name} (MAL ID: ${g.mal_id})`));
+```

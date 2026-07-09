@@ -6,6 +6,7 @@ Defined in: [types/characters.ts:3](https://github.com/gonzyui/tenrai.js/blob/de
 
 ## Extended by
 
+- [`CharacterFull`](CharacterFull.md)
 - [`TopCharacter`](TopCharacter.md)
 
 ## Properties

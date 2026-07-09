@@ -74,6 +74,7 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/gonzyui/tenrai.js' },
       { icon: 'npm', link: 'https://www.npmjs.com/package/tenrai.js' },
+      { icon: 'discord', link: 'https://discord.gg/3P7twDurUD' },
     ],
     footer: {
       message: 'Released under the MIT License.',

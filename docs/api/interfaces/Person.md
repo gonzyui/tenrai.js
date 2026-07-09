@@ -6,6 +6,7 @@ Defined in: [types/people.ts:3](https://github.com/gonzyui/tenrai.js/blob/dev/sr
 
 ## Extended by
 
+- [`PersonFull`](PersonFull.md)
 - [`TopPerson`](TopPerson.md)
 
 ## Properties

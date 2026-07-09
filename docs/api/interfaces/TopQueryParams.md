@@ -2,23 +2,25 @@
 
 ***
 
-Defined in: [types/top.ts:75](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/top.ts#L75)
-
-## Properties
-
-### filter?
-
-> `optional` **filter?**: `string`
-
 Defined in: [types/top.ts:78](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/top.ts#L78)
 
-***
+Base query parameters for top lists.
+
+## Extended by
+
+- [`TopAnimeQueryParams`](TopAnimeQueryParams.md)
+- [`TopMangaQueryParams`](TopMangaQueryParams.md)
+- [`TopReviewQueryParams`](TopReviewQueryParams.md)
+
+## Properties
 
 ### limit?
 
 > `optional` **limit?**: `number`
 
-Defined in: [types/top.ts:77](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/top.ts#L77)
+Defined in: [types/top.ts:86](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/top.ts#L86)
+
+Results per page (default: 25, max: 50).
 
 ***
 
@@ -26,12 +28,6 @@ Defined in: [types/top.ts:77](https://github.com/gonzyui/tenrai.js/blob/dev/src/
 
 > `optional` **page?**: `number`
 
-Defined in: [types/top.ts:76](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/top.ts#L76)
+Defined in: [types/top.ts:82](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/top.ts#L82)
 
-***
-
-### type?
-
-> `optional` **type?**: `string`
-
-Defined in: [types/top.ts:79](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/top.ts#L79)
+Page number to retrieve (default: 1).

@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/characters.ts:54](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/characters.ts#L54)
+Defined in: [types/characters.ts:112](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/characters.ts#L112)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/characters.ts:54](https://github.com/gonzyui/tenrai.js/blob/d
 
 > `optional` **letter?**: `string`
 
-Defined in: [types/characters.ts:60](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/characters.ts#L60)
+Defined in: [types/characters.ts:118](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/characters.ts#L118)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [types/characters.ts:60](https://github.com/gonzyui/tenrai.js/blob/d
 
 > `optional` **limit?**: `number`
 
-Defined in: [types/characters.ts:56](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/characters.ts#L56)
+Defined in: [types/characters.ts:114](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/characters.ts#L114)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [types/characters.ts:56](https://github.com/gonzyui/tenrai.js/blob/d
 
 > `optional` **order\_by?**: `"mal_id"` \| `"favorites"` \| `"name"`
 
-Defined in: [types/characters.ts:58](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/characters.ts#L58)
+Defined in: [types/characters.ts:116](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/characters.ts#L116)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [types/characters.ts:58](https://github.com/gonzyui/tenrai.js/blob/d
 
 > `optional` **page?**: `number`
 
-Defined in: [types/characters.ts:55](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/characters.ts#L55)
+Defined in: [types/characters.ts:113](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/characters.ts#L113)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [types/characters.ts:55](https://github.com/gonzyui/tenrai.js/blob/d
 
 > `optional` **q?**: `string`
 
-Defined in: [types/characters.ts:57](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/characters.ts#L57)
+Defined in: [types/characters.ts:115](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/characters.ts#L115)
 
 ***
 
@@ -50,4 +50,4 @@ Defined in: [types/characters.ts:57](https://github.com/gonzyui/tenrai.js/blob/d
 
 > `optional` **sort?**: `"desc"` \| `"asc"`
 
-Defined in: [types/characters.ts:59](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/characters.ts#L59)
+Defined in: [types/characters.ts:117](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/characters.ts#L117)

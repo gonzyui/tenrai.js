@@ -2,15 +2,29 @@
 
 ***
 
-Defined in: [types/anime.ts:296](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L296)
+Defined in: [types/anime.ts:299](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L299)
+
+Query parameters for anime search and filtering.
 
 ## Properties
+
+### end\_date?
+
+> `optional` **end\_date?**: `string`
+
+Defined in: [types/anime.ts:394](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L394)
+
+Filter by end date (YYYY-MM-DD format).
+
+***
 
 ### genres?
 
 > `optional` **genres?**: `string`
 
-Defined in: [types/anime.ts:307](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L307)
+Defined in: [types/anime.ts:356](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L356)
+
+Comma-separated list of genre IDs (max 25 IDs).
 
 ***
 
@@ -18,7 +32,9 @@ Defined in: [types/anime.ts:307](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > `optional` **genres\_exclude?**: `string`
 
-Defined in: [types/anime.ts:308](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L308)
+Defined in: [types/anime.ts:360](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L360)
+
+Comma-separated list of genre IDs to exclude (max 25 IDs).
 
 ***
 
@@ -26,7 +42,9 @@ Defined in: [types/anime.ts:308](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > `optional` **letter?**: `string`
 
-Defined in: [types/anime.ts:324](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L324)
+Defined in: [types/anime.ts:382](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L382)
+
+Filter by the first letter of the title.
 
 ***
 
@@ -34,7 +52,9 @@ Defined in: [types/anime.ts:324](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > `optional` **limit?**: `number`
 
-Defined in: [types/anime.ts:298](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L298)
+Defined in: [types/anime.ts:307](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L307)
+
+Results per page (default: 25, max: 50).
 
 ***
 
@@ -42,7 +62,9 @@ Defined in: [types/anime.ts:298](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > `optional` **max\_score?**: `number`
 
-Defined in: [types/anime.ts:303](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L303)
+Defined in: [types/anime.ts:336](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L336)
+
+Filter by maximum score.
 
 ***
 
@@ -50,15 +72,19 @@ Defined in: [types/anime.ts:303](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > `optional` **min\_score?**: `number`
 
-Defined in: [types/anime.ts:302](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L302)
+Defined in: [types/anime.ts:332](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L332)
+
+Filter by minimum score.
 
 ***
 
 ### order\_by?
 
-> `optional` **order\_by?**: `"mal_id"` \| `"title"` \| `"type"` \| `"rating"` \| `"start_date"` \| `"end_date"` \| `"episodes"` \| `"score"` \| `"scored_by"` \| `"rank"` \| `"popularity"` \| `"members"` \| `"favorites"`
+> `optional` **order\_by?**: `"mal_id"` \| `"title"` \| `"start_date"` \| `"end_date"` \| `"episodes"` \| `"score"` \| `"scored_by"` \| `"rank"` \| `"popularity"` \| `"members"`
 
-Defined in: [types/anime.ts:309](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L309)
+Defined in: [types/anime.ts:364](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L364)
+
+Field to order results by.
 
 ***
 
@@ -66,7 +92,9 @@ Defined in: [types/anime.ts:309](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > `optional` **page?**: `number`
 
-Defined in: [types/anime.ts:297](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L297)
+Defined in: [types/anime.ts:303](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L303)
+
+Page number to retrieve (default: 1, max: 1000).
 
 ***
 
@@ -74,7 +102,9 @@ Defined in: [types/anime.ts:297](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > `optional` **producers?**: `string`
 
-Defined in: [types/anime.ts:325](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L325)
+Defined in: [types/anime.ts:386](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L386)
+
+Comma-separated list of producer IDs (max 25 IDs).
 
 ***
 
@@ -82,15 +112,19 @@ Defined in: [types/anime.ts:325](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > `optional` **q?**: `string`
 
-Defined in: [types/anime.ts:299](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L299)
+Defined in: [types/anime.ts:311](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L311)
+
+Title search query (fuzzy matched; min 3 chars, max 200 chars).
 
 ***
 
 ### rating?
 
-> `optional` **rating?**: `"g"` \| `"pg"` \| `"pg13"` \| `"r17"` \| `"r"` \| `"rx"`
+> `optional` **rating?**: `"g"` \| `"pg"` \| `"pg13"` \| `"r17"` \| `"r"` \| `"rplus"` \| `"rx"`
 
-Defined in: [types/anime.ts:305](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L305)
+Defined in: [types/anime.ts:344](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L344)
+
+Filter by age rating.
 
 ***
 
@@ -98,7 +132,9 @@ Defined in: [types/anime.ts:305](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > `optional` **score?**: `number`
 
-Defined in: [types/anime.ts:301](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L301)
+Defined in: [types/anime.ts:328](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L328)
+
+Filter by exact score.
 
 ***
 
@@ -106,7 +142,9 @@ Defined in: [types/anime.ts:301](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > `optional` **sfw?**: `boolean`
 
-Defined in: [types/anime.ts:306](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L306)
+Defined in: [types/anime.ts:348](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L348)
+
+Flag — pass `true` to filter out NSFW entries.
 
 ***
 
@@ -114,7 +152,19 @@ Defined in: [types/anime.ts:306](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > `optional` **sort?**: `"desc"` \| `"asc"`
 
-Defined in: [types/anime.ts:323](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L323)
+Defined in: [types/anime.ts:378](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L378)
+
+Sorting order (default: asc).
+
+***
+
+### start\_date?
+
+> `optional` **start\_date?**: `string`
+
+Defined in: [types/anime.ts:390](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L390)
+
+Filter by start date (YYYY-MM-DD format).
 
 ***
 
@@ -122,12 +172,26 @@ Defined in: [types/anime.ts:323](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > `optional` **status?**: `"airing"` \| `"complete"` \| `"upcoming"`
 
-Defined in: [types/anime.ts:304](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L304)
+Defined in: [types/anime.ts:340](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L340)
+
+Filter by airing status.
 
 ***
 
 ### type?
 
-> `optional` **type?**: `"tv"` \| `"movie"` \| `"ova"` \| `"special"` \| `"ona"` \| `"music"`
+> `optional` **type?**: `"tv"` \| `"movie"` \| `"ova"` \| `"special"` \| `"ona"` \| `"music"` \| `"cm"` \| `"pv"` \| `"tv_special"`
 
-Defined in: [types/anime.ts:300](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L300)
+Defined in: [types/anime.ts:315](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L315)
+
+Filter by entry type.
+
+***
+
+### unapproved?
+
+> `optional` **unapproved?**: `boolean`
+
+Defined in: [types/anime.ts:352](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L352)
+
+Include unapproved entries in results.

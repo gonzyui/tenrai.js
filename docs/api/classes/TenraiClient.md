@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [client.ts:25](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L25)
+Defined in: [client.ts:55](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L55)
 
 Main client for interacting with the Tenrai API
 
@@ -12,7 +12,7 @@ Main client for interacting with the Tenrai API
 
 > **new TenraiClient**(`options?`): `TenraiClient`
 
-Defined in: [client.ts:49](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L49)
+Defined in: [client.ts:84](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L84)
 
 Create a new TenraiClient instance
 
@@ -34,7 +34,7 @@ Client configuration options
 
 > **anime**: [`AnimeEndpoint`](AnimeEndpoint.md)
 
-Defined in: [client.ts:31](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L31)
+Defined in: [client.ts:66](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L66)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [client.ts:31](https://github.com/gonzyui/tenrai.js/blob/dev/src/cli
 
 > **characters**: [`CharactersEndpoint`](CharactersEndpoint.md)
 
-Defined in: [client.ts:33](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L33)
+Defined in: [client.ts:68](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L68)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [client.ts:33](https://github.com/gonzyui/tenrai.js/blob/dev/src/cli
 
 > **genres**: [`GenresEndpoint`](GenresEndpoint.md)
 
-Defined in: [client.ts:38](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L38)
+Defined in: [client.ts:73](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L73)
 
 ***
 
@@ -58,7 +58,7 @@ Defined in: [client.ts:38](https://github.com/gonzyui/tenrai.js/blob/dev/src/cli
 
 > **magazines**: [`MagazinesEndpoint`](MagazinesEndpoint.md)
 
-Defined in: [client.ts:40](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L40)
+Defined in: [client.ts:75](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L75)
 
 ***
 
@@ -66,7 +66,7 @@ Defined in: [client.ts:40](https://github.com/gonzyui/tenrai.js/blob/dev/src/cli
 
 > **manga**: [`MangaEndpoint`](MangaEndpoint.md)
 
-Defined in: [client.ts:32](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L32)
+Defined in: [client.ts:67](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L67)
 
 ***
 
@@ -74,7 +74,7 @@ Defined in: [client.ts:32](https://github.com/gonzyui/tenrai.js/blob/dev/src/cli
 
 > **people**: [`PeopleEndpoint`](PeopleEndpoint.md)
 
-Defined in: [client.ts:34](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L34)
+Defined in: [client.ts:69](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L69)
 
 ***
 
@@ -82,7 +82,7 @@ Defined in: [client.ts:34](https://github.com/gonzyui/tenrai.js/blob/dev/src/cli
 
 > **producers**: [`ProducersEndpoint`](ProducersEndpoint.md)
 
-Defined in: [client.ts:39](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L39)
+Defined in: [client.ts:74](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L74)
 
 ***
 
@@ -90,7 +90,7 @@ Defined in: [client.ts:39](https://github.com/gonzyui/tenrai.js/blob/dev/src/cli
 
 > **random**: [`RandomEndpoint`](RandomEndpoint.md)
 
-Defined in: [client.ts:43](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L43)
+Defined in: [client.ts:78](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L78)
 
 ***
 
@@ -98,7 +98,7 @@ Defined in: [client.ts:43](https://github.com/gonzyui/tenrai.js/blob/dev/src/cli
 
 > **recommendations**: [`RecommendationsEndpoint`](RecommendationsEndpoint.md)
 
-Defined in: [client.ts:42](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L42)
+Defined in: [client.ts:77](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L77)
 
 ***
 
@@ -106,7 +106,7 @@ Defined in: [client.ts:42](https://github.com/gonzyui/tenrai.js/blob/dev/src/cli
 
 > **reviews**: [`ReviewsEndpoint`](ReviewsEndpoint.md)
 
-Defined in: [client.ts:41](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L41)
+Defined in: [client.ts:76](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L76)
 
 ***
 
@@ -114,7 +114,7 @@ Defined in: [client.ts:41](https://github.com/gonzyui/tenrai.js/blob/dev/src/cli
 
 > **schedules**: [`SchedulesEndpoint`](SchedulesEndpoint.md)
 
-Defined in: [client.ts:36](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L36)
+Defined in: [client.ts:71](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L71)
 
 ***
 
@@ -122,7 +122,7 @@ Defined in: [client.ts:36](https://github.com/gonzyui/tenrai.js/blob/dev/src/cli
 
 > **seasons**: [`SeasonsEndpoint`](SeasonsEndpoint.md)
 
-Defined in: [client.ts:35](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L35)
+Defined in: [client.ts:70](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L70)
 
 ***
 
@@ -130,15 +130,29 @@ Defined in: [client.ts:35](https://github.com/gonzyui/tenrai.js/blob/dev/src/cli
 
 > **top**: [`TopEndpoint`](TopEndpoint.md)
 
-Defined in: [client.ts:37](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L37)
+Defined in: [client.ts:72](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L72)
 
 ## Methods
+
+### clearCache()
+
+> **clearCache**(): `void`
+
+Defined in: [client.ts:120](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L120)
+
+Clears the in-memory response cache.
+
+#### Returns
+
+`void`
+
+***
 
 ### request()
 
 > **request**\<`T`\>(`endpoint`, `params?`): `Promise`\<`T`\>
 
-Defined in: [client.ts:79](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L79)
+Defined in: [client.ts:138](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L138)
 
 Make a request to the Tenrai API
 

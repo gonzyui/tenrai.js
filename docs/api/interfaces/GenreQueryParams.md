@@ -2,7 +2,9 @@
 
 ***
 
-Defined in: [types/genres.ts:8](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/genres.ts#L8)
+Defined in: [types/genres.ts:26](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/genres.ts#L26)
+
+Query parameters to filter genres.
 
 ## Properties
 
@@ -10,4 +12,6 @@ Defined in: [types/genres.ts:8](https://github.com/gonzyui/tenrai.js/blob/dev/sr
 
 > `optional` **filter?**: `"genres"` \| `"explicit_genres"` \| `"themes"` \| `"demographics"`
 
-Defined in: [types/genres.ts:9](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/genres.ts#L9)
+Defined in: [types/genres.ts:30](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/genres.ts#L30)
+
+Filter genres by category.
