@@ -72,9 +72,63 @@ export interface TopReview {
   };
 }
 
+/**
+ * Base query parameters for top lists.
+ */
 export interface TopQueryParams {
+  /**
+   * Page number to retrieve (default: 1).
+   */
   page?: number;
+  /**
+   * Results per page (default: 25, max: 50).
+   */
   limit?: number;
-  filter?: string;
-  type?: string;
 }
+
+/**
+ * Query parameters for top anime retrieval.
+ */
+export interface TopAnimeQueryParams extends TopQueryParams {
+  /**
+   * Filter top anime by entry type.
+   */
+  type?: 'tv' | 'movie' | 'ova' | 'special' | 'ona' | 'music' | 'cm' | 'pv' | 'tv_special';
+  /**
+   * Filter top anime by category/ranking type.
+   */
+  filter?: 'airing' | 'upcoming' | 'bypopularity' | 'favorite';
+  /**
+   * Filter by age rating.
+   */
+  rating?: 'g' | 'pg' | 'pg13' | 'r17' | 'r' | 'rx';
+  /**
+   * Flag — pass `true` to filter out NSFW entries.
+   */
+  sfw?: boolean;
+}
+
+/**
+ * Query parameters for top manga retrieval.
+ */
+export interface TopMangaQueryParams extends TopQueryParams {
+  /**
+   * Filter top manga by entry type.
+   */
+  type?: 'manga' | 'novel' | 'lightnovel' | 'oneshot' | 'doujin' | 'manhwa' | 'manhua';
+  /**
+   * Filter top manga by publishing/ranking status.
+   */
+  filter?: 'publishing' | 'upcoming' | 'bypopularity' | 'favorite';
+}
+
+/**
+ * Query parameters for top reviews retrieval.
+ */
+export interface TopReviewQueryParams extends TopQueryParams {
+  /**
+   * Filter reviews by resource type.
+   */
+  type?: 'anime' | 'manga';
+}
+

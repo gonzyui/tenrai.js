@@ -35,9 +35,34 @@ export interface Review {
   };
 }
 
+/**
+ * Query parameters for reviews search and filtering.
+ */
 export interface ReviewQueryParams {
+  /**
+   * Page number to retrieve (default: 1).
+   */
   page?: number;
+  /**
+   * Results per page (default: 50, max: 100).
+   */
   limit?: number;
-  preliminary?: boolean;
-  spoiler?: boolean;
+  /**
+   * Filter reviews by preliminary status.
+   * Pass `true` to include them, `false` to exclude, or `'only'` to exclusively retrieve preliminary reviews.
+   */
+  preliminary?: boolean | 'only';
+  /**
+   * Filter reviews by spoiler status.
+   * Pass `true` to include them, `false` to exclude, or `'only'` to exclusively retrieve spoiler reviews.
+   */
+  spoilers?: boolean | 'only';
+  /**
+   * Sort reviews by date or helpfulness (default: most_helpful).
+   */
+  sort?: 'newest' | 'oldest' | 'most_helpful';
+  /**
+   * Filter reviews by user sentiment.
+   */
+  sentiment?: 'recommended' | 'mixed_feelings' | 'not_recommended';
 }

@@ -68,4 +68,13 @@ describe('MangaEndpoint', () => {
     await mangaEndpoint.getAllIds();
     expect(client.request).toHaveBeenCalledWith('/manga/ids');
   });
+
+  it('should get manga reviews with parameters', async () => {
+    await mangaEndpoint.getReviews(1, { page: 2, sort: 'newest' });
+    expect(client.request).toHaveBeenCalledWith('/manga/1/reviews', {
+      page: 2,
+      sort: 'newest',
+    });
+  });
 });
+

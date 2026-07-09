@@ -293,24 +293,68 @@ export interface AnimeIdsResponse {
   data: number[];
 }
 
+/**
+ * Query parameters for anime search and filtering.
+ */
 export interface AnimeQueryParams {
+  /**
+   * Page number to retrieve (default: 1, max: 1000).
+   */
   page?: number;
+  /**
+   * Results per page (default: 25, max: 50).
+   */
   limit?: number;
+  /**
+   * Title search query (fuzzy matched; min 3 chars, max 200 chars).
+   */
   q?: string;
-  type?: 'tv' | 'movie' | 'ova' | 'special' | 'ona' | 'music';
+  /**
+   * Filter by entry type.
+   */
+  type?: 'tv' | 'movie' | 'ova' | 'special' | 'ona' | 'music' | 'cm' | 'pv' | 'tv_special';
+  /**
+   * Filter by exact score.
+   */
   score?: number;
+  /**
+   * Filter by minimum score.
+   */
   min_score?: number;
+  /**
+   * Filter by maximum score.
+   */
   max_score?: number;
+  /**
+   * Filter by airing status.
+   */
   status?: 'airing' | 'complete' | 'upcoming';
-  rating?: 'g' | 'pg' | 'pg13' | 'r17' | 'r' | 'rx';
+  /**
+   * Filter by age rating.
+   */
+  rating?: 'g' | 'pg' | 'pg13' | 'r17' | 'r' | 'rplus' | 'rx';
+  /**
+   * Flag — pass `true` to filter out NSFW entries.
+   */
   sfw?: boolean;
+  /**
+   * Include unapproved entries in results.
+   */
+  unapproved?: boolean;
+  /**
+   * Comma-separated list of genre IDs (max 25 IDs).
+   */
   genres?: string;
+  /**
+   * Comma-separated list of genre IDs to exclude (max 25 IDs).
+   */
   genres_exclude?: string;
+  /**
+   * Field to order results by.
+   */
   order_by?:
     | 'mal_id'
     | 'title'
-    | 'type'
-    | 'rating'
     | 'start_date'
     | 'end_date'
     | 'episodes'
@@ -318,9 +362,25 @@ export interface AnimeQueryParams {
     | 'scored_by'
     | 'rank'
     | 'popularity'
-    | 'members'
-    | 'favorites';
+    | 'members';
+  /**
+   * Sorting order (default: asc).
+   */
   sort?: 'desc' | 'asc';
+  /**
+   * Filter by the first letter of the title.
+   */
   letter?: string;
+  /**
+   * Comma-separated list of producer IDs (max 25 IDs).
+   */
   producers?: string;
+  /**
+   * Filter by start date (YYYY-MM-DD format).
+   */
+  start_date?: string;
+  /**
+   * Filter by end date (YYYY-MM-DD format).
+   */
+  end_date?: string;
 }

@@ -84,4 +84,13 @@ describe('AnimeEndpoint', () => {
     await animeEndpoint.getAllIds();
     expect(client.request).toHaveBeenCalledWith('/anime/ids');
   });
+
+  it('should get anime reviews with parameters', async () => {
+    await animeEndpoint.getReviews(1, { page: 2, sort: 'newest' });
+    expect(client.request).toHaveBeenCalledWith('/anime/1/reviews', {
+      page: 2,
+      sort: 'newest',
+    });
+  });
 });
+

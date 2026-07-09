@@ -14,6 +14,7 @@ import type {
   MangaRelation,
   MangaReview,
   MangaStatistics,
+  ReviewQueryParams,
 } from '../types';
 
 export class MangaEndpoint {
@@ -127,16 +128,16 @@ export class MangaEndpoint {
   /**
    * Get manga reviews
    * @param id Manga ID
-   * @param page Page number
+   * @param params Query parameters (page, limit, spoilers, preliminary, sort, sentiment)
    * @returns Promise with manga reviews data
    */
   async getReviews(
     id: number,
-    page?: number,
+    params?: ReviewQueryParams,
   ): Promise<TenraiPaginatedResponse<MangaReview>> {
     return this.client.request<TenraiPaginatedResponse<MangaReview>>(
       `/manga/${id}/reviews`,
-      { page },
+      params,
     );
   }
 

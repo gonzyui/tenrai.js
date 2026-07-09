@@ -18,6 +18,7 @@ import type {
   AnimeTheme,
   AnimeVideo,
   AnimeVideoEpisode,
+  ReviewQueryParams,
   TenraiPaginatedResponse,
   TenraiResponse,
 } from '../types';
@@ -209,16 +210,16 @@ export class AnimeEndpoint {
   /**
    * Get anime reviews
    * @param id Anime ID
-   * @param page Page number
+   * @param params Query parameters (page, limit, spoilers, preliminary, sort, sentiment)
    * @returns Promise with anime reviews data
    */
   async getReviews(
     id: number,
-    page?: number,
+    params?: ReviewQueryParams,
   ): Promise<TenraiPaginatedResponse<AnimeReview>> {
     return this.client.request<TenraiPaginatedResponse<AnimeReview>>(
       `/anime/${id}/reviews`,
-      { page },
+      params,
     );
   }
 

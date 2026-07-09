@@ -33,6 +33,33 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Added `producers.getAllIds()` endpoint — retrieves all active MAL producer IDs, requires Server Key (`GET /v1/producers/ids`).
 - Added `ProducerFull`, `ProducerExternal`, and `ProducerIdsResponse` type interfaces.
 
+### Changed
+- Updated `AnimeQueryParams` in `src/types/anime.ts` to support all Tenrai API parameters:
+  - Added `cm | pv | tv_special` to `type`.
+  - Added `rplus` to `rating`.
+  - Restructured `order_by` (removed `type`, `rating`, `favorites` which are not supported).
+  - Added missing parameters: `unapproved`, `start_date`, and `end_date`.
+  - Added clear JSDoc documentation for all parameters.
+- Updated `MangaQueryParams` in `src/types/manga.ts`:
+  - Added `start_date` and `end_date` parameters.
+  - Added JSDoc documentation.
+- Updated `SeasonQueryParams` in `src/types/seasons.ts`:
+  - Enforced correct `filter` type values (removed `unknown`, added `music`).
+  - Added `continuing`, `kids`, `order_by`, and `sort` parameters.
+  - Added JSDoc documentation.
+- Updated `ScheduleQueryParams` in `src/types/schedules.ts`:
+  - Added `kids` and `unapproved` parameters.
+  - Added JSDoc documentation.
+- Revamped `TopQueryParams` and signatures in `src/types/top.ts` & `src/endpoints/top.ts`:
+  - Split into specific typed interfaces: `TopAnimeQueryParams`, `TopMangaQueryParams`, and `TopReviewQueryParams` to match Tenrai API constraints.
+  - Added JSDoc documentation.
+- Updated `ReviewQueryParams` in `src/types/reviews.ts`:
+  - Added `sort` and `sentiment` parameters.
+  - Aligned `preliminary` and `spoilers` (renamed from `spoiler`) to support `boolean | 'only'`.
+  - Added JSDoc documentation.
+- Updated endpoint-level `getReviews` signatures in `AnimeEndpoint` and `MangaEndpoint` to accept `ReviewQueryParams`.
+
+
 
 
 ### Removed
