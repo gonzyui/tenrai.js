@@ -46,6 +46,70 @@ export interface Person {
   }[];
 }
 
+/**
+ * Full person details including anime roles, manga roles, and voice acting roles.
+ * Returned by the `/people/{id}/full` endpoint.
+ */
+export interface PersonFull extends Person {
+  anime: PersonAnimeRole[];
+  manga: PersonMangaRole[];
+  voices: PersonVoiceRole[];
+}
+
+/**
+ * An anime role of a person.
+ */
+export interface PersonAnimeRole {
+  position: string;
+  anime: {
+    mal_id: number;
+    url: string;
+    images: Image;
+    title: string;
+  };
+}
+
+/**
+ * A manga role of a person.
+ */
+export interface PersonMangaRole {
+  position: string;
+  manga: {
+    mal_id: number;
+    url: string;
+    images: Image;
+    title: string;
+  };
+}
+
+/**
+ * A voice acting role of a person.
+ */
+export interface PersonVoiceRole {
+  role: string;
+  anime: {
+    mal_id: number;
+    url: string;
+    images: Image;
+    title: string;
+  };
+  character: {
+    mal_id: number;
+    url: string;
+    images: Image;
+    name: string;
+  };
+}
+
+/**
+ * Response returned by the `/people/ids` endpoint.
+ * Contains all unique MAL person IDs that currently exist and are active.
+ * Requires a Server Key (`X-Server-Key` header) for authentication.
+ */
+export interface PersonIdsResponse {
+  data: number[];
+}
+
 export interface PersonPicture {
   jpg: {
     image_url: string;

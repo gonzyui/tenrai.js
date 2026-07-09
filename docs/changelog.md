@@ -22,6 +22,13 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Added `characters.getVoices()` endpoint — fetches character voice actors (`GET /v1/characters/{id}/voices`).
 - Added `characters.getAllIds()` endpoint — retrieves all active MAL character IDs, requires Server Key (`GET /v1/characters/ids`).
 - Added `CharacterFull`, `CharacterAnimeAppearance`, `CharacterMangaAppearance`, `CharacterVoiceActor`, and `CharacterIdsResponse` type interfaces.
+- Added `people.getFullById()` endpoint — fetches full person details including anime, manga, and voice acting roles (`GET /v1/people/{id}/full`).
+- Added `people.getAnime()` endpoint — fetches person anime roles (`GET /v1/people/{id}/anime`).
+- Added `people.getManga()` endpoint — fetches person manga roles (`GET /v1/people/{id}/manga`).
+- Added `people.getVoices()` endpoint — fetches person voice acting roles (`GET /v1/people/{id}/voices`).
+- Added `people.getAllIds()` endpoint — retrieves all active MAL person IDs, requires Server Key (`GET /v1/people/ids`).
+- Added `PersonFull`, `PersonAnimeRole`, `PersonMangaRole`, `PersonVoiceRole`, and `PersonIdsResponse` type interfaces.
+
 
 ### Removed
 - Removed `anime.getForum()` endpoint — `/anime/{id}/forum` does not exist in the Tenrai API (Jikan-only endpoint).
