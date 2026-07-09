@@ -65,4 +65,3 @@ describe('CharactersEndpoint', () => {
     expect(client.request).toHaveBeenCalledWith('/characters/ids');
   });
 });
-

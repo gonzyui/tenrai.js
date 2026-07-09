@@ -1,5 +1,8 @@
 import { describe, it, expect } from 'vitest';
-import { TenraiError, type TenraiApiErrorResponse } from '../../src/types/error';
+import {
+  TenraiError,
+  type TenraiApiErrorResponse,
+} from '../../src/types/error';
 
 describe('TenraiError', () => {
   it('should create an error with message and status', () => {

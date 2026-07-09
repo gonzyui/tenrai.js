@@ -8,8 +8,7 @@
 
 ---
 
-> **This project is currently undergoing a major rewrite** to transition from the Jikan API to the new Tenrai API. Some features might be unstable or incomplete.
-> Contributions, feedback, and bug reports are highly welcome! Check out [CONTRIBUTING.md](CONTRIBUTING.md) to see how you can help.
+> 📖 **Full Documentation**: Visit [tenrai.js.org](https://tenrai.js.org/) for complete guides and API Reference.
 
 ## Overview
 
@@ -21,14 +20,11 @@ Provides seamless access to MyAnimeList data including anime, manga, characters,
 
 - **Type-Safe**: Full TypeScript support with comprehensive type definitions for all API responses
 - **Complete Coverage**: All Tenrai API v1 endpoints implemented and tested
-- **Performance Optimized**: Built-in caching, request batching, and connection pooling support
-- **Robust Error Handling**: Custom error classes with detailed error information and recovery suggestions
-- **Comprehensive Type Safety**: Extensive JSDoc comments and full TypeScript types
-- **Well Tested**: Full unit test coverage with vitest
+- **Built-in Caching**: Optional in-memory caching system with configurable Time-To-Live (TTL)
+- **Robust Error Handling**: Custom error classes with detailed API error responses and status codes
+- **Rate Limit Aware**: Automatic rate limit (`429`) handling with built-in retry mechanism and exponential backoff
+- **Server Key Support**: Fully compatible with Tenrai Server Keys to leverage higher throughput limits
 - **Zero Dependencies**: Minimal footprint using native Node.js APIs
-- **Clean API**: Intuitive, fluent API design for common use cases
-- **Tree-Shakeable**: Modular architecture enables optimal bundle sizes
-- **Rate Limit Aware**: Built-in rate limit handling and request throttling
 
 ## Installation
 
@@ -52,7 +48,7 @@ pnpm add tenrai.js
 
 ### Requirements
 
-- Node.js 16 or higher
+- Node.js 18 or higher (utilizes native fetch)
 - TypeScript 4.7 or higher (for TypeScript projects)
 
 ## Quick Start
@@ -62,8 +58,13 @@ pnpm add tenrai.js
 ```typescript
 import { TenraiClient } from 'tenrai.js';
 
-// Initialize the client
-const Tenrai = new TenraiClient();
+// Initialize the client with optional caching and server key
+const Tenrai = new TenraiClient({
+  serverKey: 'your_secret_server_key', // Optional, increases rate limits
+  cache: true,                         // Enable in-memory caching (default: false)
+  cacheTtl: 300000,                    // Cache TTL in ms (default: 5 minutes)
+  maxRetries: 3                        // Auto-retry 429 rate limits (default: 3)
+});
 
 // Fetch anime information
 const getAnime = async () => {

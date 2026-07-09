@@ -44,4 +44,3 @@ export class TenraiError extends Error {
     this.data = data;
   }
 }
-

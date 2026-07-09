@@ -44,7 +44,7 @@
   },
   "homepage": "https://github.com/gonzyui/tenrai.js#readme",
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18.0.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.2",

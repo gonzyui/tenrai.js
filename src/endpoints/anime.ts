@@ -127,8 +127,6 @@ export class AnimeEndpoint {
     );
   }
 
-
-
   /**
    * Get anime videos
    * @param id Anime ID

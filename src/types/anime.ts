@@ -312,7 +312,16 @@ export interface AnimeQueryParams {
   /**
    * Filter by entry type.
    */
-  type?: 'tv' | 'movie' | 'ova' | 'special' | 'ona' | 'music' | 'cm' | 'pv' | 'tv_special';
+  type?:
+    | 'tv'
+    | 'movie'
+    | 'ova'
+    | 'special'
+    | 'ona'
+    | 'music'
+    | 'cm'
+    | 'pv'
+    | 'tv_special';
   /**
    * Filter by exact score.
    */

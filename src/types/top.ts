@@ -93,7 +93,16 @@ export interface TopAnimeQueryParams extends TopQueryParams {
   /**
    * Filter top anime by entry type.
    */
-  type?: 'tv' | 'movie' | 'ova' | 'special' | 'ona' | 'music' | 'cm' | 'pv' | 'tv_special';
+  type?:
+    | 'tv'
+    | 'movie'
+    | 'ova'
+    | 'special'
+    | 'ona'
+    | 'music'
+    | 'cm'
+    | 'pv'
+    | 'tv_special';
   /**
    * Filter top anime by category/ranking type.
    */
@@ -115,7 +124,14 @@ export interface TopMangaQueryParams extends TopQueryParams {
   /**
    * Filter top manga by entry type.
    */
-  type?: 'manga' | 'novel' | 'lightnovel' | 'oneshot' | 'doujin' | 'manhwa' | 'manhua';
+  type?:
+    | 'manga'
+    | 'novel'
+    | 'lightnovel'
+    | 'oneshot'
+    | 'doujin'
+    | 'manhwa'
+    | 'manhua';
   /**
    * Filter top manga by publishing/ranking status.
    */
@@ -131,4 +147,3 @@ export interface TopReviewQueryParams extends TopQueryParams {
    */
   type?: 'anime' | 'manga';
 }
-

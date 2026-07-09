@@ -40,7 +40,6 @@ describe('MangaEndpoint', () => {
     });
   });
 
-
   it('should search for manga with parameters', async () => {
     await mangaEndpoint.search({ q: 'berserk', limit: 10 });
     expect(client.request).toHaveBeenCalledWith('/manga', {
@@ -77,4 +76,3 @@ describe('MangaEndpoint', () => {
     });
   });
 });
-

@@ -53,4 +53,3 @@ describe('ProducersEndpoint', () => {
     expect(client.request).toHaveBeenCalledWith('/producers/ids');
   });
 });
-

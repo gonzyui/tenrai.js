@@ -79,8 +79,6 @@ export class MangaEndpoint {
     );
   }
 
-
-
   /**
    * Get manga pictures
    * @param id Manga ID

@@ -39,5 +39,4 @@ export class RandomEndpoint {
   async getPerson(): Promise<TenraiResponse<Person>> {
     return this.client.request<TenraiResponse<Person>>('/random/people');
   }
-
 }

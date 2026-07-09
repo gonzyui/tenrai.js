@@ -62,6 +62,11 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Expanded `DateRange` in `src/types/common.ts` to fully model the nested `prop` and `string` properties.
 - Deprecated `RandomQueryParams` in `src/types/random.ts` since `/random/*` endpoints do not accept query parameters.
 - Updated `ProducerQueryParams` in `src/types/producers.ts` to add `favorites` and `established` to `order_by`.
+- Added `serverKey`, `cache`, `cacheTtl`, `maxRetries`, and `retryDelay` options to `TenraiClientOptions` in `src/client.ts`.
+- Implemented automatic header injection of `X-Server-Key` when using a Server Key.
+- Implemented a lightweight in-memory cache system for successful GET requests with configurable TTL and `clearCache()` support.
+- Implemented automatic rate limit handling for HTTP `429` status responses with custom Retry-After header parsing and exponential backoff retries.
+- Updated `README.md` to accurately describe implemented features (caching, server key, automatic 429 retries) and linked to the documentation website (`https://tenrai.js.org/`).
 
 
 

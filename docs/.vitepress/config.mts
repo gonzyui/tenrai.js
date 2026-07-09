@@ -83,9 +83,8 @@ export default defineConfig({
       provider: 'local',
     },
     editLink: {
-      pattern: "https://github.com/gonzyui/tenrai.js/edit/dev/docs/:path",
-      text: "Edit this page on GitHub",
+      pattern: 'https://github.com/gonzyui/tenrai.js/edit/dev/docs/:path',
+      text: 'Edit this page on GitHub',
     },
-
   },
 });

@@ -65,4 +65,3 @@ describe('PeopleEndpoint', () => {
     expect(client.request).toHaveBeenCalledWith('/people/ids');
   });
 });
-

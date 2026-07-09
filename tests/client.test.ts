@@ -124,4 +124,77 @@ describe('TenraiClient', () => {
       expect.anything(),
     );
   });
+
+  it('should include X-Server-Key header when serverKey option is set', async () => {
+    const customClient = new TenraiClient({
+      serverKey: 'my-secret-server-key',
+    });
+
+    mockFetch.mockResolvedValueOnce({
+      ok: true,
+      json: async () => ({ data: {} }),
+    });
+
+    await customClient.request('/anime/1');
+    expect(mockFetch).toHaveBeenCalledWith(
+      'https://api.tenrai.org/v1/anime/1',
+      expect.objectContaining({
+        headers: expect.objectContaining({
+          'X-Server-Key': 'my-secret-server-key',
+        }),
+      }),
+    );
+  });
+
+  it('should cache GET responses when cache is enabled', async () => {
+    const cachedClient = new TenraiClient({ cache: true, cacheTtl: 5000 });
+    const mockResponse = { data: 'my-cached-data' };
+
+    mockFetch.mockResolvedValueOnce({
+      ok: true,
+      json: async () => mockResponse,
+    });
+
+    // First request - cache miss, fetches from API
+    const res1 = await cachedClient.request('/anime/1');
+    // Second request - cache hit, returns from memory
+    const res2 = await cachedClient.request('/anime/1');
+
+    expect(res1).toEqual(mockResponse);
+    expect(res2).toEqual(mockResponse);
+    expect(mockFetch).toHaveBeenCalledTimes(1);
+
+    // Clear cache - fetches from API again
+    cachedClient.clearCache();
+    mockFetch.mockResolvedValueOnce({
+      ok: true,
+      json: async () => mockResponse,
+    });
+    const res3 = await cachedClient.request('/anime/1');
+    expect(res3).toEqual(mockResponse);
+    expect(mockFetch).toHaveBeenCalledTimes(2);
+  });
+
+  it('should retry requests when encountering a 429 Rate Limit response', async () => {
+    const retryClient = new TenraiClient({ maxRetries: 2, retryDelay: 10 });
+    const mockResponse = { data: 'success' };
+
+    // First call: 429 Rate Limit
+    mockFetch.mockResolvedValueOnce({
+      ok: false,
+      status: 429,
+      headers: new Headers({ 'retry-after': '0' }),
+      json: async () => ({}),
+    });
+    // Second call: 200 OK
+    mockFetch.mockResolvedValueOnce({
+      ok: true,
+      status: 200,
+      json: async () => mockResponse,
+    });
+
+    const res = await retryClient.request('/anime/1');
+    expect(res).toEqual(mockResponse);
+    expect(mockFetch).toHaveBeenCalledTimes(2);
+  });
 });
