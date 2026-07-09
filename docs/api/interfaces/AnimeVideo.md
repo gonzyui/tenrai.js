@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/anime.ts:165](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L165)
+Defined in: [types/anime.ts:160](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L160)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/anime.ts:165](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > **episodes**: `object`[]
 
-Defined in: [types/anime.ts:181](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L181)
+Defined in: [types/anime.ts:176](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L176)
 
 #### episode
 
@@ -38,7 +38,7 @@ Defined in: [types/anime.ts:181](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > **promo**: `object`[]
 
-Defined in: [types/anime.ts:166](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L166)
+Defined in: [types/anime.ts:161](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/anime.ts#L161)
 
 #### title
 

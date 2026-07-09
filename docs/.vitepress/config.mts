@@ -12,6 +12,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/getting-started' },
       { text: 'API Reference', link: '/api/' },
+      { text: 'Changelog', link: '/changelog' },
     ],
     sidebar: {
       '/guide/': [
@@ -61,6 +62,12 @@ export default defineConfig({
             { text: 'TopEndpoint', link: '/api/classes/TopEndpoint' },
             { text: 'RandomEndpoint', link: '/api/classes/RandomEndpoint' },
           ],
+        },
+      ],
+      '/changelog': [
+        {
+          text: 'Changelog',
+          items: [{ text: 'All Releases', link: '/changelog' }],
         },
       ],
     },

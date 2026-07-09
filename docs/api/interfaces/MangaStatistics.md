@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/manga.ts:117](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L117)
+Defined in: [types/manga.ts:101](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L101)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/manga.ts:117](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > **completed**: `number`
 
-Defined in: [types/manga.ts:119](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L119)
+Defined in: [types/manga.ts:103](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L103)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [types/manga.ts:119](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > **dropped**: `number`
 
-Defined in: [types/manga.ts:121](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L121)
+Defined in: [types/manga.ts:105](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L105)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [types/manga.ts:121](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > **on\_hold**: `number`
 
-Defined in: [types/manga.ts:120](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L120)
+Defined in: [types/manga.ts:104](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L104)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [types/manga.ts:120](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > **plan\_to\_read**: `number`
 
-Defined in: [types/manga.ts:122](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L122)
+Defined in: [types/manga.ts:106](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L106)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [types/manga.ts:122](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > **reading**: `number`
 
-Defined in: [types/manga.ts:118](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L118)
+Defined in: [types/manga.ts:102](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L102)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [types/manga.ts:118](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > **scores**: `object`[]
 
-Defined in: [types/manga.ts:124](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L124)
+Defined in: [types/manga.ts:108](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L108)
 
 #### percentage
 
@@ -70,4 +70,4 @@ Defined in: [types/manga.ts:124](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > **total**: `number`
 
-Defined in: [types/manga.ts:123](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L123)
+Defined in: [types/manga.ts:107](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L107)

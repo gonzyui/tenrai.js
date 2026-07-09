@@ -5,7 +5,8 @@ import type {
   Manga,
   MangaCharacter,
   MangaExternal,
-  MangaForum,
+  MangaFullDetails,
+  MangaIdsResponse,
   MangaNews,
   MangaPicture,
   MangaQueryParams,
@@ -29,6 +30,25 @@ export class MangaEndpoint {
    */
   async getById(id: number): Promise<TenraiResponse<Manga>> {
     return this.client.request<TenraiResponse<Manga>>(`/manga/${id}`);
+  }
+
+  /**
+   * Get full manga details by ID, including relations and external links.
+   * @param id - The MAL manga ID
+   * @returns Promise with full manga data
+   * @see {@link https://api.tenrai.org | Tenrai API} — `GET /v1/manga/{id}/full`
+   *
+   * @example
+   * ```ts
+   * const manga = await client.manga.getFullById(13);
+   * console.log(manga.data.relations); // Related manga/anime
+   * console.log(manga.data.external);  // External links
+   * ```
+   */
+  async getFullById(id: number): Promise<TenraiResponse<MangaFullDetails>> {
+    return this.client.request<TenraiResponse<MangaFullDetails>>(
+      `/manga/${id}/full`,
+    );
   }
 
   /**
@@ -58,16 +78,7 @@ export class MangaEndpoint {
     );
   }
 
-  /**
-   * Get manga forum topics
-   * @param id Manga ID
-   * @returns Promise with manga forum data
-   */
-  async getForum(id: number): Promise<TenraiResponse<MangaForum[]>> {
-    return this.client.request<TenraiResponse<MangaForum[]>>(
-      `/manga/${id}/forum`,
-    );
-  }
+
 
   /**
    * Get manga pictures
@@ -163,5 +174,27 @@ export class MangaEndpoint {
       '/manga',
       params,
     );
+  }
+
+  /**
+   * Retrieve all unique MAL manga IDs that currently exist and are active.
+   *
+   * **Requires a Server Key** — pass it via the `X-Server-Key` header
+   * when constructing the client.
+   *
+   * @returns Promise with an array of all manga IDs
+   * @see {@link https://api.tenrai.org | Tenrai API} — `GET /v1/manga/ids`
+   *
+   * @example
+   * ```ts
+   * const client = new TenraiClient({
+   *   headers: { 'X-Server-Key': 'your-server-key' },
+   * });
+   * const ids = await client.manga.getAllIds();
+   * console.log(ids.data); // [1, 2, 13, 21, ...]
+   * ```
+   */
+  async getAllIds(): Promise<MangaIdsResponse> {
+    return this.client.request<MangaIdsResponse>('/manga/ids');
   }
 }

@@ -67,4 +67,21 @@ describe('AnimeEndpoint', () => {
     await animeEndpoint.getRecommendations(1);
     expect(client.request).toHaveBeenCalledWith('/anime/1/recommendations');
   });
+
+  it('should get full anime details by ID', async () => {
+    await animeEndpoint.getFullById(1);
+    expect(client.request).toHaveBeenCalledWith('/anime/1/full');
+  });
+
+  it('should get anime video episodes with pagination', async () => {
+    await animeEndpoint.getVideoEpisodes(1, 3);
+    expect(client.request).toHaveBeenCalledWith('/anime/1/videos/episodes', {
+      page: 3,
+    });
+  });
+
+  it('should get all anime IDs', async () => {
+    await animeEndpoint.getAllIds();
+    expect(client.request).toHaveBeenCalledWith('/anime/ids');
+  });
 });
