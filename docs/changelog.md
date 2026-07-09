@@ -28,6 +28,11 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Added `people.getVoices()` endpoint — fetches person voice acting roles (`GET /v1/people/{id}/voices`).
 - Added `people.getAllIds()` endpoint — retrieves all active MAL person IDs, requires Server Key (`GET /v1/people/ids`).
 - Added `PersonFull`, `PersonAnimeRole`, `PersonMangaRole`, `PersonVoiceRole`, and `PersonIdsResponse` type interfaces.
+- Added `producers.getFullById()` endpoint — fetches full producer details (`GET /v1/producers/{id}/full`).
+- Added `producers.getExternal()` endpoint — fetches producer external links (`GET /v1/producers/{id}/external`).
+- Added `producers.getAllIds()` endpoint — retrieves all active MAL producer IDs, requires Server Key (`GET /v1/producers/ids`).
+- Added `ProducerFull`, `ProducerExternal`, and `ProducerIdsResponse` type interfaces.
+
 
 
 ### Removed
