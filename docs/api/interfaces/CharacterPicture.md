@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/characters.ts:41](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/characters.ts#L41)
+Defined in: [types/characters.ts:99](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/characters.ts#L99)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/characters.ts:41](https://github.com/gonzyui/tenrai.js/blob/d
 
 > **jpg**: `object`
 
-Defined in: [types/characters.ts:42](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/characters.ts#L42)
+Defined in: [types/characters.ts:100](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/characters.ts#L100)
 
 #### image\_url
 
@@ -30,7 +30,7 @@ Defined in: [types/characters.ts:42](https://github.com/gonzyui/tenrai.js/blob/d
 
 > `optional` **webp?**: `object`
 
-Defined in: [types/characters.ts:47](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/characters.ts#L47)
+Defined in: [types/characters.ts:105](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/characters.ts#L105)
 
 #### image\_url
 

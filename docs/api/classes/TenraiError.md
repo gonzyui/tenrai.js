@@ -2,7 +2,9 @@
 
 ***
 
-Defined in: [types/error.ts:1](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/error.ts#L1)
+Defined in: [types/error.ts:30](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/error.ts#L30)
+
+Standard error class thrown by the Tenrai client when request failures occur.
 
 ## Extends
 
@@ -14,7 +16,7 @@ Defined in: [types/error.ts:1](https://github.com/gonzyui/tenrai.js/blob/dev/src
 
 > **new TenraiError**(`message`, `status`, `data?`): `TenraiError`
 
-Defined in: [types/error.ts:5](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/error.ts#L5)
+Defined in: [types/error.ts:40](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/error.ts#L40)
 
 #### Parameters
 
@@ -28,7 +30,7 @@ Defined in: [types/error.ts:5](https://github.com/gonzyui/tenrai.js/blob/dev/src
 
 ##### data?
 
-`any`
+[`TenraiApiErrorResponse`](../interfaces/TenraiApiErrorResponse.md)
 
 #### Returns
 
@@ -42,9 +44,11 @@ Defined in: [types/error.ts:5](https://github.com/gonzyui/tenrai.js/blob/dev/src
 
 ### data?
 
-> `optional` **data?**: `any`
+> `optional` **data?**: [`TenraiApiErrorResponse`](../interfaces/TenraiApiErrorResponse.md)
 
-Defined in: [types/error.ts:3](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/error.ts#L3)
+Defined in: [types/error.ts:38](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/error.ts#L38)
+
+Structured error details from the Tenrai API.
 
 ***
 
@@ -52,4 +56,6 @@ Defined in: [types/error.ts:3](https://github.com/gonzyui/tenrai.js/blob/dev/src
 
 > **status**: `number`
 
-Defined in: [types/error.ts:2](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/error.ts#L2)
+Defined in: [types/error.ts:34](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/error.ts#L34)
+
+The HTTP status code of the error.

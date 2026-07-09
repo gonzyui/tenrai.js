@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [endpoints/anime.ts:25](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L25)
+Defined in: [endpoints/anime.ts:26](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L26)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [endpoints/anime.ts:25](https://github.com/gonzyui/tenrai.js/blob/de
 
 > **new AnimeEndpoint**(`client`): `AnimeEndpoint`
 
-Defined in: [endpoints/anime.ts:28](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L28)
+Defined in: [endpoints/anime.ts:29](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L29)
 
 #### Parameters
 
@@ -28,7 +28,7 @@ Defined in: [endpoints/anime.ts:28](https://github.com/gonzyui/tenrai.js/blob/de
 
 > **getAllIds**(): `Promise`\<[`AnimeIdsResponse`](../interfaces/AnimeIdsResponse.md)\>
 
-Defined in: [endpoints/anime.ts:301](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L301)
+Defined in: [endpoints/anime.ts:300](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L300)
 
 Retrieve all unique MAL anime IDs that currently exist and are active.
 
@@ -61,7 +61,7 @@ console.log(ids.data); // [1, 5, 6, 20, ...]
 
 > **getById**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`Anime`](../interfaces/Anime.md)\>\>
 
-Defined in: [endpoints/anime.ts:37](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L37)
+Defined in: [endpoints/anime.ts:38](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L38)
 
 Get anime by ID
 
@@ -85,7 +85,7 @@ Promise with anime data
 
 > **getCharacters**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`AnimeCharacter`](../interfaces/AnimeCharacter.md)[]\>\>
 
-Defined in: [endpoints/anime.ts:65](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L65)
+Defined in: [endpoints/anime.ts:66](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L66)
 
 Get anime characters and voice actors
 
@@ -109,7 +109,7 @@ Promise with anime characters data
 
 > **getEpisodeById**(`animeId`, `episodeId`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`AnimeEpisode`](../interfaces/AnimeEpisode.md)\>\>
 
-Defined in: [endpoints/anime.ts:104](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L104)
+Defined in: [endpoints/anime.ts:105](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L105)
 
 Get anime episode by ID
 
@@ -139,7 +139,7 @@ Promise with anime episode data
 
 > **getEpisodes**(`id`, `page?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`AnimeEpisode`](../interfaces/AnimeEpisode.md)\>\>
 
-Defined in: [endpoints/anime.ts:88](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L88)
+Defined in: [endpoints/anime.ts:89](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L89)
 
 Get anime episodes
 
@@ -169,7 +169,7 @@ Promise with anime episodes data
 
 > **getExternal**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`AnimeExternal`](../interfaces/AnimeExternal.md)[]\>\>
 
-Defined in: [endpoints/anime.ts:252](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L252)
+Defined in: [endpoints/anime.ts:251](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L251)
 
 Get anime external links
 
@@ -193,7 +193,7 @@ Promise with anime external links data
 
 > **getFullById**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`AnimeFullDetails`](../interfaces/AnimeFullDetails.md)\>\>
 
-Defined in: [endpoints/anime.ts:54](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L54)
+Defined in: [endpoints/anime.ts:55](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L55)
 
 Get full anime details by ID, including relations, themes, external links, and streaming data.
 
@@ -229,7 +229,7 @@ console.log(anime.data.streaming); // Streaming links
 
 > **getMoreInfo**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<`string`\>\>
 
-Defined in: [endpoints/anime.ts:192](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L192)
+Defined in: [endpoints/anime.ts:191](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L191)
 
 Get more anime info
 
@@ -253,7 +253,7 @@ Promise with more anime info
 
 > **getNews**(`id`, `page?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`AnimeNews`](../interfaces/AnimeNews.md)\>\>
 
-Defined in: [endpoints/anime.ts:119](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L119)
+Defined in: [endpoints/anime.ts:120](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L120)
 
 Get anime news
 
@@ -283,7 +283,7 @@ Promise with anime news data
 
 > **getPictures**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`AnimePicture`](../interfaces/AnimePicture.md)[]\>\>
 
-Defined in: [endpoints/anime.ts:170](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L170)
+Defined in: [endpoints/anime.ts:169](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L169)
 
 Get anime pictures
 
@@ -307,7 +307,7 @@ Promise with anime pictures data
 
 > **getRecommendations**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`AnimeRecommendation`](../interfaces/AnimeRecommendation.md)[]\>\>
 
-Defined in: [endpoints/anime.ts:201](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L201)
+Defined in: [endpoints/anime.ts:200](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L200)
 
 Get anime recommendations
 
@@ -331,7 +331,7 @@ Promise with anime recommendations data
 
 > **getRelations**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`AnimeRelation`](../interfaces/AnimeRelation.md)[]\>\>
 
-Defined in: [endpoints/anime.ts:230](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L230)
+Defined in: [endpoints/anime.ts:229](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L229)
 
 Get anime relations
 
@@ -353,9 +353,9 @@ Promise with anime relations data
 
 ### getReviews()
 
-> **getReviews**(`id`, `page?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`AnimeReview`](../interfaces/AnimeReview.md)\>\>
+> **getReviews**(`id`, `params?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`AnimeReview`](../interfaces/AnimeReview.md)\>\>
 
-Defined in: [endpoints/anime.ts:215](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L215)
+Defined in: [endpoints/anime.ts:214](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L214)
 
 Get anime reviews
 
@@ -367,11 +367,11 @@ Get anime reviews
 
 Anime ID
 
-##### page?
+##### params?
 
-`number`
+[`ReviewQueryParams`](../interfaces/ReviewQueryParams.md)
 
-Page number
+Query parameters (page, limit, spoilers, preliminary, sort, sentiment)
 
 #### Returns
 
@@ -385,7 +385,7 @@ Promise with anime reviews data
 
 > **getStaff**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`AnimeStaff`](../interfaces/AnimeStaff.md)[]\>\>
 
-Defined in: [endpoints/anime.ts:76](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L76)
+Defined in: [endpoints/anime.ts:77](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L77)
 
 Get anime staff
 
@@ -409,7 +409,7 @@ Promise with anime staff data
 
 > **getStatistics**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`AnimeStatistics`](../interfaces/AnimeStatistics.md)\>\>
 
-Defined in: [endpoints/anime.ts:181](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L181)
+Defined in: [endpoints/anime.ts:180](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L180)
 
 Get anime statistics
 
@@ -433,7 +433,7 @@ Promise with anime statistics data
 
 > **getStreaming**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`AnimeStreaming`](../interfaces/AnimeStreaming.md)[]\>\>
 
-Defined in: [endpoints/anime.ts:263](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L263)
+Defined in: [endpoints/anime.ts:262](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L262)
 
 Get anime streaming links
 
@@ -457,7 +457,7 @@ Promise with anime streaming links data
 
 > **getThemes**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`AnimeTheme`](../interfaces/AnimeTheme.md)\>\>
 
-Defined in: [endpoints/anime.ts:241](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L241)
+Defined in: [endpoints/anime.ts:240](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L240)
 
 Get anime themes
 
@@ -481,7 +481,7 @@ Promise with anime themes data
 
 > **getVideoEpisodes**(`id`, `page?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`AnimeVideoEpisode`](../interfaces/AnimeVideoEpisode.md)\>\>
 
-Defined in: [endpoints/anime.ts:155](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L155)
+Defined in: [endpoints/anime.ts:154](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L154)
 
 Get paginated episode videos for an anime.
 
@@ -522,7 +522,7 @@ videos.data.forEach(ep => console.log(ep.title));
 
 > **getVideos**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`AnimeVideo`](../interfaces/AnimeVideo.md)\>\>
 
-Defined in: [endpoints/anime.ts:136](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L136)
+Defined in: [endpoints/anime.ts:135](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L135)
 
 Get anime videos
 
@@ -546,7 +546,7 @@ Promise with anime videos data
 
 > **search**(`params?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`Anime`](../interfaces/Anime.md)\>\>
 
-Defined in: [endpoints/anime.ts:274](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L274)
+Defined in: [endpoints/anime.ts:273](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/anime.ts#L273)
 
 Search for anime
 

@@ -40,7 +40,6 @@ describe('MangaEndpoint', () => {
     });
   });
 
-
   it('should search for manga with parameters', async () => {
     await mangaEndpoint.search({ q: 'berserk', limit: 10 });
     expect(client.request).toHaveBeenCalledWith('/manga', {
@@ -67,5 +66,13 @@ describe('MangaEndpoint', () => {
   it('should get all manga IDs', async () => {
     await mangaEndpoint.getAllIds();
     expect(client.request).toHaveBeenCalledWith('/manga/ids');
+  });
+
+  it('should get manga reviews with parameters', async () => {
+    await mangaEndpoint.getReviews(1, { page: 2, sort: 'newest' });
+    expect(client.request).toHaveBeenCalledWith('/manga/1/reviews', {
+      page: 2,
+      sort: 'newest',
+    });
   });
 });

@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/people.ts:62](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L62)
+Defined in: [types/people.ts:126](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L126)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/people.ts:62](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > `optional` **letter?**: `string`
 
-Defined in: [types/people.ts:68](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L68)
+Defined in: [types/people.ts:132](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L132)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [types/people.ts:68](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > `optional` **limit?**: `number`
 
-Defined in: [types/people.ts:64](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L64)
+Defined in: [types/people.ts:128](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L128)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [types/people.ts:64](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > `optional` **order\_by?**: `"mal_id"` \| `"favorites"` \| `"name"` \| `"birthday"`
 
-Defined in: [types/people.ts:66](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L66)
+Defined in: [types/people.ts:130](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L130)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [types/people.ts:66](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > `optional` **page?**: `number`
 
-Defined in: [types/people.ts:63](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L63)
+Defined in: [types/people.ts:127](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L127)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [types/people.ts:63](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > `optional` **q?**: `string`
 
-Defined in: [types/people.ts:65](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L65)
+Defined in: [types/people.ts:129](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L129)
 
 ***
 
@@ -50,4 +50,4 @@ Defined in: [types/people.ts:65](https://github.com/gonzyui/tenrai.js/blob/dev/s
 
 > `optional` **sort?**: `"desc"` \| `"asc"`
 
-Defined in: [types/people.ts:67](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L67)
+Defined in: [types/people.ts:131](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/people.ts#L131)

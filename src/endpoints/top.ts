@@ -2,11 +2,14 @@ import type { TenraiClient } from '../client';
 import type {
   TenraiPaginatedResponse,
   TopAnime,
+  TopAnimeQueryParams,
   TopCharacter,
   TopManga,
+  TopMangaQueryParams,
   TopPerson,
   TopQueryParams,
   TopReview,
+  TopReviewQueryParams,
 } from '../types';
 
 export class TopEndpoint {
@@ -22,7 +25,7 @@ export class TopEndpoint {
    * @returns Promise with top anime data
    */
   async getAnime(
-    params?: TopQueryParams,
+    params?: TopAnimeQueryParams,
   ): Promise<TenraiPaginatedResponse<TopAnime>> {
     return this.client.request<TenraiPaginatedResponse<TopAnime>>(
       '/top/anime',
@@ -36,7 +39,7 @@ export class TopEndpoint {
    * @returns Promise with top manga data
    */
   async getManga(
-    params?: TopQueryParams,
+    params?: TopMangaQueryParams,
   ): Promise<TenraiPaginatedResponse<TopManga>> {
     return this.client.request<TenraiPaginatedResponse<TopManga>>(
       '/top/manga',
@@ -78,7 +81,7 @@ export class TopEndpoint {
    * @returns Promise with top reviews data
    */
   async getReviews(
-    params?: TopQueryParams,
+    params?: TopReviewQueryParams,
   ): Promise<TenraiPaginatedResponse<TopReview>> {
     return this.client.request<TenraiPaginatedResponse<TopReview>>(
       '/top/reviews',

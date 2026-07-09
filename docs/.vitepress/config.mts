@@ -6,8 +6,25 @@ export default defineConfig({
     'A type-safe, feature-complete TypeScript wrapper for the Tenrai API v1',
   cleanUrls: true,
   appearance: 'dark',
+  sitemap: {
+    hostname: 'https://tenrai.js.org'
+  },
+  head: [
+    ['link', { rel: 'icon', href: '/logo.png' }],
+    ['meta', { name: 'keywords', content: 'tenrai, tenrai.js, myanimelist, mal, api, wrapper, typescript, nodejs, anime, manga' }],
+    ['meta', { name: 'author', content: 'gonzyui' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: 'Tenrai.js' }],
+    ['meta', { property: 'og:description', content: 'A type-safe, feature-complete TypeScript wrapper for the Tenrai API v1' }],
+    ['meta', { property: 'og:image', content: 'https://tenrai.js.org/logo.png' }],
+    ['meta', { name: 'twitter:card', content: 'summary' }],
+    ['meta', { name: 'twitter:title', content: 'Tenrai.js' }],
+    ['meta', { name: 'twitter:description', content: 'A type-safe, feature-complete TypeScript wrapper for the Tenrai API v1' }],
+    ['meta', { name: 'twitter:image', content: 'https://tenrai.js.org/logo.png' }]
+  ],
 
   themeConfig: {
+    logo: '/logo.png',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/getting-started' },
@@ -74,6 +91,7 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/gonzyui/tenrai.js' },
       { icon: 'npm', link: 'https://www.npmjs.com/package/tenrai.js' },
+      { icon: 'discord', link: 'https://discord.gg/3P7twDurUD' },
     ],
     footer: {
       message: 'Released under the MIT License.',
@@ -83,9 +101,8 @@ export default defineConfig({
       provider: 'local',
     },
     editLink: {
-      pattern: "https://github.com/gonzyui/tenrai.js/edit/dev/docs/:path",
-      text: "Edit this page on GitHub",
+      pattern: 'https://github.com/gonzyui/tenrai.js/edit/dev/docs/:path',
+      text: 'Edit this page on GitHub',
     },
-
   },
 });

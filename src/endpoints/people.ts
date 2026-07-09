@@ -42,7 +42,9 @@ export class PeopleEndpoint {
    * ```
    */
   async getFullById(id: number): Promise<TenraiResponse<PersonFull>> {
-    return this.client.request<TenraiResponse<PersonFull>>(`/people/${id}/full`);
+    return this.client.request<TenraiResponse<PersonFull>>(
+      `/people/${id}/full`,
+    );
   }
 
   /**

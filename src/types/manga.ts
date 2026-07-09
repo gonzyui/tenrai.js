@@ -184,10 +184,25 @@ export interface MangaIdsResponse {
   data: number[];
 }
 
+/**
+ * Query parameters for manga search and filtering.
+ */
 export interface MangaQueryParams {
+  /**
+   * Page number to retrieve (default: 1, max: 1000).
+   */
   page?: number;
+  /**
+   * Results per page (default: 25, max: 50).
+   */
   limit?: number;
+  /**
+   * Title search query (fuzzy matched; min 3 chars, max 200 chars).
+   */
   q?: string;
+  /**
+   * Filter by entry type.
+   */
   type?:
     | 'manga'
     | 'novel'
@@ -196,13 +211,37 @@ export interface MangaQueryParams {
     | 'doujin'
     | 'manhwa'
     | 'manhua';
+  /**
+   * Filter by exact score.
+   */
   score?: number;
+  /**
+   * Filter by minimum score.
+   */
   min_score?: number;
+  /**
+   * Filter by maximum score.
+   */
   max_score?: number;
+  /**
+   * Filter by publishing status.
+   */
   status?: 'publishing' | 'complete' | 'hiatus' | 'discontinued' | 'upcoming';
+  /**
+   * Flag — pass `true` to filter out NSFW entries.
+   */
   sfw?: boolean;
+  /**
+   * Comma-separated list of genre IDs (max 25 IDs).
+   */
   genres?: string;
+  /**
+   * Comma-separated list of genre IDs to exclude (max 25 IDs).
+   */
   genres_exclude?: string;
+  /**
+   * Field to order results by.
+   */
   order_by?:
     | 'mal_id'
     | 'title'
@@ -216,7 +255,24 @@ export interface MangaQueryParams {
     | 'popularity'
     | 'members'
     | 'favorites';
+  /**
+   * Sorting order (default: asc).
+   */
   sort?: 'desc' | 'asc';
+  /**
+   * Filter by the first letter of the title.
+   */
   letter?: string;
+  /**
+   * Comma-separated list of magazine IDs (max 25 IDs).
+   */
   magazines?: string;
+  /**
+   * Filter by publishing start date (YYYY-MM-DD format).
+   */
+  start_date?: string;
+  /**
+   * Filter by publishing end date (YYYY-MM-DD format).
+   */
+  end_date?: string;
 }

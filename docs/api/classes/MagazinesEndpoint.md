@@ -2,7 +2,10 @@
 
 ***
 
-Defined in: [endpoints/magazines.ts:8](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/magazines.ts#L8)
+Defined in: [endpoints/magazines.ts:12](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/magazines.ts#L12)
+
+Endpoint wrapper for MAL magazines.
+Provides access to the `/magazines` resource.
 
 ## Constructors
 
@@ -10,7 +13,7 @@ Defined in: [endpoints/magazines.ts:8](https://github.com/gonzyui/tenrai.js/blob
 
 > **new MagazinesEndpoint**(`client`): `MagazinesEndpoint`
 
-Defined in: [endpoints/magazines.ts:11](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/magazines.ts#L11)
+Defined in: [endpoints/magazines.ts:15](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/magazines.ts#L15)
 
 #### Parameters
 
@@ -28,9 +31,9 @@ Defined in: [endpoints/magazines.ts:11](https://github.com/gonzyui/tenrai.js/blo
 
 > **getAll**(`params?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`Magazine`](../interfaces/Magazine.md)\>\>
 
-Defined in: [endpoints/magazines.ts:38](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/magazines.ts#L38)
+Defined in: [endpoints/magazines.ts:31](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/magazines.ts#L31)
 
-Get all magazines
+Retrieve a paginated list of magazines, publishing counts, and metadata.
 
 #### Parameters
 
@@ -38,46 +41,21 @@ Get all magazines
 
 [`MagazineQueryParams`](../interfaces/MagazineQueryParams.md)
 
-Query parameters
+Optional query parameters for pagination, sorting, and name filtering
 
 #### Returns
 
 `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`Magazine`](../interfaces/Magazine.md)\>\>
 
-Promise with magazines data
+Promise with a paginated list of magazines
 
-***
+#### See
 
-### getById()
+[Tenrai API](https://api.tenrai.org) — `GET /v1/magazines`
 
-> **getById**(`id`, `page?`, `limit?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`Magazine`](../interfaces/Magazine.md)\>\>
+#### Example
 
-Defined in: [endpoints/magazines.ts:22](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/magazines.ts#L22)
-
-Get magazine by ID
-
-#### Parameters
-
-##### id
-
-`number`
-
-Magazine ID
-
-##### page?
-
-`number`
-
-Page number
-
-##### limit?
-
-`number`
-
-Results per page
-
-#### Returns
-
-`Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`Magazine`](../interfaces/Magazine.md)\>\>
-
-Promise with magazine data
+```ts
+const magazines = await client.magazines.getAll({ q: 'shonen', limit: 10 });
+magazines.data.forEach(mag => console.log(`${mag.name} has ${mag.count} manga published`));
+```

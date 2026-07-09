@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [endpoints/manga.ts:17](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L17)
+Defined in: [endpoints/manga.ts:20](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L20)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [endpoints/manga.ts:17](https://github.com/gonzyui/tenrai.js/blob/de
 
 > **new MangaEndpoint**(`client`): `MangaEndpoint`
 
-Defined in: [endpoints/manga.ts:20](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L20)
+Defined in: [endpoints/manga.ts:23](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L23)
 
 #### Parameters
 
@@ -24,11 +24,44 @@ Defined in: [endpoints/manga.ts:20](https://github.com/gonzyui/tenrai.js/blob/de
 
 ## Methods
 
+### getAllIds()
+
+> **getAllIds**(): `Promise`\<[`MangaIdsResponse`](../interfaces/MangaIdsResponse.md)\>
+
+Defined in: [endpoints/manga.ts:196](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L196)
+
+Retrieve all unique MAL manga IDs that currently exist and are active.
+
+**Requires a Server Key** — pass it via the `X-Server-Key` header
+when constructing the client.
+
+#### Returns
+
+`Promise`\<[`MangaIdsResponse`](../interfaces/MangaIdsResponse.md)\>
+
+Promise with an array of all manga IDs
+
+#### See
+
+[Tenrai API](https://api.tenrai.org) — `GET /v1/manga/ids`
+
+#### Example
+
+```ts
+const client = new TenraiClient({
+  headers: { 'X-Server-Key': 'your-server-key' },
+});
+const ids = await client.manga.getAllIds();
+console.log(ids.data); // [1, 2, 13, 21, ...]
+```
+
+***
+
 ### getById()
 
 > **getById**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`Manga`](../interfaces/Manga.md)\>\>
 
-Defined in: [endpoints/manga.ts:29](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L29)
+Defined in: [endpoints/manga.ts:32](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L32)
 
 Get manga by ID
 
@@ -52,7 +85,7 @@ Promise with manga data
 
 > **getCharacters**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`MangaCharacter`](../interfaces/MangaCharacter.md)[]\>\>
 
-Defined in: [endpoints/manga.ts:38](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L38)
+Defined in: [endpoints/manga.ts:60](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L60)
 
 Get manga characters
 
@@ -76,7 +109,7 @@ Promise with manga characters data
 
 > **getExternal**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`MangaExternal`](../interfaces/MangaExternal.md)[]\>\>
 
-Defined in: [endpoints/manga.ts:138](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L138)
+Defined in: [endpoints/manga.ts:158](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L158)
 
 Get manga external links
 
@@ -96,11 +129,47 @@ Promise with manga external links data
 
 ***
 
+### getFullById()
+
+> **getFullById**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`MangaFullDetails`](../interfaces/MangaFullDetails.md)\>\>
+
+Defined in: [endpoints/manga.ts:49](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L49)
+
+Get full manga details by ID, including relations and external links.
+
+#### Parameters
+
+##### id
+
+`number`
+
+The MAL manga ID
+
+#### Returns
+
+`Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`MangaFullDetails`](../interfaces/MangaFullDetails.md)\>\>
+
+Promise with full manga data
+
+#### See
+
+[Tenrai API](https://api.tenrai.org) — `GET /v1/manga/{id}/full`
+
+#### Example
+
+```ts
+const manga = await client.manga.getFullById(13);
+console.log(manga.data.relations); // Related manga/anime
+console.log(manga.data.external);  // External links
+```
+
+***
+
 ### getMoreInfo()
 
 > **getMoreInfo**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<`string`\>\>
 
-Defined in: [endpoints/manga.ts:89](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L89)
+Defined in: [endpoints/manga.ts:109](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L109)
 
 Get more manga info
 
@@ -124,7 +193,7 @@ Promise with more manga info
 
 > **getNews**(`id`, `page?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`MangaNews`](../interfaces/MangaNews.md)\>\>
 
-Defined in: [endpoints/manga.ts:50](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L50)
+Defined in: [endpoints/manga.ts:72](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L72)
 
 Get manga news
 
@@ -154,7 +223,7 @@ Promise with manga news data
 
 > **getPictures**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`MangaPicture`](../interfaces/MangaPicture.md)[]\>\>
 
-Defined in: [endpoints/manga.ts:67](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L67)
+Defined in: [endpoints/manga.ts:87](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L87)
 
 Get manga pictures
 
@@ -178,7 +247,7 @@ Promise with manga pictures data
 
 > **getRecommendations**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`MangaRecommendation`](../interfaces/MangaRecommendation.md)[]\>\>
 
-Defined in: [endpoints/manga.ts:98](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L98)
+Defined in: [endpoints/manga.ts:118](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L118)
 
 Get manga recommendations
 
@@ -202,7 +271,7 @@ Promise with manga recommendations data
 
 > **getRelations**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`MangaRelation`](../interfaces/MangaRelation.md)[]\>\>
 
-Defined in: [endpoints/manga.ts:127](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L127)
+Defined in: [endpoints/manga.ts:147](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L147)
 
 Get manga relations
 
@@ -224,9 +293,9 @@ Promise with manga relations data
 
 ### getReviews()
 
-> **getReviews**(`id`, `page?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`MangaReview`](../interfaces/MangaReview.md)\>\>
+> **getReviews**(`id`, `params?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`MangaReview`](../interfaces/MangaReview.md)\>\>
 
-Defined in: [endpoints/manga.ts:112](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L112)
+Defined in: [endpoints/manga.ts:132](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L132)
 
 Get manga reviews
 
@@ -238,11 +307,11 @@ Get manga reviews
 
 Manga ID
 
-##### page?
+##### params?
 
-`number`
+[`ReviewQueryParams`](../interfaces/ReviewQueryParams.md)
 
-Page number
+Query parameters (page, limit, spoilers, preliminary, sort, sentiment)
 
 #### Returns
 
@@ -256,7 +325,7 @@ Promise with manga reviews data
 
 > **getStatistics**(`id`): `Promise`\<[`TenraiResponse`](../interfaces/TenraiResponse.md)\<[`MangaStatistics`](../interfaces/MangaStatistics.md)\>\>
 
-Defined in: [endpoints/manga.ts:78](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L78)
+Defined in: [endpoints/manga.ts:98](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L98)
 
 Get manga statistics
 
@@ -280,7 +349,7 @@ Promise with manga statistics data
 
 > **search**(`params?`): `Promise`\<[`TenraiPaginatedResponse`](../interfaces/TenraiPaginatedResponse.md)\<[`Manga`](../interfaces/Manga.md)\>\>
 
-Defined in: [endpoints/manga.ts:149](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L149)
+Defined in: [endpoints/manga.ts:169](https://github.com/gonzyui/tenrai.js/blob/dev/src/endpoints/manga.ts#L169)
 
 Search for manga
 

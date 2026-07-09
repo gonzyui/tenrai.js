@@ -11,5 +11,4 @@ export * from './producers';
 export * from './magazines';
 export * from './reviews';
 export * from './recommendations';
-export * from './random';
 export * from './error';

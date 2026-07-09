@@ -6,7 +6,7 @@ outline: deep
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
-## 1.0.1 - 2026-07-09
+## 1.1.0 - 2026-07-09
 
 ### Added
 - Added `anime.getFullById()` endpoint — fetches full anime details including relations, themes, external links, and streaming data (`GET /v1/anime/{id}/full`).
@@ -33,12 +33,56 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Added `producers.getAllIds()` endpoint — retrieves all active MAL producer IDs, requires Server Key (`GET /v1/producers/ids`).
 - Added `ProducerFull`, `ProducerExternal`, and `ProducerIdsResponse` type interfaces.
 
-
+### Changed
+- Updated `AnimeQueryParams` in `src/types/anime.ts` to support all Tenrai API parameters:
+  - Added `cm | pv | tv_special` to `type`.
+  - Added `rplus` to `rating`.
+  - Restructured `order_by` (removed `type`, `rating`, `favorites` which are not supported).
+  - Added missing parameters: `unapproved`, `start_date`, and `end_date`.
+  - Added clear JSDoc documentation for all parameters.
+- Updated `MangaQueryParams` in `src/types/manga.ts`:
+  - Added `start_date` and `end_date` parameters.
+  - Added JSDoc documentation.
+- Updated `SeasonQueryParams` in `src/types/seasons.ts`:
+  - Enforced correct `filter` type values (removed `unknown`, added `music`).
+  - Added `continuing`, `kids`, `order_by`, and `sort` parameters.
+  - Added JSDoc documentation.
+- Updated `ScheduleQueryParams` in `src/types/schedules.ts`:
+  - Added `kids` and `unapproved` parameters.
+  - Added JSDoc documentation.
+- Revamped `TopQueryParams` and signatures in `src/types/top.ts` & `src/endpoints/top.ts`:
+  - Split into specific typed interfaces: `TopAnimeQueryParams`, `TopMangaQueryParams`, and `TopReviewQueryParams` to match Tenrai API constraints.
+  - Added JSDoc documentation.
+- Updated `ReviewQueryParams` in `src/types/reviews.ts`:
+  - Added `sort` and `sentiment` parameters.
+  - Aligned `preliminary` and `spoilers` (renamed from `spoiler`) to support `boolean | 'only'`.
+  - Added JSDoc documentation.
+- Updated endpoint-level `getReviews` signatures in `AnimeEndpoint` and `MangaEndpoint` to accept `ReviewQueryParams`.
+- Updated `TenraiError` in `src/types/error.ts` to be type-safe by defining a structured `TenraiApiErrorResponse` interface.
+- Expanded `DateRange` in `src/types/common.ts` to fully model the nested `prop` and `string` properties.
+- Deprecated `RandomQueryParams` in `src/types/random.ts` since `/random/*` endpoints do not accept query parameters.
+- Updated `ProducerQueryParams` in `src/types/producers.ts` to add `favorites` and `established` to `order_by`.
+- Added `serverKey`, `cache`, `cacheTtl`, `maxRetries`, and `retryDelay` options to `TenraiClientOptions` in `src/client.ts`.
+- Implemented automatic header injection of `X-Server-Key` when using a Server Key.
+- Implemented a lightweight in-memory cache system for successful GET requests with configurable TTL and `clearCache()` support.
+- Implemented automatic rate limit handling for HTTP `429` status responses with custom Retry-After header parsing and exponential backoff retries.
+- Updated `README.md` to accurately describe implemented features (caching, server key, automatic 429 retries) and linked to the documentation website (`https://tenrai.js.org/`).
+- Added `test:integration` script to `package.json` to run tests against the live Tenrai API.
+- Implemented integration tests in `tests/integration.test.ts` to validate real network requests, data formats, and type consistency (skipped by default unless `INTEGRATION=true` environment variable is set).
+- Corrected incorrect feature claims in `README.md` (removed non-existent batching and connection pooling, updated badges to Node.js 18+).
+- Corrected project structure layout in `CONTRIBUTING.md` (removed reference to non-existent `examples/` directory) and added links to the official documentation website (`https://tenrai.js.org/`).
+- Added modern Node.js `"exports"` property mapping to `package.json` for better module resolution in ESM/CommonJS projects.
+- Added `"sideEffects": false` flag to `package.json` to enable bundler tree-shaking optimizations.
+- Configured Biome linter rule `noExplicitAny` as `"warn"` in `biome.json` to enforce strict type checking, and replaced explicit `any` usages with `unknown` inside `client.ts`.
+- Documented `GenresEndpoint`, `MagazinesEndpoint`, and `RandomEndpoint` methods with detailed English JSDocs and examples.
+- Configured SEO metadata keywords/description tags, Open Graph options, and automatic XML sitemap generation for the VitePress documentation.
+- Generated a futuristic logo icon "T" and registered it as the documentation logo and favicon.
 
 ### Removed
 - Removed `anime.getForum()` endpoint — `/anime/{id}/forum` does not exist in the Tenrai API (Jikan-only endpoint).
 - Removed `manga.getForum()` endpoint — `/manga/{id}/forum` does not exist in the Tenrai API (Jikan-only endpoint).
 - Removed `random.getUser()` endpoint — `/random/users` does not exist in the Tenrai API (no user data endpoints).
+- Removed `magazines.getById()` endpoint — `/magazines/{id}` does not exist in the Tenrai API.
 - Removed `AnimeForum` and `MangaForum` type interfaces (unused after endpoint removal).
 - Removed associated unit tests for the above ghost endpoints.
 ---

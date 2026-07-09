@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [types/manga.ts:88](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L88)
+Defined in: [types/manga.ts:97](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L97)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types/manga.ts:88](https://github.com/gonzyui/tenrai.js/blob/dev/sr
 
 > **jpg**: `object`
 
-Defined in: [types/manga.ts:89](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L89)
+Defined in: [types/manga.ts:98](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L98)
 
 #### image\_url
 
@@ -30,7 +30,7 @@ Defined in: [types/manga.ts:89](https://github.com/gonzyui/tenrai.js/blob/dev/sr
 
 > `optional` **webp?**: `object`
 
-Defined in: [types/manga.ts:94](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L94)
+Defined in: [types/manga.ts:103](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/manga.ts#L103)
 
 #### image\_url
 

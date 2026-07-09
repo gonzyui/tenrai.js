@@ -2,7 +2,9 @@
 
 ***
 
-Defined in: [types/genres.ts:1](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/genres.ts#L1)
+Defined in: [types/genres.ts:4](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/genres.ts#L4)
+
+Represents a genre returned by MAL/Tenrai.
 
 ## Properties
 
@@ -10,7 +12,9 @@ Defined in: [types/genres.ts:1](https://github.com/gonzyui/tenrai.js/blob/dev/sr
 
 > **count**: `number`
 
-Defined in: [types/genres.ts:5](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/genres.ts#L5)
+Defined in: [types/genres.ts:20](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/genres.ts#L20)
+
+Total entries matching this genre in the database.
 
 ***
 
@@ -18,7 +22,9 @@ Defined in: [types/genres.ts:5](https://github.com/gonzyui/tenrai.js/blob/dev/sr
 
 > **mal\_id**: `number`
 
-Defined in: [types/genres.ts:2](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/genres.ts#L2)
+Defined in: [types/genres.ts:8](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/genres.ts#L8)
+
+The MAL ID of the genre.
 
 ***
 
@@ -26,7 +32,9 @@ Defined in: [types/genres.ts:2](https://github.com/gonzyui/tenrai.js/blob/dev/sr
 
 > **name**: `string`
 
-Defined in: [types/genres.ts:3](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/genres.ts#L3)
+Defined in: [types/genres.ts:12](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/genres.ts#L12)
+
+The name of the genre.
 
 ***
 
@@ -34,4 +42,6 @@ Defined in: [types/genres.ts:3](https://github.com/gonzyui/tenrai.js/blob/dev/sr
 
 > **url**: `string`
 
-Defined in: [types/genres.ts:4](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/genres.ts#L4)
+Defined in: [types/genres.ts:16](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/genres.ts#L16)
+
+The MyAnimeList URL of the genre.

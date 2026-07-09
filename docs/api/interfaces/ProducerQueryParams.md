@@ -2,7 +2,9 @@
 
 ***
 
-Defined in: [types/producers.ts:8](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/producers.ts#L8)
+Defined in: [types/producers.ts:41](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/producers.ts#L41)
+
+Query parameters for producers search and filtering.
 
 ## Properties
 
@@ -10,7 +12,9 @@ Defined in: [types/producers.ts:8](https://github.com/gonzyui/tenrai.js/blob/dev
 
 > `optional` **letter?**: `string`
 
-Defined in: [types/producers.ts:14](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/producers.ts#L14)
+Defined in: [types/producers.ts:65](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/producers.ts#L65)
+
+Filter producers by the first letter of their name.
 
 ***
 
@@ -18,15 +22,19 @@ Defined in: [types/producers.ts:14](https://github.com/gonzyui/tenrai.js/blob/de
 
 > `optional` **limit?**: `number`
 
-Defined in: [types/producers.ts:10](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/producers.ts#L10)
+Defined in: [types/producers.ts:49](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/producers.ts#L49)
+
+Results per page (default: 25, max: 50).
 
 ***
 
 ### order\_by?
 
-> `optional` **order\_by?**: `"mal_id"` \| `"name"` \| `"count"`
+> `optional` **order\_by?**: `"mal_id"` \| `"favorites"` \| `"name"` \| `"count"` \| `"established"`
 
-Defined in: [types/producers.ts:12](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/producers.ts#L12)
+Defined in: [types/producers.ts:57](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/producers.ts#L57)
+
+Field to order results by (default: mal_id).
 
 ***
 
@@ -34,7 +42,9 @@ Defined in: [types/producers.ts:12](https://github.com/gonzyui/tenrai.js/blob/de
 
 > `optional` **page?**: `number`
 
-Defined in: [types/producers.ts:9](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/producers.ts#L9)
+Defined in: [types/producers.ts:45](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/producers.ts#L45)
+
+Page number to retrieve (default: 1).
 
 ***
 
@@ -42,7 +52,9 @@ Defined in: [types/producers.ts:9](https://github.com/gonzyui/tenrai.js/blob/dev
 
 > `optional` **q?**: `string`
 
-Defined in: [types/producers.ts:11](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/producers.ts#L11)
+Defined in: [types/producers.ts:53](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/producers.ts#L53)
+
+Search query to filter producers by name.
 
 ***
 
@@ -50,4 +62,6 @@ Defined in: [types/producers.ts:11](https://github.com/gonzyui/tenrai.js/blob/de
 
 > `optional` **sort?**: `"desc"` \| `"asc"`
 
-Defined in: [types/producers.ts:13](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/producers.ts#L13)
+Defined in: [types/producers.ts:61](https://github.com/gonzyui/tenrai.js/blob/dev/src/types/producers.ts#L61)
+
+Sorting order (default: asc).

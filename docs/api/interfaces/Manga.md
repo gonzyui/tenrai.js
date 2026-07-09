@@ -6,6 +6,7 @@ Defined in: [types/manga.ts:3](https://github.com/gonzyui/tenrai.js/blob/dev/src
 
 ## Extended by
 
+- [`MangaFullDetails`](MangaFullDetails.md)
 - [`TopManga`](TopManga.md)
 
 ## Properties
