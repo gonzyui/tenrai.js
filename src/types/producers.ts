@@ -35,12 +35,33 @@ export interface ProducerIdsResponse {
   data: number[];
 }
 
+/**
+ * Query parameters for producers search and filtering.
+ */
 export interface ProducerQueryParams {
+  /**
+   * Page number to retrieve (default: 1).
+   */
   page?: number;
+  /**
+   * Results per page (default: 25, max: 50).
+   */
   limit?: number;
+  /**
+   * Search query to filter producers by name.
+   */
   q?: string;
-  order_by?: 'mal_id' | 'name' | 'count';
+  /**
+   * Field to order results by (default: mal_id).
+   */
+  order_by?: 'mal_id' | 'name' | 'count' | 'favorites' | 'established';
+  /**
+   * Sorting order (default: asc).
+   */
   sort?: 'desc' | 'asc';
+  /**
+   * Filter producers by the first letter of their name.
+   */
   letter?: string;
 }
 

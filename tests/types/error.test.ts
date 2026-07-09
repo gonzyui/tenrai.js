@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { TenraiError } from '../../src/types/error';
+import { TenraiError, type TenraiApiErrorResponse } from '../../src/types/error';
 
 describe('TenraiError', () => {
   it('should create an error with message and status', () => {
@@ -13,7 +13,13 @@ describe('TenraiError', () => {
   });
 
   it('should create an error with message, status, and data', () => {
-    const errorData = { error: 'Resource not found' };
+    const errorData: TenraiApiErrorResponse = {
+      status: 404,
+      type: 'ResourceNotFoundException',
+      message: 'Not found',
+      error: 'Resource not found',
+      path: '/anime/1',
+    };
     const error = new TenraiError('Not found', 404, errorData);
 
     expect(error.message).toBe('Not found');

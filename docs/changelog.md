@@ -58,6 +58,10 @@ This project adheres to [Semantic Versioning](https://semver.org/).
   - Aligned `preliminary` and `spoilers` (renamed from `spoiler`) to support `boolean | 'only'`.
   - Added JSDoc documentation.
 - Updated endpoint-level `getReviews` signatures in `AnimeEndpoint` and `MangaEndpoint` to accept `ReviewQueryParams`.
+- Updated `TenraiError` in `src/types/error.ts` to be type-safe by defining a structured `TenraiApiErrorResponse` interface.
+- Expanded `DateRange` in `src/types/common.ts` to fully model the nested `prop` and `string` properties.
+- Deprecated `RandomQueryParams` in `src/types/random.ts` since `/random/*` endpoints do not accept query parameters.
+- Updated `ProducerQueryParams` in `src/types/producers.ts` to add `favorites` and `established` to `order_by`.
 
 
 

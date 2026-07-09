@@ -11,7 +11,7 @@ import { MagazinesEndpoint } from './endpoints/magazines';
 import { ReviewsEndpoint } from './endpoints/reviews';
 import { RecommendationsEndpoint } from './endpoints/recommendations';
 import { RandomEndpoint } from './endpoints/random';
-import { TenraiError } from './types/error';
+import { TenraiError, type TenraiApiErrorResponse } from './types/error';
 
 export interface TenraiClientOptions {
   baseUrl?: string;
@@ -72,8 +72,8 @@ export class TenraiClient {
 
   /**
    * Make a request to the Tenrai API
-   * @param endpoint API endpoint path
-   * @param params Query parameters
+   * @param endpoint - API endpoint path
+   * @param params - Query parameters
    * @returns Promise with the API response
    */
   async request<T>(endpoint: string, params?: Record<string, any>): Promise<T> {
@@ -100,7 +100,7 @@ export class TenraiClient {
       clearTimeout(timeoutId);
 
       if (!response.ok) {
-        const errorData = await response.json().catch(() => ({}));
+        const errorData = (await response.json().catch(() => ({}))) as TenraiApiErrorResponse;
         throw new TenraiError(
           `API request failed with status ${response.status}`,
           response.status,
