@@ -11,6 +11,7 @@ import { MagazinesEndpoint } from './endpoints/magazines';
 import { ReviewsEndpoint } from './endpoints/reviews';
 import { RecommendationsEndpoint } from './endpoints/recommendations';
 import { RandomEndpoint } from './endpoints/random';
+import { NewsEndpoint } from './endpoints/news';
 import { TenraiError, type TenraiApiErrorResponse } from './types/error';
 
 export interface TenraiClientOptions {
@@ -76,6 +77,7 @@ export class TenraiClient {
   public reviews: ReviewsEndpoint;
   public recommendations: RecommendationsEndpoint;
   public random: RandomEndpoint;
+  public news: NewsEndpoint;
 
   /**
    * Create a new TenraiClient instance
@@ -112,6 +114,7 @@ export class TenraiClient {
     this.reviews = new ReviewsEndpoint(this);
     this.recommendations = new RecommendationsEndpoint(this);
     this.random = new RandomEndpoint(this);
+    this.news = new NewsEndpoint(this);
   }
 
   /**

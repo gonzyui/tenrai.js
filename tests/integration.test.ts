@@ -40,5 +40,30 @@ describe.runIf(runIntegration)('Tenrai API Integration Tests', () => {
     expect(person.data).toBeDefined();
     expect(person.data.name).toBeDefined();
   });
-});
 
+  it('should fetch news list from Tenrai API', async () => {
+    const news = await client.news.getNews({ limit: 5 });
+    expect(news.data).toBeInstanceOf(Array);
+    expect(news.data.length).toBeGreaterThan(0);
+    expect(news.data[0].mal_id).toBeDefined();
+    expect(news.data[0].title).toBeDefined();
+  });
+
+  it('should fetch news tags from Tenrai API', async () => {
+    const tags = await client.news.getNewsTags();
+    expect(tags.data).toBeInstanceOf(Array);
+    expect(tags.data.length).toBeGreaterThan(0);
+    expect(tags.data[0].name).toBeDefined();
+  });
+
+  it('should fetch news details by ID from Tenrai API', async () => {
+    const news = await client.news.getNews({ limit: 1 });
+    if (news.data.length > 0) {
+      const id = news.data[0].mal_id;
+      const details = await client.news.getNewsById(id);
+      expect(details.data).toBeDefined();
+      expect(details.data.mal_id).toBe(id);
+      expect(details.data.content).toBeDefined();
+    }
+  });
+});

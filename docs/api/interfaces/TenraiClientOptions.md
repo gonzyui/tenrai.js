@@ -2,7 +2,7 @@
 
 ***
 
-Defined in: [client.ts:16](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L16)
+Defined in: [client.ts:17](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L17)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [client.ts:16](https://github.com/gonzyui/tenrai.js/blob/dev/src/cli
 
 > `optional` **baseUrl?**: `string`
 
-Defined in: [client.ts:20](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L20)
+Defined in: [client.ts:21](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L21)
 
 The base URL of the Tenrai API (default: 'https://api.tenrai.org/v1').
 
@@ -20,7 +20,7 @@ The base URL of the Tenrai API (default: 'https://api.tenrai.org/v1').
 
 > `optional` **cache?**: `boolean`
 
-Defined in: [client.ts:37](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L37)
+Defined in: [client.ts:38](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L38)
 
 Enable in-memory caching for GET requests (default: false).
 
@@ -30,7 +30,7 @@ Enable in-memory caching for GET requests (default: false).
 
 > `optional` **cacheTtl?**: `number`
 
-Defined in: [client.ts:41](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L41)
+Defined in: [client.ts:42](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L42)
 
 Time-to-live for cached responses in milliseconds (default: 300000ms / 5 minutes).
 
@@ -40,7 +40,7 @@ Time-to-live for cached responses in milliseconds (default: 300000ms / 5 minutes
 
 > `optional` **headers?**: `Record`\<`string`, `string`\>
 
-Defined in: [client.ts:28](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L28)
+Defined in: [client.ts:29](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L29)
 
 Custom HTTP headers to include with every request.
 
@@ -50,7 +50,7 @@ Custom HTTP headers to include with every request.
 
 > `optional` **maxRetries?**: `number`
 
-Defined in: [client.ts:45](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L45)
+Defined in: [client.ts:46](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L46)
 
 Maximum number of retry attempts for 429 Rate Limit responses (default: 3).
 
@@ -60,7 +60,7 @@ Maximum number of retry attempts for 429 Rate Limit responses (default: 3).
 
 > `optional` **retryDelay?**: `number`
 
-Defined in: [client.ts:49](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L49)
+Defined in: [client.ts:50](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L50)
 
 Delay multiplier or starting delay in milliseconds for retrying rate-limited requests (default: 1000ms).
 
@@ -70,7 +70,7 @@ Delay multiplier or starting delay in milliseconds for retrying rate-limited req
 
 > `optional` **serverKey?**: `string`
 
-Defined in: [client.ts:33](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L33)
+Defined in: [client.ts:34](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L34)
 
 The Server Key to authenticate requests and increase rate limits.
 Will be sent via the `X-Server-Key` header.
@@ -81,6 +81,6 @@ Will be sent via the `X-Server-Key` header.
 
 > `optional` **timeout?**: `number`
 
-Defined in: [client.ts:24](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L24)
+Defined in: [client.ts:25](https://github.com/gonzyui/tenrai.js/blob/dev/src/client.ts#L25)
 
 The request timeout in milliseconds (default: 30000ms).
