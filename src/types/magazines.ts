@@ -49,4 +49,3 @@ export interface MagazineQueryParams {
    */
   letter?: string;
 }
-

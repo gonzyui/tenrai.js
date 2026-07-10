@@ -29,4 +29,3 @@ export interface GenreQueryParams {
    */
   filter?: 'genres' | 'explicit_genres' | 'themes' | 'demographics';
 }
-

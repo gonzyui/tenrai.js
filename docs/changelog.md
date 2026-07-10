@@ -1,12 +1,28 @@
 ---
-outline: deep
+outline: 2
 ---
 
 # Changelog
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
-## 1.1.0 - 2026-07-09
+## 1.1.1 - 2026-07-10
+
+### Added
+- Added `news.getNews()` endpoint — fetches recent news articles with search and tag filtering (`GET /v1/news`).
+- Added `news.getNewsTags()` endpoint — fetches all news tags and category counts (`GET /v1/news/tags`).
+- Added `news.getNewsById()` endpoint — fetches full details of a specific news article by ID (`GET /v1/news/{id}`).
+- Added `News`, `NewsTag`, `NewsDetails`, and `NewsQueryParams` type interfaces.
+
+### Documentation
+- Added missing endpoint entries (`SchedulesEndpoint`, `GenresEndpoint`, `ProducersEndpoint`, `MagazinesEndpoint`, `ReviewsEndpoint`, `RecommendationsEndpoint`, and the new `NewsEndpoint`) to the sidebar menu.
+- Configured VitePress outlines to only display version numbers in the changelog sidebar.
+- Fixed Biome linting warnings inside `custom.css` with inline ignore comments.
+
+## 1.1.0 - 2026-07-08
+
+<details>
+<summary>Click to view release details</summary>
 
 ### Added
 - Added `anime.getFullById()` endpoint — fetches full anime details including relations, themes, external links, and streaming data (`GET /v1/anime/{id}/full`).
@@ -85,10 +101,13 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Removed `magazines.getById()` endpoint — `/magazines/{id}` does not exist in the Tenrai API.
 - Removed `AnimeForum` and `MangaForum` type interfaces (unused after endpoint removal).
 - Removed associated unit tests for the above ghost endpoints.
----
+
+</details>
+
+## 1.0.0 - 2026-07-08
 
 <details>
-<summary><strong>1.0.0 - 2026-07-08</strong> <em>(click to expand)</em></summary>
+<summary>Click to view release details</summary>
 
 ### Added
 - Fork of the original "MyAnimeList-Wrapper" (https://github.com/firrthecreator/myanimelist-wrapper).

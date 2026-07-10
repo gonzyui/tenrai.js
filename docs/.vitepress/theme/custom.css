@@ -3,7 +3,9 @@
 }
 
 .top-banner {
-  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--vp-c-brand-2, var(--vp-c-brand-1)));
+  background: linear-gradient(135deg,
+      var(--vp-c-brand-1),
+      var(--vp-c-brand-2, var(--vp-c-brand-1)));
   color: #ffffff;
   padding: 8px 24px;
   height: var(--vp-layout-top-height);
@@ -33,14 +35,14 @@
   opacity: 0.85;
 }
 
-/* Correct VitePress layout alignment when layout-top slot is populated */
 @media (min-width: 960px) {
   .VPNav {
-    /* biome-ignore lint/complexity/noImportantStyles: required to override VitePress navbar default absolute positioning */
+    /* biome-ignore lint/complexity/noImportantStyles: required to override VitePress default header top alignment */
     top: var(--vp-layout-top-height, 0px) !important;
   }
+
   .VPSidebar {
-    /* biome-ignore lint/complexity/noImportantStyles: required to override VitePress sidebar default absolute positioning */
+    /* biome-ignore lint/complexity/noImportantStyles: required to override VitePress default sidebar top offset */
     top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px)) !important;
   }
 }

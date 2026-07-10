@@ -6,12 +6,16 @@ export default {
   extends: DefaultTheme,
   Layout() {
     return h(DefaultTheme.Layout, null, {
-      'layout-top': () => h('div', { class: 'top-banner' }, [
-        h('span', '🎉 '),
-        h('strong', 'Version 1.1.0 is out!'),
-        h('span', ' Now with 100% Tenrai API coverage, built-in caching, and auto rate-limit retries. '),
-        h('a', { href: '/changelog' }, 'Read Changelog')
-      ])
+      'layout-top': () =>
+        h('div', { class: 'top-banner' }, [
+          h('span', '🎉 '),
+          h('strong', 'Version 1.1.1 is out!'),
+          h(
+            'span',
+            ' News endpoints are available through tenrai.js! ',
+          ),
+          h('a', { href: '/changelog' }, 'Read Changelog'),
+        ]),
     });
-  }
+  },
 };
